@@ -1,0 +1,45 @@
+LasR–compound_11 final PLIP complex construction record
+
+Date UTC: 2026-07-17T06:01:46.699507+00:00
+
+Inputs:
+- receptor: /data/BIOFILM_INSILICO_SUPPORT/00_validated_inputs/receptors/LasR_2UV0/LasR_2UV0_prepared_chainF.pdb
+- selected docking pose: /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/production/LasR_2UV0_2026-07-16/selected_representative/compound_11_LasR_2UV0_consensus_cluster1_run01_mode06.pdbqt
+- Meeko-reconstructed ligand: /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_inputs/LasR_2UV0_2026-07-17/meeko_export_audit/compound_11_LasR_2UV0_consensus_run01_mode06_meeko.sdf
+
+Output:
+- final PLIP complex: /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_inputs/LasR_2UV0_2026-07-17/final/LasR_2UV0_compound_11_consensus_complex_FINAL.pdb
+
+Ligand validation:
+- formula: C8H9N3O3S2
+- formal charge: 0
+- total atoms: 25
+- heavy atoms: 16
+- heavy-atom elements: {'C': 8, 'N': 3, 'O': 3, 'S': 2}
+
+Coordinate validation:
+- maximum SDF-to-PDB atom displacement: 0.000707 A
+- RMS SDF-to-PDB atom displacement: 0.000265 A
+- minimum receptor-ligand atom distance: 2.0601 A
+
+PDB validation:
+- receptor atoms: 1295
+- receptor TER serial: 1296
+- ligand atoms: 25
+- ligand atom serial range: 1297-1321
+- ligand TER serial: 1322
+- ligand CONECT records: 25
+- duplicate coordinate/TER serials: none
+
+Software:
+- RDKit: 2025.09.5
+- Open Babel: Open Babel 3.1.0 -- Nov 30 2023 -- 20:44:30
+- Meeko export source: Meeko 0.7.1
+
+SHA-256:
+- receptor: 44b8b4ce2d4590b695e30908e9b7bc28c4a9e476b87c2710bd7e9d08ad4371e2
+- selected PDBQT: 211eb4d80bd5fc75d8cdc55f6506c9681305d1c8ca47e72fa559146e33d32623
+- ligand SDF: 8477fe2fc18731ead9477823aa14194c4013192ce9e254b66c5f61f581f7d653
+- final complex: f2dab66d61f25a77b4280e0f4c40c73fe8442186245fb78bc912f9fe3244e739
+
+Status: PASS

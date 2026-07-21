@@ -1,0 +1,50 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*~
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ORCA / quantum chemistry temporary files
+*.tmp
+*.gbw
+*.ges
+*.densities
+*.hess
+*.engrad
+*.prop
+*.cis
+
+# Docking temporary files
+*.dlg.tmp
+*.tmp.pdbqt
+
+# GROMACS / MD files excluded from this repository
+*.xtc
+*.trr
+*.cpt
+*.edr
+*.tpr
+#*#
+step*.pdb
+
+# MM-GBSA / trajectory-analysis files excluded from this repository
+_MMPBSA_*
+*.mdcrd
+*.nc
+
+# Large archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Local-only files
+LOCAL_*
+*_LOCAL.md

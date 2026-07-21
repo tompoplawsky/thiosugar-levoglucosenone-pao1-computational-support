@@ -1,0 +1,72 @@
+COMMAND:
+mk_prepare_ligand.py -i /data/BIOFILM_INSILICO_SUPPORT/03_docking/ligand_preparation/compound_11_final_qm_topology.sdf -o /data/BIOFILM_INSILICO_SUPPORT/03_docking/ligand_preparation/compound_11.pdbqt --charge_model gasteiger --add_index_map --rename_atoms -r [N;X3;H2]-[c;R] -b 1 2 -v
+
+STDOUT:
+Molecule Setup
+
+==============[ ATOMS ]===================================================
+idx  |          coords            | charge |ign| atype    | connections
+-----+----------------------------+--------+---+----------+--------------- . . . 
+   0 |   -0.235    0.132    3.073 | -0.294 | 0 | OA       | [1]
+   1 |   -0.669   -0.032    1.959 |  0.190 | 0 | C        | [0, 2, 13]
+   2 |   -0.334   -1.220    1.083 |  0.111 | 0 | C        | [1, 3, 16, 17]
+   3 |   -0.349   -0.879   -0.413 |  0.149 | 0 | C        | [2, 4, 11, 18]
+   4 |    0.953   -0.373   -0.845 | -0.236 | 0 | N        | [3, 5, 9]
+   5 |    1.679    0.371    0.043 | -0.142 | 0 | NA       | [4, 6]
+   6 |    2.784    0.777   -0.496 |  0.201 | 0 | A        | [5, 7, 8]
+   7 |    3.685    1.568    0.117 | -0.374 | 0 | N        | [6, 19, 20]
+   8 |    2.989    0.256   -2.160 | -0.067 | 0 | S        | [6, 9]
+   9 |    1.442   -0.561   -2.080 |  0.181 | 0 | A        | [4, 10, 8]
+  10 |    0.749   -1.398   -3.346 | -0.046 | 0 | S        | [9]
+  11 |   -1.434    0.163   -0.729 |  0.173 | 0 | C        | [3, 12, 15, 21]
+  12 |   -1.209    1.320    0.067 | -0.338 | 0 | OA       | [11, 13]
+  13 |   -1.685    0.929    1.322 |  0.319 | 0 | C        | [12, 14, 1, 22]
+  14 |   -2.876    0.217    1.085 | -0.343 | 0 | OA       | [13, 15]
+  15 |   -2.824   -0.273   -0.254 |  0.198 | 0 | C        | [14, 11, 23, 24]
+  16 |   -1.116   -1.974    1.271 |  0.000 | 1 | H        | [2]
+  17 |    0.622   -1.658    1.398 |  0.000 | 1 | H        | [2]
+  18 |   -0.537   -1.780   -1.013 |  0.000 | 1 | H        | [3]
+  19 |    3.586    1.691    1.119 |  0.159 | 0 | HD       | [7]
+  20 |    4.625    1.633   -0.253 |  0.159 | 0 | HD       | [7]
+  21 |   -1.401    0.448   -1.788 |  0.000 | 1 | H        | [11]
+  22 |   -1.866    1.805    1.960 |  0.000 | 1 | H        | [13]
+  23 |   -2.963   -1.364   -0.270 |  0.000 | 1 | H        | [15]
+  24 |   -3.616    0.202   -0.851 |  0.000 | 1 | H        | [15]
+-----+----------------------------+--------+---+----------+--------------- . . . 
+  TOT CHARGE: -0.000
+
+==============[ BONDS ]================
+  (0, 1) -  index1: 0, index2: 1, rotatable: False, breakable: False, canon_id: (0, 1)
+  (1, 2) -  index1: 1, index2: 2, rotatable: False, breakable: False, canon_id: (1, 2)
+  (2, 3) -  index1: 2, index2: 3, rotatable: False, breakable: False, canon_id: (2, 3)
+  (3, 4) -  index1: 3, index2: 4, rotatable: True, breakable: False, canon_id: (3, 4)
+  (4, 5) -  index1: 4, index2: 5, rotatable: False, breakable: False, canon_id: (4, 5)
+  (5, 6) -  index1: 5, index2: 6, rotatable: False, breakable: False, canon_id: (5, 6)
+  (6, 7) -  index1: 6, index2: 7, rotatable: False, breakable: False, canon_id: (6, 7)
+  (6, 8) -  index1: 6, index2: 8, rotatable: False, breakable: False, canon_id: (6, 8)
+  (4, 9) -  index1: 4, index2: 9, rotatable: False, breakable: False, canon_id: (4, 9)
+ (9, 10) -  index1: 9, index2: 10, rotatable: False, breakable: False, canon_id: (9, 10)
+ (3, 11) -  index1: 3, index2: 11, rotatable: False, breakable: False, canon_id: (3, 11)
+(11, 12) -  index1: 11, index2: 12, rotatable: False, breakable: False, canon_id: (11, 12)
+(12, 13) -  index1: 12, index2: 13, rotatable: False, breakable: False, canon_id: (12, 13)
+(13, 14) -  index1: 13, index2: 14, rotatable: False, breakable: False, canon_id: (13, 14)
+(14, 15) -  index1: 14, index2: 15, rotatable: False, breakable: False, canon_id: (14, 15)
+ (1, 13) -  index1: 13, index2: 1, rotatable: False, breakable: False, canon_id: (1, 13)
+  (8, 9) -  index1: 9, index2: 8, rotatable: False, breakable: False, canon_id: (8, 9)
+(11, 15) -  index1: 15, index2: 11, rotatable: False, breakable: False, canon_id: (11, 15)
+ (2, 16) -  index1: 2, index2: 16, rotatable: False, breakable: False, canon_id: (2, 16)
+ (2, 17) -  index1: 2, index2: 17, rotatable: False, breakable: False, canon_id: (2, 17)
+ (3, 18) -  index1: 3, index2: 18, rotatable: False, breakable: False, canon_id: (3, 18)
+ (7, 19) -  index1: 7, index2: 19, rotatable: False, breakable: False, canon_id: (7, 19)
+ (7, 20) -  index1: 7, index2: 20, rotatable: False, breakable: False, canon_id: (7, 20)
+(11, 21) -  index1: 11, index2: 21, rotatable: False, breakable: False, canon_id: (11, 21)
+(13, 22) -  index1: 13, index2: 22, rotatable: False, breakable: False, canon_id: (13, 22)
+(15, 23) -  index1: 15, index2: 23, rotatable: False, breakable: False, canon_id: (15, 23)
+(15, 24) -  index1: 15, index2: 24, rotatable: False, breakable: False, canon_id: (15, 24)
+
+Input molecules processed: 1, skipped: 0
+PDBQT files written: 1
+PDBQT files not written due to error: 0
+Input molecules with errors: 0
+
+STDERR:

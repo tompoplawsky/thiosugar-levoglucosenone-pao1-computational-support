@@ -1,0 +1,8 @@
+compound	check	result	observation
+11	ligand connectivity	PASS	single chemically connected ligand; no broken topology
+11	gross steric clash	PASS	no obvious severe receptor interpenetration
+11	pose location	PASS	recurrent orthosteric-like pose in the OHN-defined pocket region
+11	reference-ligand context	PASS	selected pose is spatially consistent with crystallographic OHN; centroid distance 4.7025 A
+11	PLIP context	PASS	Ala127 hydrophobic contact and marginal Asp65 hydrogen bond are spatially plausible
+8,9	negative LasR result context	PASS	no qualifying orthosteric or partial-pocket poses; no positive LasR interaction panels generated
+all	supervised Windows/ChimeraX visual QC	PASS	final ChimeraX session and selected publication-style PNG archived and checksum-verified

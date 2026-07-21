@@ -1,0 +1,136 @@
+COMMAND:
+mk_prepare_ligand.py -i /data/BIOFILM_INSILICO_SUPPORT/03_docking/ligand_preparation/compound_09_final_qm_topology.sdf -o /data/BIOFILM_INSILICO_SUPPORT/03_docking/ligand_preparation/compound_09.pdbqt --charge_model gasteiger --add_index_map --rename_atoms -r [C;X3](=[N;X2]-[N;X3]-[C;X3](=[S;X1])-[N;X3]) -b 2 3 -v
+
+STDOUT:
+Molecule Setup
+
+==============[ ATOMS ]===================================================
+idx  |          coords            | charge |ign| atype    | connections
+-----+----------------------------+--------+---+----------+--------------- . . . 
+   0 |    6.190   -2.902    1.731 | -0.040 | 0 | S        | [1]
+   1 |    5.050   -1.664    1.641 |  0.184 | 0 | C        | [0, 2, 3]
+   2 |    4.327   -1.242    2.676 | -0.375 | 0 | N        | [1, 32, 33]
+   3 |    4.831   -1.037    0.450 | -0.254 | 0 | N        | [1, 4, 34]
+   4 |    3.991    0.019    0.398 | -0.177 | 0 | NA       | [3, 5]
+   5 |    3.696    0.592   -0.701 |  0.095 | 0 | C        | [4, 6, 29]
+   6 |    2.762    1.769   -0.672 |  0.076 | 0 | C        | [5, 7, 35, 36]
+   7 |    1.655    1.590   -1.723 |  0.087 | 0 | C        | [6, 8, 27, 37]
+   8 |    0.413    0.340   -1.228 | -0.120 | 0 | SA       | [7, 9]
+   9 |   -0.269    1.126    0.272 |  0.221 | 0 | C        | [8, 10, 26, 38]
+  10 |   -1.031    0.077    1.114 |  0.260 | 0 | C        | [9, 11, 15, 39]
+  11 |   -0.366   -1.176    1.166 | -0.455 | 0 | OA       | [10, 12]
+  12 |    0.813   -1.271    1.797 |  0.303 | 0 | C        | [11, 13, 14]
+  13 |    1.420   -2.627    1.617 |  0.139 | 0 | C        | [12, 40, 41, 42]
+  14 |    1.312   -0.344    2.392 | -0.253 | 0 | OA       | [12]
+  15 |   -2.408   -0.214    0.537 |  0.264 | 0 | C        | [10, 16, 20, 43]
+  16 |   -3.141   -0.976    1.485 | -0.454 | 0 | OA       | [15, 17]
+  17 |   -3.555   -2.212    1.147 |  0.303 | 0 | C        | [16, 18, 19]
+  18 |   -4.301   -2.852    2.278 |  0.139 | 0 | C        | [17, 44, 45, 46]
+  19 |   -3.342   -2.711    0.071 | -0.253 | 0 | OA       | [17]
+  20 |   -3.158    1.071    0.243 |  0.247 | 0 | C        | [15, 21, 25, 47]
+  21 |   -4.341    0.707   -0.456 | -0.456 | 0 | OA       | [20, 22]
+  22 |   -5.443    1.459   -0.276 |  0.303 | 0 | C        | [21, 23, 24]
+  23 |   -6.601    0.913   -1.054 |  0.139 | 0 | C        | [22, 48, 49, 50]
+  24 |   -5.457    2.441    0.423 | -0.253 | 0 | OA       | [22]
+  25 |   -2.295    1.991   -0.616 |  0.211 | 0 | C        | [20, 26, 51, 52]
+  26 |   -1.071    2.246    0.036 | -0.359 | 0 | OA       | [25, 9]
+  27 |    2.277    1.077   -3.032 |  0.161 | 0 | C        | [7, 28, 31, 53]
+  28 |    2.911   -0.177   -2.787 | -0.340 | 0 | OA       | [27, 29]
+  29 |    4.089    0.192   -2.121 |  0.298 | 0 | C        | [28, 30, 5, 54]
+  30 |    4.575    1.322   -2.806 | -0.344 | 0 | OA       | [29, 31]
+  31 |    3.475    1.920   -3.491 |  0.197 | 0 | C        | [30, 27, 55, 56]
+  32 |    3.550   -0.595    2.540 |  0.159 | 0 | HD       | [2]
+  33 |    4.429   -1.719    3.562 |  0.159 | 0 | HD       | [2]
+  34 |    5.374   -1.361   -0.347 |  0.193 | 0 | HD       | [3]
+  35 |    2.370    1.902    0.344 |  0.000 | 1 | H        | [6]
+  36 |    3.329    2.684   -0.911 |  0.000 | 1 | H        | [6]
+  37 |    1.137    2.542   -1.910 |  0.000 | 1 | H        | [7]
+  38 |    0.574    1.489    0.870 |  0.000 | 1 | H        | [9]
+  39 |   -1.135    0.487    2.131 |  0.000 | 1 | H        | [10]
+  40 |    2.079   -2.861    2.461 |  0.000 | 1 | H        | [13]
+  41 |    2.027   -2.595    0.698 |  0.000 | 1 | H        | [13]
+  42 |    0.647   -3.394    1.494 |  0.000 | 1 | H        | [13]
+  43 |   -2.305   -0.797   -0.390 |  0.000 | 1 | H        | [15]
+  44 |   -5.186   -2.246    2.520 |  0.000 | 1 | H        | [18]
+  45 |   -4.604   -3.866    1.997 |  0.000 | 1 | H        | [18]
+  46 |   -3.662   -2.879    3.171 |  0.000 | 1 | H        | [18]
+  47 |   -3.424    1.577    1.183 |  0.000 | 1 | H        | [20]
+  48 |   -6.357    0.926   -2.126 |  0.000 | 1 | H        | [23]
+  49 |   -7.494    1.518   -0.865 |  0.000 | 1 | H        | [23]
+  50 |   -6.781   -0.132   -0.767 |  0.000 | 1 | H        | [23]
+  51 |   -2.130    1.528   -1.605 |  0.000 | 1 | H        | [25]
+  52 |   -2.792    2.959   -0.755 |  0.000 | 1 | H        | [25]
+  53 |    1.520    0.937   -3.814 |  0.000 | 1 | H        | [27]
+  54 |    4.814   -0.629   -2.190 |  0.000 | 1 | H        | [29]
+  55 |    3.386    2.982   -3.221 |  0.000 | 1 | H        | [31]
+  56 |    3.624    1.833   -4.577 |  0.000 | 1 | H        | [31]
+-----+----------------------------+--------+---+----------+--------------- . . . 
+  TOT CHARGE: 0.000
+
+==============[ BONDS ]================
+  (0, 1) -  index1: 0, index2: 1, rotatable: False, breakable: False, canon_id: (0, 1)
+  (1, 2) -  index1: 1, index2: 2, rotatable: False, breakable: False, canon_id: (1, 2)
+  (1, 3) -  index1: 1, index2: 3, rotatable: False, breakable: False, canon_id: (1, 3)
+  (3, 4) -  index1: 3, index2: 4, rotatable: False, breakable: False, canon_id: (3, 4)
+  (4, 5) -  index1: 4, index2: 5, rotatable: False, breakable: False, canon_id: (4, 5)
+  (5, 6) -  index1: 5, index2: 6, rotatable: False, breakable: False, canon_id: (5, 6)
+  (6, 7) -  index1: 6, index2: 7, rotatable: False, breakable: False, canon_id: (6, 7)
+  (7, 8) -  index1: 7, index2: 8, rotatable: True, breakable: False, canon_id: (7, 8)
+  (8, 9) -  index1: 8, index2: 9, rotatable: True, breakable: False, canon_id: (8, 9)
+ (9, 10) -  index1: 9, index2: 10, rotatable: False, breakable: False, canon_id: (9, 10)
+(10, 11) -  index1: 10, index2: 11, rotatable: True, breakable: False, canon_id: (10, 11)
+(11, 12) -  index1: 11, index2: 12, rotatable: True, breakable: False, canon_id: (11, 12)
+(12, 13) -  index1: 12, index2: 13, rotatable: False, breakable: False, canon_id: (12, 13)
+(12, 14) -  index1: 12, index2: 14, rotatable: False, breakable: False, canon_id: (12, 14)
+(10, 15) -  index1: 10, index2: 15, rotatable: False, breakable: False, canon_id: (10, 15)
+(15, 16) -  index1: 15, index2: 16, rotatable: True, breakable: False, canon_id: (15, 16)
+(16, 17) -  index1: 16, index2: 17, rotatable: True, breakable: False, canon_id: (16, 17)
+(17, 18) -  index1: 17, index2: 18, rotatable: False, breakable: False, canon_id: (17, 18)
+(17, 19) -  index1: 17, index2: 19, rotatable: False, breakable: False, canon_id: (17, 19)
+(15, 20) -  index1: 15, index2: 20, rotatable: False, breakable: False, canon_id: (15, 20)
+(20, 21) -  index1: 20, index2: 21, rotatable: True, breakable: False, canon_id: (20, 21)
+(21, 22) -  index1: 21, index2: 22, rotatable: True, breakable: False, canon_id: (21, 22)
+(22, 23) -  index1: 22, index2: 23, rotatable: False, breakable: False, canon_id: (22, 23)
+(22, 24) -  index1: 22, index2: 24, rotatable: False, breakable: False, canon_id: (22, 24)
+(20, 25) -  index1: 20, index2: 25, rotatable: False, breakable: False, canon_id: (20, 25)
+(25, 26) -  index1: 25, index2: 26, rotatable: False, breakable: False, canon_id: (25, 26)
+ (7, 27) -  index1: 7, index2: 27, rotatable: False, breakable: False, canon_id: (7, 27)
+(27, 28) -  index1: 27, index2: 28, rotatable: False, breakable: False, canon_id: (27, 28)
+(28, 29) -  index1: 28, index2: 29, rotatable: False, breakable: False, canon_id: (28, 29)
+(29, 30) -  index1: 29, index2: 30, rotatable: False, breakable: False, canon_id: (29, 30)
+(30, 31) -  index1: 30, index2: 31, rotatable: False, breakable: False, canon_id: (30, 31)
+ (5, 29) -  index1: 29, index2: 5, rotatable: False, breakable: False, canon_id: (5, 29)
+ (9, 26) -  index1: 26, index2: 9, rotatable: False, breakable: False, canon_id: (9, 26)
+(27, 31) -  index1: 31, index2: 27, rotatable: False, breakable: False, canon_id: (27, 31)
+ (2, 32) -  index1: 2, index2: 32, rotatable: False, breakable: False, canon_id: (2, 32)
+ (2, 33) -  index1: 2, index2: 33, rotatable: False, breakable: False, canon_id: (2, 33)
+ (3, 34) -  index1: 3, index2: 34, rotatable: False, breakable: False, canon_id: (3, 34)
+ (6, 35) -  index1: 6, index2: 35, rotatable: False, breakable: False, canon_id: (6, 35)
+ (6, 36) -  index1: 6, index2: 36, rotatable: False, breakable: False, canon_id: (6, 36)
+ (7, 37) -  index1: 7, index2: 37, rotatable: False, breakable: False, canon_id: (7, 37)
+ (9, 38) -  index1: 9, index2: 38, rotatable: False, breakable: False, canon_id: (9, 38)
+(10, 39) -  index1: 10, index2: 39, rotatable: False, breakable: False, canon_id: (10, 39)
+(13, 40) -  index1: 13, index2: 40, rotatable: False, breakable: False, canon_id: (13, 40)
+(13, 41) -  index1: 13, index2: 41, rotatable: False, breakable: False, canon_id: (13, 41)
+(13, 42) -  index1: 13, index2: 42, rotatable: False, breakable: False, canon_id: (13, 42)
+(15, 43) -  index1: 15, index2: 43, rotatable: False, breakable: False, canon_id: (15, 43)
+(18, 44) -  index1: 18, index2: 44, rotatable: False, breakable: False, canon_id: (18, 44)
+(18, 45) -  index1: 18, index2: 45, rotatable: False, breakable: False, canon_id: (18, 45)
+(18, 46) -  index1: 18, index2: 46, rotatable: False, breakable: False, canon_id: (18, 46)
+(20, 47) -  index1: 20, index2: 47, rotatable: False, breakable: False, canon_id: (20, 47)
+(23, 48) -  index1: 23, index2: 48, rotatable: False, breakable: False, canon_id: (23, 48)
+(23, 49) -  index1: 23, index2: 49, rotatable: False, breakable: False, canon_id: (23, 49)
+(23, 50) -  index1: 23, index2: 50, rotatable: False, breakable: False, canon_id: (23, 50)
+(25, 51) -  index1: 25, index2: 51, rotatable: False, breakable: False, canon_id: (25, 51)
+(25, 52) -  index1: 25, index2: 52, rotatable: False, breakable: False, canon_id: (25, 52)
+(27, 53) -  index1: 27, index2: 53, rotatable: False, breakable: False, canon_id: (27, 53)
+(29, 54) -  index1: 29, index2: 54, rotatable: False, breakable: False, canon_id: (29, 54)
+(31, 55) -  index1: 31, index2: 55, rotatable: False, breakable: False, canon_id: (31, 55)
+(31, 56) -  index1: 31, index2: 56, rotatable: False, breakable: False, canon_id: (31, 56)
+
+Input molecules processed: 1, skipped: 0
+PDBQT files written: 1
+PDBQT files not written due to error: 0
+Input molecules with errors: 0
+
+STDERR:

@@ -1,0 +1,11 @@
+compound,orca_atom_index,element,chemical_label,structural_role,chelpg_charge_e
+compound_11,0,O,carbonyl_O,levoglucosenone carbonyl oxygen,-0.50556993
+compound_11,4,N,N-4,"1,3,4-thiadiazole ring nitrogen bonded to levoglucosenone core",0.31321861
+compound_11,5,N,N-3,"1,3,4-thiadiazole ring nitrogen",-0.45537399
+compound_11,6,C,C-2,ring carbon bearing exocyclic amino group,0.54001613
+compound_11,7,N,N-exocyclic,exocyclic amino nitrogen NH2,-0.95315983
+compound_11,8,S,S-1,"1,3,4-thiadiazole ring sulfur",0.01876394
+compound_11,9,C,C-5,ring carbon bearing exocyclic thione sulfur,-0.00956215
+compound_11,10,S,S-exocyclic,exocyclic thione sulfur C=S,-0.38433741
+compound_11,12,O,bicyclic_ether_O1,bicyclic ether oxygen,-0.43964327
+compound_11,14,O,bicyclic_ether_O2,bicyclic ether oxygen,-0.42466528

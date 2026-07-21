@@ -1,0 +1,26 @@
+LasR–compound_11 consensus representative pose selection
+
+Date UTC: 2026-07-17T05:00:06.246535+00:00
+Receptor: LasR_2UV0
+Ligand: compound_11
+Docking function: Vinardo
+Source file: 03_docking/vina_outputs/production/LasR_2UV0_2026-07-16/compound_11/run01_seed2026071661/compound_11_LasR_2UV0_run01_seed2026071661_poses.pdbqt
+Selected run: run01_seed2026071661
+Selected mode: 6
+Docking score: -3.5860 kcal/mol
+Reference-ligand centroid distance: 4.7025 A
+
+Selection basis:
+- orthosteric threshold: centroid distance <= 5.0 A
+- cluster occupancy: 5/5 independent seeds
+- cluster size: 5 poses
+- cluster definition: direct fixed-frame heavy-atom RMSD <= 2.0 A
+- tie-breaker: lower median docking score
+- selected representative: lowest-scoring pose within selected cluster
+
+Interpretation:
+This pose is a reproducible orthosteric structural hypothesis.
+It is not experimental proof of direct LasR binding or binding affinity.
+
+Source SHA-256: 843edbd9b1f64a786871b549ad7269b300813ebe97ce2ead4e9657d6467eca94
+Representative pose SHA-256: 211eb4d80bd5fc75d8cdc55f6506c9681305d1c8ca47e72fa559146e33d32623

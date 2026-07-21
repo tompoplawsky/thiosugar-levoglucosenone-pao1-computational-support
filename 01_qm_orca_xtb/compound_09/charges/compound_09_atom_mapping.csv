@@ -1,0 +1,17 @@
+compound,orca_atom_index,element,chemical_label,structural_role,chelpg_charge_e
+compound_09,0,S,thiosemicarbazone_S,thiosemicarbazone thione sulfur C=S,-0.50127246
+compound_09,1,C,thiosemicarbazone_C,thiosemicarbazone thiocarbonyl carbon,0.16367980
+compound_09,2,N,terminal_amino_N,terminal thiosemicarbazone amino nitrogen NH2,-0.52200266
+compound_09,3,N,hydrazinic_N,hydrazinic nitrogen in C=N-NH-C(=S)-NH2,0.01875997
+compound_09,4,N,imine_N,imine nitrogen in thiosemicarbazone C=N-NH-C(=S)-NH2,-0.29654155
+compound_09,5,C,imine_C2,levoglucosenone-derived C-2 imine carbon,0.25372704
+compound_09,8,S,thioether_S,thioether bridge linking levoglucosenone and xylopyranose,-0.29326569
+compound_09,11,O,acetate1_ester_O,ester oxygen of acetate substituent 1,-0.44151917
+compound_09,14,O,acetate1_carbonyl_O,carbonyl oxygen of acetate substituent 1,-0.61484564
+compound_09,16,O,acetate2_ester_O,ester oxygen of acetate substituent 2,-0.55713891
+compound_09,19,O,acetate2_carbonyl_O,carbonyl oxygen of acetate substituent 2,-0.62770745
+compound_09,21,O,acetate3_ester_O,ester oxygen of acetate substituent 3,-0.54006137
+compound_09,24,O,acetate3_carbonyl_O,carbonyl oxygen of acetate substituent 3,-0.62488013
+compound_09,26,O,xylopyranose_ring_O,ring oxygen of peracetylated xylopyranose,-0.49287075
+compound_09,28,O,bicyclic_ether_O1,"oxygen of 6,8-dioxabicyclo[3.2.1]octane core",-0.36479809
+compound_09,30,O,bicyclic_ether_O2,"oxygen of 6,8-dioxabicyclo[3.2.1]octane core",-0.38727930

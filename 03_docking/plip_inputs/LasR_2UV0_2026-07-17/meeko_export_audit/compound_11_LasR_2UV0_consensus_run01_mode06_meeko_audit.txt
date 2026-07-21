@@ -1,0 +1,38 @@
+MEEKO EXPORT AUDIT — COMPOUND 11 / LasR
+
+Date UTC: 2026-07-17T05:53:14.578904+00:00
+Status: PASS
+
+Source PDBQT: 03_docking/vina_outputs/production/LasR_2UV0_2026-07-16/selected_representative/compound_11_LasR_2UV0_consensus_cluster1_run01_mode06.pdbqt
+Exported SDF: 03_docking/plip_inputs/LasR_2UV0_2026-07-17/meeko_export_audit/compound_11_LasR_2UV0_consensus_run01_mode06_meeko.sdf
+
+Software:
+- Meeko: 0.7.1
+- RDKit: 2025.09.5
+
+Chemical structure:
+- Formula: C8H9N3O3S2
+- Formal charge: 0
+- Total explicit atoms in SDF: 25
+- Heavy atoms: 16
+- Heavy-atom element counts: {'C': 8, 'N': 3, 'O': 3, 'S': 2}
+- Bonds: 27
+- Bond-type counts: {'AROMATIC': 5, 'DOUBLE': 2, 'SINGLE': 20}
+- Aromatic atoms: 5
+
+Coordinate audit:
+- Source PDBQT atoms: 18
+- Source PDBQT heavy atoms: 16
+- SDF heavy atoms: 16
+- Maximum matched heavy-atom shift: 0.000000 A
+- RMS matched heavy-atom shift: 0.000000 A
+
+Checks:
+- formula_C8H9N3O3S2: PASS
+- heavy_atom_count_16: PASS
+- formal_charge_0: PASS
+- element_counts: PASS
+- coordinate_shift_le_0.002_A: PASS
+
+Source SHA-256: 211eb4d80bd5fc75d8cdc55f6506c9681305d1c8ca47e72fa559146e33d32623
+SDF SHA-256: 8477fe2fc18731ead9477823aa14194c4013192ce9e254b66c5f61f581f7d653

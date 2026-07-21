@@ -1,0 +1,42 @@
+STEP 4 CHELPG QC SUMMARY — compound_11
+date: 2026-07-14
+software: ORCA 6.1.1 RELEASE
+calculation: single-point CHELPG
+method: RHF
+basis: 6-31G*
+scf: TightSCF
+phase: gas
+solvent_model: none
+geometry_optimization: no
+frequency_calculation: no
+total_charge: 0
+multiplicity: 1
+chelpg_grid_angstrom: 0.3
+chelpg_rmax_angstrom: 2.8
+chelpg_vdwradii: COSMO radii only; no COSMO solvation model
+chelpg_dipole_constraint: false
+nprocs: 8
+maxcore_mb_per_process: 3000
+scf_cycles: 14
+final_single_point_energy_Eh: -1491.084030226235
+total_runtime: 0 days 0 hours 0 minutes 23 seconds 847 msec
+chelpg_charge_sum_e: -0.000000010000
+N4_orca_index: 4
+N4_chelpg_charge_e: 0.31321861
+N3_orca_index: 5
+N3_chelpg_charge_e: -0.45537399
+N_exocyclic_orca_index: 7
+N_exocyclic_chelpg_charge_e: -0.95315983
+reference_control_N4_approximately_minus_1.087_e: NOT_REPRODUCED
+method_retuning_to_match_reference: not performed
+qc_status: PASSED_WITH_DOCUMENTED_REFERENCE_DISCREPANCY
+source_smiles: /data/BIOFILM_INSILICO_SUPPORT/00_validated_inputs/ligands/compound_11/compound_11.smiles
+source_geometry: /data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_11/geometries/compound_11_wb97xd3_def2svp_cpcm_water_minimum.xyz
+input: /data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_11/charges/compound_11_hf_631gstar_gas_chelpg.inp
+output: /data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_11/charges/compound_11_hf_631gstar_gas_chelpg.out
+raw_chelpg_charges: /data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_11/charges/compound_11_hf_631gstar_gas_chelpg.chelpg.xyz
+derived_charge_table: /data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_11/charges/compound_11_hf_631gstar_gas_chelpg_charges.csv
+atom_mapping: /data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_11/charges/compound_11_atom_mapping.csv
+run_started: 2026-07-14T17:03:17+02:00
+run_finished: 2026-07-14T17:03:40+02:00
+exit_code: 0

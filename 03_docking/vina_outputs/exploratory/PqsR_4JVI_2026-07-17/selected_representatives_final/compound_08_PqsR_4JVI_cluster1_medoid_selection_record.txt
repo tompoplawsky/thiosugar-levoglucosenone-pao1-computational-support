@@ -1,0 +1,61 @@
+STEP 9 — final PqsR medoid selection record
+
+Date UTC:
+2026-07-17T11:28:03.931273+00:00
+
+Receptor:
+PqsR/MvfR 4JVI
+
+Ligand:
+compound_08
+
+Scientific status:
+EXPLORATORY ONLY
+
+Formal receptor-specific redocking validation:
+not achieved
+
+Source docking file:
+03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/compound_08/run01_seed2026071671/compound_08_PqsR_4JVI_run01_seed2026071671_poses.pdbqt
+
+Selected cluster:
+Cluster 1
+
+Cluster classification:
+recurrent partially inserted exploratory PqsR pose; bulk of ligand remains outside the QZN-defined cavity
+
+Cluster occupancy:
+5/5 independent seeds
+
+Cluster size:
+5 poses
+
+Clustering method:
+- direct fixed-frame full-heavy-atom RMSD
+- deterministic complete linkage
+- no superposition
+- threshold <= 2.5 A
+
+Cluster RMSD:
+- median pairwise RMSD: 0.0455 A
+- maximum pairwise RMSD: 0.1693 A
+
+Selected medoid:
+- run: run01_seed2026071671
+- mode: 15
+- Vinardo score: -2.2480 kcal/mol
+- QZN centroid distance: 9.4680 A
+
+Recurrent pocket-contact residues:
+LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Interpretation restriction:
+This representative pose is an exploratory structural hypothesis.
+It does not establish binding affinity, direct PqsR target engagement,
+or causal inhibition of quorum sensing.
+
+Source SHA-256:
+91d780d56a8ef8990b02966e6fad40d5091e01f6e8b390e03127b5601ce778fb
+
+Extracted medoid SHA-256:
+ee7814ef1046cd1945d4666935418797d48c00672627e873390ab2010112b91e

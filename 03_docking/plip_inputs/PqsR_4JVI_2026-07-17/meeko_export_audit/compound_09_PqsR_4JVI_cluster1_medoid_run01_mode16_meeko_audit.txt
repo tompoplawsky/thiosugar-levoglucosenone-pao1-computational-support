@@ -1,0 +1,51 @@
+MEEKO EXPORT AUDIT — compound_09 / PqsR 4JVI
+
+Date UTC: 2026-07-17T13:54:50.179580+00:00
+Status: PASS
+
+Scientific status:
+EXPLORATORY ONLY
+
+Formal receptor-specific PqsR redocking validation:
+not achieved
+
+Source PDBQT:
+03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/selected_representatives_final/compound_09_PqsR_4JVI_cluster1_medoid_run01_mode16.pdbqt
+
+Exported SDF:
+03_docking/plip_inputs/PqsR_4JVI_2026-07-17/meeko_export_audit/compound_09_PqsR_4JVI_cluster1_medoid_run01_mode16_meeko.sdf
+
+Software:
+- Meeko: 0.7.1
+- RDKit: 2025.09.5
+- mk_export.py: /home/tomasz/miniforge3/envs/docking_env/bin/mk_export.py
+
+Chemical structure:
+- Formula: C18H25N3O9S2
+- Formal charge: 0
+- Total explicit atoms in SDF: 57
+- Heavy atoms: 32
+- Heavy-atom element counts: {'C': 18, 'N': 3, 'O': 9, 'S': 2}
+- Bonds: 59
+- Bond-type counts: {'DOUBLE': 5, 'SINGLE': 54}
+- Aromatic atoms: 0
+
+Coordinate audit:
+- Source PDBQT atoms: 35
+- Source PDBQT heavy atoms: 32
+- SDF heavy atoms: 32
+- Maximum matched heavy-atom shift: 0.000000 A
+- RMS matched heavy-atom shift: 0.000000 A
+
+Checks:
+- formula_C18H25N3O9S2: PASS
+- heavy_atom_count_32: PASS
+- formal_charge_0: PASS
+- element_counts: PASS
+- coordinate_shift_le_0.002_A: PASS
+
+Source SHA-256:
+43f5a9cc72c10cd3edf08b3b5fcb9ce90f38bab224167cce1397d7d68e9e3c7b
+
+SDF SHA-256:
+38da3fb51ce143b9c3b805da3f3bbad6d7cb8fb999dde1a4dd7c37a6a9b2f4da

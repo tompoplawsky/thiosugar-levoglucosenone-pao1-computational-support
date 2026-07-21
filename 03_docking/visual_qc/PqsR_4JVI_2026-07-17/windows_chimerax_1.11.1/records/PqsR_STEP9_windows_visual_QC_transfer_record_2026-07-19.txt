@@ -1,0 +1,64 @@
+STEP 9 — PqsR Windows/ChimeraX visual-QC transfer record
+
+Date UTC: 2026-07-19T15:04:40.628039+00:00
+
+Source platform:
+- Windows workstation
+- UCSF ChimeraX version 1.11.1 (2026-01-23)
+
+Destination repository:
+- 03_docking/visual_qc/PqsR_4JVI_2026-07-17/windows_chimerax_1.11.1
+
+Scientific status:
+- PqsR docking remains EXPLORATORY ONLY
+- Formal receptor-specific PqsR redocking validation was not achieved
+
+Transfer policy:
+- source Desktop files retained
+- repository copies created without overwrite
+- source and destination SHA-256 verified
+
+Archived files:
+- UCSF ChimeraX session for compound_08 visual QC
+  source: /home/tomasz/Desktop/PqsR_compound08_QC_session.cxs
+  destination: 03_docking/visual_qc/PqsR_4JVI_2026-07-17/windows_chimerax_1.11.1/sessions/PqsR_compound08_QC_session.cxs
+  size_bytes: 155462
+  sha256: 9c8f56c52427bfac198509d103ef805678d129e455f45baff645163803f68f45
+- Selected compound_08 publication-style visual-QC image
+  source: /home/tomasz/Desktop/PqsR_STEP9_compound_08_publication_view.png
+  destination: 03_docking/visual_qc/PqsR_4JVI_2026-07-17/windows_chimerax_1.11.1/images/final/PqsR_STEP9_compound_08_publication_view.png
+  size_bytes: 912018
+  sha256: a574cc5a400d46f557bf5e14f129eb7941bb19764b4123b74e8110761f430c66
+- UCSF ChimeraX session for compound_09 visual QC
+  source: /home/tomasz/Desktop/PqsR_compound09_QC_session.cxs
+  destination: 03_docking/visual_qc/PqsR_4JVI_2026-07-17/windows_chimerax_1.11.1/sessions/PqsR_compound09_QC_session.cxs
+  size_bytes: 152469
+  sha256: 41d5054843d9dd3e422224aba346d14bf79e9744981f7fa8ff362298d7fe7e5e
+- Selected compound_09 publication-style visual-QC image
+  source: /home/tomasz/Desktop/PqsR_STEP9_compound_09_publication_view.png
+  destination: 03_docking/visual_qc/PqsR_4JVI_2026-07-17/windows_chimerax_1.11.1/images/final/PqsR_STEP9_compound_09_publication_view.png
+  size_bytes: 847038
+  sha256: afc8c9f72dadfd1abe5d5e77f2d01f4382b743e89f1a463ffb0be0ee60c67f77
+- UCSF ChimeraX session for compound_11 visual QC
+  source: /home/tomasz/Desktop/PqsR_compound11_QC_session.cxs
+  destination: 03_docking/visual_qc/PqsR_4JVI_2026-07-17/windows_chimerax_1.11.1/sessions/PqsR_compound11_QC_session.cxs
+  size_bytes: 148518
+  sha256: 6864da688332ba67c4d4ef89702b299b7cf9c5a349c618fa66587b962425a4d3
+- Selected compound_11 publication-style visual-QC image
+  source: /home/tomasz/Desktop/PqsR_STEP9_compound_11_publication_view.png
+  destination: 03_docking/visual_qc/PqsR_4JVI_2026-07-17/windows_chimerax_1.11.1/images/final/PqsR_STEP9_compound_11_publication_view.png
+  size_bytes: 489613
+  sha256: 2157d2f79c357ec9c5ee62893eda9d4e89f97986cdf077b07fc18379c1b54839
+
+Visual-QC status at transfer:
+- compound_11: supervised visual inspection completed; archived
+- compound_09: supervised visual inspection completed; archived
+- compound_08: session and selected image archived; final image review remains to be documented
+
+Interpretation restriction:
+These images and sessions document technical inspection of exploratory
+docking poses. They do not establish binding affinity, direct PqsR
+target engagement, or causal inhibition of quorum sensing.
+
+Status:
+PASS

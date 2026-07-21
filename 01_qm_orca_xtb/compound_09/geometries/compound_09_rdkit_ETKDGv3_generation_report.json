@@ -1,0 +1,53 @@
+{
+  "compound": "compound_09",
+  "source_smiles": "S=C(N)N/N=C1C[C@H](S[C@@H]2[C@H](OC(C)=O)[C@@H](OC(C)=O)[C@H](OC(C)=O)CO2)[C@@H]3O[C@H]/1OC3",
+  "rdkit_embedding": "ETKDGv3",
+  "force_field": "MMFF94s",
+  "n_conformers_generated": 95,
+  "best_conf_id": 14,
+  "best_energy": 51.241371327856996,
+  "identity_check": {
+    "formula": "C18H25N3O9S2",
+    "mw": 491.544,
+    "formal_charge": 0,
+    "chiral_centers": [
+      [
+        7,
+        "S"
+      ],
+      [
+        9,
+        "R"
+      ],
+      [
+        10,
+        "R"
+      ],
+      [
+        15,
+        "S"
+      ],
+      [
+        20,
+        "R"
+      ],
+      [
+        27,
+        "R"
+      ],
+      [
+        29,
+        "R"
+      ]
+    ],
+    "num_atoms_noH": 32
+  },
+  "outputs": {
+    "all_conformers_sdf": "/data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_09/geometries/compound_09_rdkit_ETKDGv3_all_conformers.sdf",
+    "best_sdf": "/data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_09/geometries/compound_09_rdkit_ETKDGv3_best.sdf",
+    "best_mol": "/data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_09/geometries/compound_09_rdkit_ETKDGv3_best.mol",
+    "best_xyz": "/data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_09/geometries/compound_09_rdkit_ETKDGv3_best.xyz",
+    "report_csv": "/data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_09/geometries/compound_09_rdkit_ETKDGv3_conformer_report.csv"
+  },
+  "warning": "MMFF/UFF geometry is only a pre-QM starting structure, not a final quantum-chemical geometry."
+}

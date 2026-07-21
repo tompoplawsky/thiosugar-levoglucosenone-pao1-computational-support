@@ -1,0 +1,54 @@
+STEP 9 — LasR Windows/ChimeraX visual-QC transfer record
+
+Date UTC: 2026-07-19T16:02:37.089649+00:00
+
+Source platform:
+- Windows workstation
+- UCSF ChimeraX version 1.11.1 (2026-01-23)
+
+Destination repository:
+- 03_docking/visual_qc/LasR_2UV0_2026-07-19/windows_chimerax_1.11.1
+
+Docking-validation status:
+- LasR receptor-specific redocking validation: PASS
+
+Selected pose:
+- compound_11
+- recurrent orthosteric-like pose
+- centroid distance to crystallographic OHN: 4.7025 A
+
+Transfer policy:
+- source Desktop files retained
+- repository copies created without overwrite
+- source and destination SHA-256 verified
+
+Archived files:
+- UCSF ChimeraX session for LasR–compound_11 visual QC
+  source: /home/tomasz/Desktop/LasR_STEP9_compound_11_QC_session.cxs
+  destination: 03_docking/visual_qc/LasR_2UV0_2026-07-19/windows_chimerax_1.11.1/sessions/LasR_STEP9_compound_11_QC_session.cxs
+  size_bytes: 62078
+  sha256: a4cc99a68d5f8eeca67ec49d4797a660bb638e877c34a32fa4294478e0b1556c
+- Selected LasR–compound_11 publication-style visual-QC image
+  source: /home/tomasz/Desktop/LasR_STEP9_compound_11_publication_view.png
+  destination: 03_docking/visual_qc/LasR_2UV0_2026-07-19/windows_chimerax_1.11.1/images/final/LasR_STEP9_compound_11_publication_view.png
+  size_bytes: 357322
+  sha256: 26669f70db5ae53110d6da777708c0db6842dbe0e689239f5897e0e243df0435
+
+Visual-QC status at transfer:
+- compound_11: supervised visual inspection completed
+- ligand connectivity: PASS
+- gross steric-clash inspection: PASS
+- pose location relative to OHN-defined pocket: PASS
+- publication-style image and ChimeraX session archived
+
+Negative LasR result context:
+- compounds 8 and 9 did not produce qualifying orthosteric or partial-pocket poses
+- no positive LasR interaction figures were generated for compounds 8 and 9
+
+Interpretation restriction:
+The visual-QC PASS status confirms technical plausibility and integrity
+of the selected docking pose. It does not establish experimental binding
+affinity, direct LasR target engagement, or causal inhibition of quorum sensing.
+
+Status:
+PASS

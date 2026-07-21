@@ -1,0 +1,4 @@
+ligand	runs	poses_examined	orthosteric_poses	runs_with_orthosteric_pose	consensus_clusters	selected_pose	score_kcal_mol	centroid_distance_A	PLIP_contacts	classification
+compound_08	5	100	0	0/5	0	NA	NA	NA	NA	no_orthosteric_consensus
+compound_09	5	100	0	0/5	0	NA	NA	NA	NA	no_orthosteric_consensus
+compound_11	5	100	10	5/5	2	run01_seed2026071661_mode06	-3.5860	4.7025	Asp65_Hbond;Ala127_hydrophobic	reproducible_orthosteric_hypothesis

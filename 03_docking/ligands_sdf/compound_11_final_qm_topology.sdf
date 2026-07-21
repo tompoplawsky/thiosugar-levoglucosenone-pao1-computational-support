@@ -1,0 +1,107 @@
+compound_11_best_cid_11
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 25 27 0 0 0
+M  V30 BEGIN ATOM
+M  V30 1 O -0.235379 0.131768 3.072910 0
+M  V30 2 C -0.669373 -0.032446 1.958788 0
+M  V30 3 C -0.333574 -1.220181 1.082614 0
+M  V30 4 C -0.349406 -0.878609 -0.413256 0 CFG=2
+M  V30 5 N 0.952963 -0.373161 -0.844585 0
+M  V30 6 N 1.678508 0.371170 0.043336 0
+M  V30 7 C 2.783815 0.777390 -0.496044 0
+M  V30 8 N 3.685304 1.568465 0.117249 0
+M  V30 9 S 2.989042 0.256356 -2.160312 0
+M  V30 10 C 1.442284 -0.560922 -2.080171 0
+M  V30 11 S 0.749385 -1.398377 -3.345759 0
+M  V30 12 C -1.433524 0.162707 -0.728940 0 CFG=2
+M  V30 13 O -1.209409 1.320298 0.067231 0
+M  V30 14 C -1.684916 0.929495 1.321982 0 CFG=1
+M  V30 15 O -2.876079 0.217231 1.085362 0
+M  V30 16 C -2.823848 -0.273026 -0.253808 0
+M  V30 17 H -1.115568 -1.974497 1.271264 0
+M  V30 18 H 0.622131 -1.658197 1.397806 0
+M  V30 19 H -0.536734 -1.779980 -1.013203 0
+M  V30 20 H 3.586312 1.691263 1.119219 0
+M  V30 21 H 4.625199 1.632745 -0.253332 0
+M  V30 22 H -1.401472 0.447530 -1.788239 0
+M  V30 23 H -1.866181 1.805407 1.960424 0
+M  V30 24 H -2.963046 -1.364316 -0.270017 0
+M  V30 25 H -3.616435 0.201892 -0.850517 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 1 2
+M  V30 2 1 2 3
+M  V30 3 1 3 4
+M  V30 4 1 4 5
+M  V30 5 1 5 6
+M  V30 6 2 6 7
+M  V30 7 1 7 8
+M  V30 8 1 7 9
+M  V30 9 1 5 10
+M  V30 10 2 10 11
+M  V30 11 1 4 12
+M  V30 12 1 12 13
+M  V30 13 1 13 14
+M  V30 14 1 14 15
+M  V30 15 1 15 16
+M  V30 16 1 14 2
+M  V30 17 1 10 9
+M  V30 18 1 16 12
+M  V30 19 1 3 17
+M  V30 20 1 3 18
+M  V30 21 1 4 19 CFG=3
+M  V30 22 1 8 20
+M  V30 23 1 8 21
+M  V30 24 1 12 22 CFG=3
+M  V30 25 1 14 23 CFG=1
+M  V30 26 1 16 24
+M  V30 27 1 16 25
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <compound_id>  (1) 
+compound_11
+
+>  <source_qm_xyz>  (1) 
+01_qm_orca_xtb/compound_11/geometries/compound_11_wb97xd3_def2svp_cpcm_water_minimum.xyz
+
+>  <source_qm_xyz_sha256>  (1) 
+8c5fa226efa04a7cbf24610c32e85ab9c0a549a68b1ec9bdcf5b27b94c4a273a
+
+>  <source_topology_mol>  (1) 
+01_qm_orca_xtb/compound_11/geometries/compound_11_rdkit_ETKDGv3_best.mol
+
+>  <source_topology_mol_sha256>  (1) 
+9a1a8baf04f9f1117142a3b2f10935c6e705b0e3d0a3177eb5bea53b85b8b0de
+
+>  <validated_smiles_file>  (1) 
+00_validated_inputs/ligands/compound_11/compound_11.smiles
+
+>  <validated_smiles_sha256>  (1) 
+98b85b3ebfd0c9217203626269ac83535c93bf37098e6ec2da005e0f62e72cda
+
+>  <geometry_level>  (1) 
+omegaB97X-D3/def2-SVP/CPCM(water)
+
+>  <formal_charge>  (1) 
+0
+
+>  <protonation_tautomer_policy>  (1) 
+validated neutral input retained; no enumeration
+
+>  <coordinate_transfer>  (1) 
+atom-for-atom from final QM XYZ; no distance-based bond perception
+
+>  <meeko_charge_model>  (1) 
+gasteiger
+
+>  <torsion_rule>  (1) 
+Rigidify conjugated exocyclic NH2-thiadiazole C-N bond; retain ring-N-scaffold sigma rotor.
+
+>  <preparation_date>  (1) 
+2026-07-16
+
+$$$$

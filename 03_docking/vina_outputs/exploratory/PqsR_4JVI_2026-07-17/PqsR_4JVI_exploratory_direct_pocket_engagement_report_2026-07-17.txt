@@ -1,0 +1,516 @@
+STEP 9 — PqsR 4JVI exploratory direct-pocket-engagement analysis
+==================================================================================
+
+Scientific status: EXPLORATORY ONLY
+Formal receptor-specific PqsR redocking validation was not achieved.
+
+Inputs:
+- receptor: 00_validated_inputs/receptors/PqsR_4JVI/PqsR_4JVI_prepared_dimer_AB.pdb
+- QZN site A reference: 00_validated_inputs/receptors/PqsR_4JVI/PqsR_4JVI_QZN_chainA_reference.pdb
+
+QZN chain A heavy-atom centroid: -33.4890, 56.8654, 9.1002 A
+QZN heavy atoms: 22
+
+Objective QZN site A pocket definition:
+- receptor heavy atoms within 5.0 A of crystallographic QZN chain A
+- pocket heavy atoms: 69
+- pocket residues: 20
+- residues: ALA102:A, ILE149:A, THR166:A, LYS167:A, ALA168:A, VAL170:A, ILE186:A, LEU189:A, LEU207:A, LEU208:A, ARG209:A, VAL211:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+====================================================================================================
+compound_11
+====================================================================================================
+Retained poses per run: 20 + 20 + 20 + 20 + 20 = 100
+
+PRIMARY direct-engagement screen:
+- minimum ligand-QZN heavy-atom distance <= 5.0 A
+- >= 3 ligand heavy atoms within 4.0 A of pocket heavy atoms
+- >= 2 pocket residues contacted
+- recurrent signal requires >= 3/5 seeds
+Qualifying poses: 15/100
+Seeds with qualifying pose: 5/5
+Recurrent signal: YES
+
+Best direct-pocket-contact pose in each run:
+run                           mode     score   centroid   min_QZN lig_atoms residues  qualifies
+run01_seed2026071691             4   -4.8780     4.3966    0.3651        13        5        YES
+    contacted pocket residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+run02_seed2026071692             4   -4.8700     4.3965    0.3676        13        5        YES
+    contacted pocket residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+run03_seed2026071693             4   -4.8620     4.3942    0.3641        13        5        YES
+    contacted pocket residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+run04_seed2026071694             4   -4.8680     4.3958    0.3673        13        5        YES
+    contacted pocket residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+run05_seed2026071695             4   -4.8670     4.3960    0.3623        13        5        YES
+    contacted pocket residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+
+Qualifying poses:
+  run01_seed2026071691 mode 04; score=-4.8780; centroid=4.3966 A; min_QZN=0.3651 A; contacting_ligand_atoms=13/16; pocket_residues=5
+    residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+  run01_seed2026071691 mode 07; score=-4.7880; centroid=8.1319 A; min_QZN=2.6982 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, TYR258:A
+  run01_seed2026071691 mode 08; score=-4.7640; centroid=9.6038 A; min_QZN=4.9896 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run02_seed2026071692 mode 04; score=-4.8700; centroid=4.3965 A; min_QZN=0.3676 A; contacting_ligand_atoms=13/16; pocket_residues=5
+    residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+  run02_seed2026071692 mode 07; score=-4.7850; centroid=8.1330 A; min_QZN=2.7002 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, TYR258:A
+  run02_seed2026071692 mode 09; score=-4.7520; centroid=9.5999 A; min_QZN=4.9885 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run03_seed2026071693 mode 04; score=-4.8620; centroid=4.3942 A; min_QZN=0.3641 A; contacting_ligand_atoms=13/16; pocket_residues=5
+    residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+  run03_seed2026071693 mode 07; score=-4.7870; centroid=8.1346 A; min_QZN=2.7016 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, TYR258:A
+  run03_seed2026071693 mode 08; score=-4.7560; centroid=9.5937 A; min_QZN=4.9809 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run04_seed2026071694 mode 04; score=-4.8680; centroid=4.3958 A; min_QZN=0.3673 A; contacting_ligand_atoms=13/16; pocket_residues=5
+    residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+  run04_seed2026071694 mode 07; score=-4.7830; centroid=8.1192 A; min_QZN=2.6867 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, TYR258:A
+  run04_seed2026071694 mode 08; score=-4.7550; centroid=9.5936 A; min_QZN=4.9801 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run05_seed2026071695 mode 04; score=-4.8670; centroid=4.3960 A; min_QZN=0.3623 A; contacting_ligand_atoms=13/16; pocket_residues=5
+    residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A
+  run05_seed2026071695 mode 07; score=-4.7820; centroid=8.1236 A; min_QZN=2.6906 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, TYR258:A
+  run05_seed2026071695 mode 08; score=-4.7480; centroid=9.6066 A; min_QZN=4.9896 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+
+Pocket residues contacted by qualifying poses, counted by seed:
+  ILE149:A: 5/5 seeds
+  LEU207:A: 5/5 seeds
+  LEU208:A: 5/5 seeds
+  PHE221:A: 5/5 seeds
+  ILE236:A: 5/5 seeds
+  TYR258:A: 5/5 seeds
+  THR265:A: 5/5 seeds
+Recurrent contacted residues (>=3/5 seeds): ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, TYR258:A, THR265:A
+
+EXTENDED direct-engagement screen:
+- minimum ligand-QZN heavy-atom distance <= 6.5 A
+- >= 2 ligand heavy atoms within 4.5 A of pocket heavy atoms
+- >= 2 pocket residues contacted
+- recurrent signal requires >= 2/5 seeds
+Qualifying poses: 38/100
+Seeds with qualifying pose: 5/5
+Recurrent signal: YES
+
+Best direct-pocket-contact pose in each run:
+run                           mode     score   centroid   min_QZN lig_atoms residues  qualifies
+run01_seed2026071691             4   -4.8780     4.3966    0.3651        16        8        YES
+    contacted pocket residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+run02_seed2026071692             4   -4.8700     4.3965    0.3676        16        7        YES
+    contacted pocket residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+run03_seed2026071693             4   -4.8620     4.3942    0.3641        16        8        YES
+    contacted pocket residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+run04_seed2026071694             4   -4.8680     4.3958    0.3673        16        7        YES
+    contacted pocket residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+run05_seed2026071695             4   -4.8670     4.3960    0.3623        16        8        YES
+    contacted pocket residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+
+Qualifying poses:
+  run01_seed2026071691 mode 02; score=-5.1860; centroid=9.5539 A; min_QZN=5.3173 A; contacting_ligand_atoms=4/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run01_seed2026071691 mode 04; score=-4.8780; centroid=4.3966 A; min_QZN=0.3651 A; contacting_ligand_atoms=16/16; pocket_residues=8
+    residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+  run01_seed2026071691 mode 05; score=-4.8320; centroid=9.5526 A; min_QZN=5.0931 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run01_seed2026071691 mode 07; score=-4.7880; centroid=8.1319 A; min_QZN=2.6982 A; contacting_ligand_atoms=8/16; pocket_residues=4
+    residues: LEU207:A, TYR258:A, ILE263:A, LEU153:B
+  run01_seed2026071691 mode 08; score=-4.7640; centroid=9.6038 A; min_QZN=4.9896 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run01_seed2026071691 mode 11; score=-4.6240; centroid=11.6205 A; min_QZN=6.0050 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run02_seed2026071692 mode 02; score=-5.1890; centroid=9.5534 A; min_QZN=5.3173 A; contacting_ligand_atoms=4/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run02_seed2026071692 mode 04; score=-4.8700; centroid=4.3965 A; min_QZN=0.3676 A; contacting_ligand_atoms=16/16; pocket_residues=7
+    residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+  run02_seed2026071692 mode 06; score=-4.8180; centroid=9.5524 A; min_QZN=5.0905 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run02_seed2026071692 mode 07; score=-4.7850; centroid=8.1330 A; min_QZN=2.7002 A; contacting_ligand_atoms=8/16; pocket_residues=4
+    residues: LEU207:A, TYR258:A, ILE263:A, LEU153:B
+  run02_seed2026071692 mode 09; score=-4.7520; centroid=9.5999 A; min_QZN=4.9885 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run02_seed2026071692 mode 10; score=-4.6160; centroid=11.6209 A; min_QZN=6.0263 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run02_seed2026071692 mode 11; score=-4.5990; centroid=10.4681 A; min_QZN=5.3818 A; contacting_ligand_atoms=2/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run02_seed2026071692 mode 18; score=-4.3490; centroid=10.9434 A; min_QZN=6.1038 A; contacting_ligand_atoms=2/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run02_seed2026071692 mode 19; score=-4.3400; centroid=9.7273 A; min_QZN=4.5325 A; contacting_ligand_atoms=4/16; pocket_residues=3
+    residues: LEU207:A, TYR258:A, THR265:A
+  run03_seed2026071693 mode 02; score=-5.1770; centroid=9.5538 A; min_QZN=5.3173 A; contacting_ligand_atoms=4/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run03_seed2026071693 mode 04; score=-4.8620; centroid=4.3942 A; min_QZN=0.3641 A; contacting_ligand_atoms=16/16; pocket_residues=8
+    residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+  run03_seed2026071693 mode 05; score=-4.8210; centroid=9.5528 A; min_QZN=5.0930 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run03_seed2026071693 mode 07; score=-4.7870; centroid=8.1346 A; min_QZN=2.7016 A; contacting_ligand_atoms=8/16; pocket_residues=4
+    residues: LEU207:A, TYR258:A, ILE263:A, LEU153:B
+  run03_seed2026071693 mode 08; score=-4.7560; centroid=9.5937 A; min_QZN=4.9809 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run03_seed2026071693 mode 11; score=-4.6090; centroid=11.6241 A; min_QZN=6.0109 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run03_seed2026071693 mode 12; score=-4.6080; centroid=10.2558 A; min_QZN=5.2349 A; contacting_ligand_atoms=2/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run03_seed2026071693 mode 18; score=-4.3530; centroid=10.9445 A; min_QZN=6.1041 A; contacting_ligand_atoms=2/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run04_seed2026071694 mode 02; score=-5.1770; centroid=9.5537 A; min_QZN=5.3173 A; contacting_ligand_atoms=4/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run04_seed2026071694 mode 04; score=-4.8680; centroid=4.3958 A; min_QZN=0.3673 A; contacting_ligand_atoms=16/16; pocket_residues=7
+    residues: ILE149:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+  run04_seed2026071694 mode 05; score=-4.8210; centroid=9.5527 A; min_QZN=5.0909 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run04_seed2026071694 mode 07; score=-4.7830; centroid=8.1192 A; min_QZN=2.6867 A; contacting_ligand_atoms=8/16; pocket_residues=4
+    residues: LEU207:A, TYR258:A, ILE263:A, LEU153:B
+  run04_seed2026071694 mode 08; score=-4.7550; centroid=9.5936 A; min_QZN=4.9801 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run04_seed2026071694 mode 10; score=-4.6270; centroid=11.6442 A; min_QZN=6.0341 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run04_seed2026071694 mode 17; score=-4.3840; centroid=10.0426 A; min_QZN=4.8269 A; contacting_ligand_atoms=4/16; pocket_residues=3
+    residues: LEU207:A, TYR258:A, THR265:A
+  run04_seed2026071694 mode 18; score=-4.3480; centroid=10.9381 A; min_QZN=6.0990 A; contacting_ligand_atoms=2/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run05_seed2026071695 mode 02; score=-5.1790; centroid=9.5540 A; min_QZN=5.3177 A; contacting_ligand_atoms=4/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run05_seed2026071695 mode 04; score=-4.8670; centroid=4.3960 A; min_QZN=0.3623 A; contacting_ligand_atoms=16/16; pocket_residues=8
+    residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A
+  run05_seed2026071695 mode 06; score=-4.8200; centroid=9.5527 A; min_QZN=5.0930 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run05_seed2026071695 mode 07; score=-4.7820; centroid=8.1236 A; min_QZN=2.6906 A; contacting_ligand_atoms=8/16; pocket_residues=4
+    residues: LEU207:A, TYR258:A, ILE263:A, LEU153:B
+  run05_seed2026071695 mode 08; score=-4.7480; centroid=9.6066 A; min_QZN=4.9896 A; contacting_ligand_atoms=6/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+  run05_seed2026071695 mode 10; score=-4.6240; centroid=11.6376 A; min_QZN=6.0258 A; contacting_ligand_atoms=3/16; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run05_seed2026071695 mode 17; score=-4.3460; centroid=10.9427 A; min_QZN=6.1022 A; contacting_ligand_atoms=2/16; pocket_residues=2
+    residues: LEU207:A, THR265:A
+
+Pocket residues contacted by qualifying poses, counted by seed:
+  ILE149:A: 5/5 seeds
+  LEU207:A: 5/5 seeds
+  LEU208:A: 5/5 seeds
+  ARG209:A: 5/5 seeds
+  PHE221:A: 5/5 seeds
+  ILE236:A: 5/5 seeds
+  ALA237:A: 5/5 seeds
+  PRO238:A: 5/5 seeds
+  TYR258:A: 5/5 seeds
+  ILE263:A: 5/5 seeds
+  THR265:A: 5/5 seeds
+  LEU153:B: 5/5 seeds
+  ALA168:A: 3/5 seeds
+Recurrent contacted residues (>=2/5 seeds): ILE149:A, ALA168:A, LEU207:A, LEU208:A, ARG209:A, PHE221:A, ILE236:A, ALA237:A, PRO238:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+====================================================================================================
+compound_09
+====================================================================================================
+Retained poses per run: 19 + 20 + 20 + 19 + 20 = 98
+
+PRIMARY direct-engagement screen:
+- minimum ligand-QZN heavy-atom distance <= 5.0 A
+- >= 3 ligand heavy atoms within 4.0 A of pocket heavy atoms
+- >= 2 pocket residues contacted
+- recurrent signal requires >= 3/5 seeds
+Qualifying poses: 3/98
+Seeds with qualifying pose: 3/5
+Recurrent signal: YES
+
+Best direct-pocket-contact pose in each run:
+run                           mode     score   centroid   min_QZN lig_atoms residues  qualifies
+run01_seed2026071681            16   -4.1040     6.8773    0.4530        15        6        YES
+    contacted pocket residues: LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run02_seed2026071682            20   -4.0000    12.7246    6.5236         3        3         NO
+    contacted pocket residues: ARG209:A, VAL211:A, LEU153:B
+run03_seed2026071683            16   -4.0640     6.8787    0.4525        15        6        YES
+    contacted pocket residues: LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run04_seed2026071684             1   -4.9940    13.1518    5.6337         3        2         NO
+    contacted pocket residues: ARG209:A, LEU153:B
+run05_seed2026071685            14   -4.0790     6.8742    0.4446        16        6        YES
+    contacted pocket residues: LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Qualifying poses:
+  run01_seed2026071681 mode 16; score=-4.1040; centroid=6.8773 A; min_QZN=0.4530 A; contacting_ligand_atoms=15/32; pocket_residues=6
+    residues: LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run03_seed2026071683 mode 16; score=-4.0640; centroid=6.8787 A; min_QZN=0.4525 A; contacting_ligand_atoms=15/32; pocket_residues=6
+    residues: LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run05_seed2026071685 mode 14; score=-4.0790; centroid=6.8742 A; min_QZN=0.4446 A; contacting_ligand_atoms=16/32; pocket_residues=6
+    residues: LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Pocket residues contacted by qualifying poses, counted by seed:
+  LEU207:A: 3/5 seeds
+  ILE236:A: 3/5 seeds
+  TYR258:A: 3/5 seeds
+  ILE263:A: 3/5 seeds
+  THR265:A: 3/5 seeds
+  LEU153:B: 3/5 seeds
+Recurrent contacted residues (>=3/5 seeds): LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+EXTENDED direct-engagement screen:
+- minimum ligand-QZN heavy-atom distance <= 6.5 A
+- >= 2 ligand heavy atoms within 4.5 A of pocket heavy atoms
+- >= 2 pocket residues contacted
+- recurrent signal requires >= 2/5 seeds
+Qualifying poses: 13/98
+Seeds with qualifying pose: 5/5
+Recurrent signal: YES
+
+Best direct-pocket-contact pose in each run:
+run                           mode     score   centroid   min_QZN lig_atoms residues  qualifies
+run01_seed2026071681            16   -4.1040     6.8773    0.4530        19        9        YES
+    contacted pocket residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run02_seed2026071682            20   -4.0000    12.7246    6.5236         8        3         NO
+    contacted pocket residues: ARG209:A, VAL211:A, LEU153:B
+run03_seed2026071683            16   -4.0640     6.8787    0.4525        19        9        YES
+    contacted pocket residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run04_seed2026071684             1   -4.9940    13.1518    5.6337         3        3        YES
+    contacted pocket residues: ARG209:A, VAL211:A, LEU153:B
+run05_seed2026071685            14   -4.0790     6.8742    0.4446        19        9        YES
+    contacted pocket residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Qualifying poses:
+  run01_seed2026071681 mode 01; score=-5.0040; centroid=13.1648 A; min_QZN=5.6481 A; contacting_ligand_atoms=3/32; pocket_residues=3
+    residues: ARG209:A, VAL211:A, LEU153:B
+  run01_seed2026071681 mode 08; score=-4.2370; centroid=12.9134 A; min_QZN=6.3545 A; contacting_ligand_atoms=2/32; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run01_seed2026071681 mode 16; score=-4.1040; centroid=6.8773 A; min_QZN=0.4530 A; contacting_ligand_atoms=19/32; pocket_residues=9
+    residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071682 mode 01; score=-4.9930; centroid=13.1680 A; min_QZN=5.6678 A; contacting_ligand_atoms=3/32; pocket_residues=3
+    residues: ARG209:A, VAL211:A, LEU153:B
+  run02_seed2026071682 mode 13; score=-4.2290; centroid=12.9218 A; min_QZN=6.3357 A; contacting_ligand_atoms=2/32; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run03_seed2026071683 mode 01; score=-4.9940; centroid=13.1289 A; min_QZN=5.6326 A; contacting_ligand_atoms=3/32; pocket_residues=3
+    residues: ARG209:A, VAL211:A, LEU153:B
+  run03_seed2026071683 mode 13; score=-4.2250; centroid=12.9106 A; min_QZN=6.3106 A; contacting_ligand_atoms=2/32; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run03_seed2026071683 mode 16; score=-4.0640; centroid=6.8787 A; min_QZN=0.4525 A; contacting_ligand_atoms=19/32; pocket_residues=9
+    residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run04_seed2026071684 mode 01; score=-4.9940; centroid=13.1518 A; min_QZN=5.6337 A; contacting_ligand_atoms=3/32; pocket_residues=3
+    residues: ARG209:A, VAL211:A, LEU153:B
+  run04_seed2026071684 mode 13; score=-4.2180; centroid=12.9246 A; min_QZN=6.3480 A; contacting_ligand_atoms=2/32; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run05_seed2026071685 mode 01; score=-4.9910; centroid=13.1411 A; min_QZN=5.6561 A; contacting_ligand_atoms=3/32; pocket_residues=3
+    residues: ARG209:A, VAL211:A, LEU153:B
+  run05_seed2026071685 mode 09; score=-4.2270; centroid=12.9108 A; min_QZN=6.3396 A; contacting_ligand_atoms=2/32; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run05_seed2026071685 mode 14; score=-4.0790; centroid=6.8742 A; min_QZN=0.4446 A; contacting_ligand_atoms=19/32; pocket_residues=9
+    residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Pocket residues contacted by qualifying poses, counted by seed:
+  LEU207:A: 5/5 seeds
+  ARG209:A: 5/5 seeds
+  VAL211:A: 5/5 seeds
+  LEU153:B: 5/5 seeds
+  ILE149:A: 3/5 seeds
+  ALA168:A: 3/5 seeds
+  LEU208:A: 3/5 seeds
+  ILE236:A: 3/5 seeds
+  TYR258:A: 3/5 seeds
+  ILE263:A: 3/5 seeds
+  THR265:A: 3/5 seeds
+Recurrent contacted residues (>=2/5 seeds): ILE149:A, ALA168:A, LEU207:A, LEU208:A, ARG209:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+====================================================================================================
+compound_08
+====================================================================================================
+Retained poses per run: 19 + 20 + 18 + 19 + 19 = 95
+
+PRIMARY direct-engagement screen:
+- minimum ligand-QZN heavy-atom distance <= 5.0 A
+- >= 3 ligand heavy atoms within 4.0 A of pocket heavy atoms
+- >= 2 pocket residues contacted
+- recurrent signal requires >= 3/5 seeds
+Qualifying poses: 19/95
+Seeds with qualifying pose: 5/5
+Recurrent signal: YES
+
+Best direct-pocket-contact pose in each run:
+run                           mode     score   centroid   min_QZN lig_atoms residues  qualifies
+run01_seed2026071671            15   -2.2480     9.4680    0.7892        15        5        YES
+    contacted pocket residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run02_seed2026071672            18   -1.0080     7.5081    0.1906        31        8        YES
+    contacted pocket residues: ILE149:A, ALA168:A, LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run03_seed2026071673            14   -1.6100     8.2372    0.6699        18        7        YES
+    contacted pocket residues: VAL170:A, LEU207:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, LEU153:B
+run04_seed2026071674            16   -2.5050     9.4614    0.7596        16        5        YES
+    contacted pocket residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run05_seed2026071675            18   -2.5100     9.4641    0.7482        15        5        YES
+    contacted pocket residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Qualifying poses:
+  run01_seed2026071671 mode 10; score=-2.5470; centroid=13.3523 A; min_QZN=3.4244 A; contacting_ligand_atoms=7/57; pocket_residues=3
+    residues: LEU207:A, TYR258:A, LEU153:B
+  run01_seed2026071671 mode 15; score=-2.2480; centroid=9.4680 A; min_QZN=0.7892 A; contacting_ligand_atoms=15/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run01_seed2026071671 mode 16; score=-2.0610; centroid=14.9298 A; min_QZN=4.3025 A; contacting_ligand_atoms=4/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run01_seed2026071671 mode 18; score=-1.9390; centroid=10.0179 A; min_QZN=2.4923 A; contacting_ligand_atoms=12/57; pocket_residues=4
+    residues: LEU207:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 06; score=-2.2370; centroid=13.0355 A; min_QZN=3.8042 A; contacting_ligand_atoms=11/57; pocket_residues=4
+    residues: LEU207:A, TYR258:A, ILE263:A, LEU153:B
+  run02_seed2026071672 mode 09; score=-1.9740; centroid=9.4665 A; min_QZN=0.7850 A; contacting_ligand_atoms=15/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 10; score=-1.6930; centroid=10.0205 A; min_QZN=2.4813 A; contacting_ligand_atoms=12/57; pocket_residues=4
+    residues: LEU207:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 11; score=-1.6040; centroid=8.2403 A; min_QZN=0.6723 A; contacting_ligand_atoms=19/57; pocket_residues=8
+    residues: VAL170:A, LEU207:A, ARG209:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, LEU153:B
+  run02_seed2026071672 mode 12; score=-1.4950; centroid=9.0566 A; min_QZN=1.4634 A; contacting_ligand_atoms=20/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 16; score=-1.1640; centroid=9.2532 A; min_QZN=1.9932 A; contacting_ligand_atoms=14/57; pocket_residues=3
+    residues: LEU207:A, TYR258:A, LEU153:B
+  run02_seed2026071672 mode 17; score=-1.1610; centroid=6.9037 A; min_QZN=0.6956 A; contacting_ligand_atoms=30/57; pocket_residues=9
+    residues: ILE149:A, ALA168:A, LEU207:A, ARG209:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 18; score=-1.0080; centroid=7.5081 A; min_QZN=0.1906 A; contacting_ligand_atoms=31/57; pocket_residues=8
+    residues: ILE149:A, ALA168:A, LEU207:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 19; score=-0.9120; centroid=13.2375 A; min_QZN=2.3376 A; contacting_ligand_atoms=8/57; pocket_residues=5
+    residues: LEU207:A, ARG209:A, VAL211:A, ILE236:A, LEU153:B
+  run03_seed2026071673 mode 10; score=-1.9710; centroid=9.4655 A; min_QZN=0.7636 A; contacting_ligand_atoms=15/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run03_seed2026071673 mode 14; score=-1.6100; centroid=8.2372 A; min_QZN=0.6699 A; contacting_ligand_atoms=18/57; pocket_residues=7
+    residues: VAL170:A, LEU207:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, LEU153:B
+  run04_seed2026071674 mode 15; score=-2.5790; centroid=12.1121 A; min_QZN=4.6440 A; contacting_ligand_atoms=8/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run04_seed2026071674 mode 16; score=-2.5050; centroid=9.4614 A; min_QZN=0.7596 A; contacting_ligand_atoms=16/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run05_seed2026071675 mode 11; score=-3.1380; centroid=12.3163 A; min_QZN=4.9741 A; contacting_ligand_atoms=5/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run05_seed2026071675 mode 18; score=-2.5100; centroid=9.4641 A; min_QZN=0.7482 A; contacting_ligand_atoms=15/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Pocket residues contacted by qualifying poses, counted by seed:
+  LEU207:A: 5/5 seeds
+  TYR258:A: 5/5 seeds
+  ILE263:A: 5/5 seeds
+  THR265:A: 5/5 seeds
+  LEU153:B: 5/5 seeds
+  VAL170:A: 2/5 seeds
+  VAL211:A: 2/5 seeds
+  ILE236:A: 2/5 seeds
+  ILE149:A: 1/5 seeds
+  ALA168:A: 1/5 seeds
+  ARG209:A: 1/5 seeds
+Recurrent contacted residues (>=3/5 seeds): LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+EXTENDED direct-engagement screen:
+- minimum ligand-QZN heavy-atom distance <= 6.5 A
+- >= 2 ligand heavy atoms within 4.5 A of pocket heavy atoms
+- >= 2 pocket residues contacted
+- recurrent signal requires >= 2/5 seeds
+Qualifying poses: 38/95
+Seeds with qualifying pose: 5/5
+Recurrent signal: YES
+
+Best direct-pocket-contact pose in each run:
+run                           mode     score   centroid   min_QZN lig_atoms residues  qualifies
+run01_seed2026071671            15   -2.2480     9.4680    0.7892        21        5        YES
+    contacted pocket residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run02_seed2026071672            17   -1.1610     6.9037    0.6956        37       11        YES
+    contacted pocket residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ARG209:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run03_seed2026071673            14   -1.6100     8.2372    0.6699        30        9        YES
+    contacted pocket residues: VAL170:A, LEU189:A, LEU207:A, ARG209:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, LEU153:B
+run04_seed2026071674            16   -2.5050     9.4614    0.7596        21        5        YES
+    contacted pocket residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+run05_seed2026071675            18   -2.5100     9.4641    0.7482        22        5        YES
+    contacted pocket residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Qualifying poses:
+  run01_seed2026071671 mode 07; score=-2.8550; centroid=13.7878 A; min_QZN=6.3776 A; contacting_ligand_atoms=5/57; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run01_seed2026071671 mode 10; score=-2.5470; centroid=13.3523 A; min_QZN=3.4244 A; contacting_ligand_atoms=10/57; pocket_residues=4
+    residues: LEU207:A, TYR258:A, ILE263:A, LEU153:B
+  run01_seed2026071671 mode 11; score=-2.5350; centroid=13.7366 A; min_QZN=5.9711 A; contacting_ligand_atoms=7/57; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run01_seed2026071671 mode 12; score=-2.5010; centroid=14.9886 A; min_QZN=6.2162 A; contacting_ligand_atoms=7/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run01_seed2026071671 mode 15; score=-2.2480; centroid=9.4680 A; min_QZN=0.7892 A; contacting_ligand_atoms=21/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run01_seed2026071671 mode 16; score=-2.0610; centroid=14.9298 A; min_QZN=4.3025 A; contacting_ligand_atoms=7/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run01_seed2026071671 mode 18; score=-1.9390; centroid=10.0179 A; min_QZN=2.4923 A; contacting_ligand_atoms=14/57; pocket_residues=4
+    residues: LEU207:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 03; score=-3.0950; centroid=13.2045 A; min_QZN=5.2528 A; contacting_ligand_atoms=7/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run02_seed2026071672 mode 05; score=-2.6020; centroid=13.7350 A; min_QZN=6.3544 A; contacting_ligand_atoms=6/57; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run02_seed2026071672 mode 06; score=-2.2370; centroid=13.0355 A; min_QZN=3.8042 A; contacting_ligand_atoms=12/57; pocket_residues=4
+    residues: LEU207:A, TYR258:A, ILE263:A, LEU153:B
+  run02_seed2026071672 mode 09; score=-1.9740; centroid=9.4665 A; min_QZN=0.7850 A; contacting_ligand_atoms=22/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 10; score=-1.6930; centroid=10.0205 A; min_QZN=2.4813 A; contacting_ligand_atoms=14/57; pocket_residues=4
+    residues: LEU207:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 11; score=-1.6040; centroid=8.2403 A; min_QZN=0.6723 A; contacting_ligand_atoms=30/57; pocket_residues=9
+    residues: VAL170:A, LEU189:A, LEU207:A, ARG209:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, LEU153:B
+  run02_seed2026071672 mode 12; score=-1.4950; centroid=9.0566 A; min_QZN=1.4634 A; contacting_ligand_atoms=23/57; pocket_residues=6
+    residues: ILE149:A, LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 16; score=-1.1640; centroid=9.2532 A; min_QZN=1.9932 A; contacting_ligand_atoms=20/57; pocket_residues=4
+    residues: LEU207:A, TYR258:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 17; score=-1.1610; centroid=6.9037 A; min_QZN=0.6956 A; contacting_ligand_atoms=37/57; pocket_residues=11
+    residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ARG209:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 18; score=-1.0080; centroid=7.5081 A; min_QZN=0.1906 A; contacting_ligand_atoms=34/57; pocket_residues=9
+    residues: ILE149:A, ALA168:A, LEU207:A, LEU208:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run02_seed2026071672 mode 19; score=-0.9120; centroid=13.2375 A; min_QZN=2.3376 A; contacting_ligand_atoms=12/57; pocket_residues=5
+    residues: LEU207:A, ARG209:A, VAL211:A, ILE236:A, LEU153:B
+  run03_seed2026071673 mode 07; score=-2.7590; centroid=13.0187 A; min_QZN=5.2034 A; contacting_ligand_atoms=8/57; pocket_residues=3
+    residues: LEU207:A, ARG209:A, LEU153:B
+  run03_seed2026071673 mode 08; score=-2.7330; centroid=12.3924 A; min_QZN=5.1121 A; contacting_ligand_atoms=8/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run03_seed2026071673 mode 09; score=-2.2380; centroid=14.1389 A; min_QZN=6.3154 A; contacting_ligand_atoms=7/57; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run03_seed2026071673 mode 10; score=-1.9710; centroid=9.4655 A; min_QZN=0.7636 A; contacting_ligand_atoms=22/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run03_seed2026071673 mode 14; score=-1.6100; centroid=8.2372 A; min_QZN=0.6699 A; contacting_ligand_atoms=30/57; pocket_residues=9
+    residues: VAL170:A, LEU189:A, LEU207:A, ARG209:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, LEU153:B
+  run04_seed2026071674 mode 06; score=-3.7270; centroid=15.0340 A; min_QZN=5.8915 A; contacting_ligand_atoms=5/57; pocket_residues=3
+    residues: LEU207:A, ARG209:A, LEU153:B
+  run04_seed2026071674 mode 07; score=-3.6060; centroid=14.2636 A; min_QZN=5.1364 A; contacting_ligand_atoms=7/57; pocket_residues=4
+    residues: LEU207:A, ARG209:A, VAL211:A, LEU153:B
+  run04_seed2026071674 mode 09; score=-3.5080; centroid=12.9999 A; min_QZN=5.5506 A; contacting_ligand_atoms=9/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run04_seed2026071674 mode 10; score=-3.1510; centroid=13.2821 A; min_QZN=5.1071 A; contacting_ligand_atoms=9/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run04_seed2026071674 mode 11; score=-3.0800; centroid=13.7577 A; min_QZN=6.3431 A; contacting_ligand_atoms=6/57; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run04_seed2026071674 mode 12; score=-2.9350; centroid=13.2298 A; min_QZN=6.1900 A; contacting_ligand_atoms=5/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run04_seed2026071674 mode 14; score=-2.6350; centroid=13.7475 A; min_QZN=5.3381 A; contacting_ligand_atoms=5/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run04_seed2026071674 mode 15; score=-2.5790; centroid=12.1121 A; min_QZN=4.6440 A; contacting_ligand_atoms=11/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run04_seed2026071674 mode 16; score=-2.5050; centroid=9.4614 A; min_QZN=0.7596 A; contacting_ligand_atoms=21/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+  run04_seed2026071674 mode 17; score=-2.1580; centroid=13.6021 A; min_QZN=5.2515 A; contacting_ligand_atoms=6/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run05_seed2026071675 mode 02; score=-4.1600; centroid=14.2563 A; min_QZN=5.4559 A; contacting_ligand_atoms=7/57; pocket_residues=3
+    residues: ARG209:A, VAL211:A, LEU153:B
+  run05_seed2026071675 mode 05; score=-3.5830; centroid=13.2699 A; min_QZN=5.3747 A; contacting_ligand_atoms=7/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run05_seed2026071675 mode 11; score=-3.1380; centroid=12.3163 A; min_QZN=4.9741 A; contacting_ligand_atoms=8/57; pocket_residues=2
+    residues: LEU207:A, LEU153:B
+  run05_seed2026071675 mode 13; score=-3.1020; centroid=13.8145 A; min_QZN=6.1172 A; contacting_ligand_atoms=7/57; pocket_residues=2
+    residues: ARG209:A, LEU153:B
+  run05_seed2026071675 mode 18; score=-2.5100; centroid=9.4641 A; min_QZN=0.7482 A; contacting_ligand_atoms=22/57; pocket_residues=5
+    residues: LEU207:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+Pocket residues contacted by qualifying poses, counted by seed:
+  LEU207:A: 5/5 seeds
+  ARG209:A: 5/5 seeds
+  TYR258:A: 5/5 seeds
+  ILE263:A: 5/5 seeds
+  THR265:A: 5/5 seeds
+  LEU153:B: 5/5 seeds
+  VAL211:A: 4/5 seeds
+  VAL170:A: 2/5 seeds
+  LEU189:A: 2/5 seeds
+  ILE236:A: 2/5 seeds
+  ILE149:A: 1/5 seeds
+  ALA168:A: 1/5 seeds
+  LEU208:A: 1/5 seeds
+Recurrent contacted residues (>=2/5 seeds): VAL170:A, LEU189:A, LEU207:A, ARG209:A, VAL211:A, ILE236:A, TYR258:A, ILE263:A, THR265:A, LEU153:B
+
+====================================================================================================
+INTERPRETATION RESTRICTION
+====================================================================================================
+A positive primary result supports only an exploratory orthosteric-like direct-pocket-engagement hypothesis.
+A positive extended result supports only an exploratory pocket-proximal interaction pattern.
+Neither result demonstrates binding affinity, direct PqsR target engagement, or causal mechanism.
+PLIP may be considered only for recurrent poses meeting the predefined independent-seed criterion.

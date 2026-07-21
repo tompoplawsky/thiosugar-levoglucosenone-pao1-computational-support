@@ -1,0 +1,100 @@
+STEP 9 — PqsR 4JVI exploratory centroid and clustering analysis
+==============================================================================
+
+Scientific status: EXPLORATORY ONLY
+Formal receptor-specific PqsR redocking validation was not achieved.
+
+QZN heavy-atom centroid: -33.4890, 56.8654, 9.1002 A
+QZN heavy atoms: 22
+
+====================================================================================================
+compound_11
+====================================================================================================
+Retained poses per run: 20 + 20 + 20 + 20 + 20 = 100
+Primary <=5.0 A: 5/100 poses; 5/5 seeds
+Extended >5.0 to <=8.0 A: 0/100 poses; 0/5 seeds
+
+Closest pose to QZN in each run:
+run                           mode      score   centroid_A              class
+run01_seed2026071691             4    -4.8780       4.3966            PRIMARY
+run02_seed2026071692             4    -4.8700       4.3965            PRIMARY
+run03_seed2026071693             4    -4.8620       4.3942            PRIMARY
+run04_seed2026071694             4    -4.8680       4.3958            PRIMARY
+run05_seed2026071695             4    -4.8670       4.3960            PRIMARY
+
+PRIMARY clustering: direct fixed-frame heavy-atom RMSD <= 2.0 A; required occupancy >= 3/5 seeds
+  Cluster 1: poses=5, seeds=5/5, median_score=-4.8680, median_pair_RMSD=0.0064 A — CONSENSUS
+    run01_seed2026071691 mode 04; score=-4.8780; centroid=4.3966 A
+    run02_seed2026071692 mode 04; score=-4.8700; centroid=4.3965 A
+    run03_seed2026071693 mode 04; score=-4.8620; centroid=4.3942 A
+    run04_seed2026071694 mode 04; score=-4.8680; centroid=4.3958 A
+    run05_seed2026071695 mode 04; score=-4.8670; centroid=4.3960 A
+
+  Selected primary exploratory cluster: Cluster 1
+  Representative: run01_seed2026071691 mode 04
+  Score: -4.8780 kcal/mol
+  Centroid distance: 4.3966 A
+  Source: 03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/compound_11/run01_seed2026071691/compound_11_PqsR_4JVI_run01_seed2026071691_poses.pdbqt
+
+EXTENDED clustering: direct fixed-frame heavy-atom RMSD <= 2.5 A; required occupancy >= 2/5 seeds
+  No qualifying poses.
+
+====================================================================================================
+compound_09
+====================================================================================================
+Retained poses per run: 19 + 20 + 20 + 19 + 20 = 98
+Primary <=5.0 A: 0/98 poses; 0/5 seeds
+Extended >5.0 to <=8.0 A: 3/98 poses; 3/5 seeds
+
+Closest pose to QZN in each run:
+run                           mode      score   centroid_A              class
+run01_seed2026071681            16    -4.1040       6.8773           EXTENDED
+run02_seed2026071682            20    -4.0000      12.7246            OUTSIDE
+run03_seed2026071683            16    -4.0640       6.8787           EXTENDED
+run04_seed2026071684            13    -4.2180      12.9246            OUTSIDE
+run05_seed2026071685            14    -4.0790       6.8742           EXTENDED
+
+PRIMARY clustering: direct fixed-frame heavy-atom RMSD <= 2.0 A; required occupancy >= 3/5 seeds
+  No qualifying poses.
+
+EXTENDED clustering: direct fixed-frame heavy-atom RMSD <= 2.5 A; required occupancy >= 2/5 seeds
+  Cluster 1: poses=3, seeds=3/5, median_score=-4.0790, median_pair_RMSD=0.0175 A — CONSENSUS
+    run01_seed2026071681 mode 16; score=-4.1040; centroid=6.8773 A
+    run03_seed2026071683 mode 16; score=-4.0640; centroid=6.8787 A
+    run05_seed2026071685 mode 14; score=-4.0790; centroid=6.8742 A
+
+  Selected extended exploratory cluster: Cluster 1
+  Representative: run01_seed2026071681 mode 16
+  Score: -4.1040 kcal/mol
+  Centroid distance: 6.8773 A
+  Source: 03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/compound_09/run01_seed2026071681/compound_09_PqsR_4JVI_run01_seed2026071681_poses.pdbqt
+
+====================================================================================================
+compound_08
+====================================================================================================
+Retained poses per run: 19 + 20 + 18 + 19 + 19 = 95
+Primary <=5.0 A: 0/95 poses; 0/5 seeds
+Extended >5.0 to <=8.0 A: 2/95 poses; 1/5 seeds
+
+Closest pose to QZN in each run:
+run                           mode      score   centroid_A              class
+run01_seed2026071671            15    -2.2480       9.4680            OUTSIDE
+run02_seed2026071672            17    -1.1610       6.9037           EXTENDED
+run03_seed2026071673            14    -1.6100       8.2372            OUTSIDE
+run04_seed2026071674            16    -2.5050       9.4614            OUTSIDE
+run05_seed2026071675            18    -2.5100       9.4641            OUTSIDE
+
+PRIMARY clustering: direct fixed-frame heavy-atom RMSD <= 2.0 A; required occupancy >= 3/5 seeds
+  No qualifying poses.
+
+EXTENDED clustering: direct fixed-frame heavy-atom RMSD <= 2.5 A; required occupancy >= 2/5 seeds
+  Cluster 1: poses=2, seeds=1/5, median_score=-1.0845, median_pair_RMSD=1.8993 A — NON-CONSENSUS
+    run02_seed2026071672 mode 17; score=-1.1610; centroid=6.9037 A
+    run02_seed2026071672 mode 18; score=-1.0080; centroid=7.5081 A
+  No recurrent extended cluster met occupancy.
+
+====================================================================================================
+INTERPRETATION RESTRICTION
+====================================================================================================
+All classifications remain exploratory because formal PqsR redocking validation was not achieved.
+Vinardo scores are not experimental binding free energies and do not prove direct PqsR target engagement.

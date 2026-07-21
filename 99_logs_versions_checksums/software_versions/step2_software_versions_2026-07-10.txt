@@ -1,0 +1,12 @@
+Step 2 software versions
+Date: 2026-07-10
+
+RDKit / Python:
+Python 3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]
+RDKit 2025.09.5
+
+Open Babel:
+Open Babel 3.1.0 -- Nov 30 2023 -- 20:44:30
+
+PyMOL:
+pymol-open-source 3.1.0 py312h01792ee_8 conda-forge

@@ -1,0 +1,23 @@
+	Command being timed: "/usr/bin/vina --config /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/exploratory_PqsR_2026-07-17/compound_09_PqsR_4JVI_run02_seed2026071682.conf --out /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/compound_09/run02_seed2026071682/compound_09_PqsR_4JVI_run02_seed2026071682_poses.pdbqt"
+	User time (seconds): 623.31
+	System time (seconds): 0.37
+	Percent of CPU this job got: 728%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:25.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 564952
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 188089
+	Voluntary context switches: 124
+	Involuntary context switches: 3376
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 208
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

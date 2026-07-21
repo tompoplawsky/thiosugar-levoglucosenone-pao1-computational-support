@@ -1,0 +1,200 @@
+CASE: PqsR_4JVI_QZN_siteB
+LABEL: PqsR 4JVI QZN site B
+
+DEFAULT MEEKO COMMAND:
+mk_prepare_ligand.py -i /tmp/step8c_reference_preparation_qrr7l_ox/PqsR_4JVI_QZN_siteB_reference_prepared.sdf --charge_model gasteiger --add_index_map --rename_atoms -
+
+DEFAULT STDOUT:
+REMARK SMILES CCCCCCCCCc1nc2cc(Cl)ccc2c(=O)n1N
+REMARK SMILES IDX 6 1 5 2 4 3 3 4 2 5 1 6 7 7 8 8 9 9 10 10 21 11 11 12 19 13
+REMARK SMILES IDX 12 14 20 15 18 16 13 17 17 18 14 19 16 20 15 21 22 22
+REMARK H PARENT 22 23 22 24
+REMARK INDEX MAP 6 1 5 2 4 3 3 4 2 5 1 6 7 7 8 8 9 9 10 10 21 11 11 12 19 13
+REMARK INDEX MAP 12 14 20 15 18 16 13 17 17 18 14 19 16 20 15 21 22 22 45 23
+REMARK INDEX MAP 46 24
+ROOT
+ATOM      1  C6  UNL     1     -28.969  58.190  27.986  1.00  0.00     0.000 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  C5  UNL     1     -28.500  59.573  28.329  1.00  0.00     0.000 C 
+BRANCH   2   3
+ATOM      3  C4  UNL     1     -28.418  59.674  29.828  1.00  0.00    -0.000 C 
+BRANCH   3   4
+ATOM      4  C3  UNL     1     -27.042  60.153  30.170  1.00  0.00    -0.000 C 
+BRANCH   4   5
+ATOM      5  C2  UNL     1     -27.220  61.559  30.711  1.00  0.00    -0.003 C 
+ATOM      6  C1  UNL     1     -25.940  62.055  31.360  1.00  0.00     0.004 C 
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   7
+ATOM      7  C7  UNL     1     -30.116  58.292  27.006  1.00  0.00     0.000 C 
+BRANCH   7   8
+ATOM      8  C8  UNL     1     -31.423  57.939  27.730  1.00  0.00     0.008 C 
+BRANCH   8   9
+ATOM      9  C9  UNL     1     -31.998  56.596  27.245  1.00  0.00     0.077 C 
+BRANCH   9  10
+ATOM     10 C10  UNL     1     -33.032  56.241  28.268  1.00  0.00     0.131 A 
+ATOM     11 N21  UNL     1     -32.810  55.307  29.332  1.00  0.00    -0.212 N 
+ATOM     12 N11  UNL     1     -34.175  56.897  28.148  1.00  0.00    -0.233 NA
+ATOM     13 C19  UNL     1     -33.828  55.101  30.243  1.00  0.00     0.279 A 
+ATOM     14 C12  UNL     1     -35.166  56.683  29.025  1.00  0.00     0.079 A 
+ATOM     15 O20  UNL     1     -33.659  54.307  31.155  1.00  0.00    -0.267 OA
+ATOM     16 C18  UNL     1     -35.025  55.782  30.088  1.00  0.00     0.068 A 
+ATOM     17 C13  UNL     1     -36.350  57.380  28.872  1.00  0.00     0.049 A 
+ATOM     18 C17  UNL     1     -36.062  55.583  30.985  1.00  0.00     0.018 A 
+ATOM     19 C14  UNL     1     -37.406  57.196  29.770  1.00  0.00     0.043 A 
+ATOM     20 C16  UNL     1     -37.249  56.287  30.809  1.00  0.00     0.021 A 
+ATOM     21 Cl15 UNL     1     -38.898  58.118  29.583  1.00  0.00    -0.084 Cl
+BRANCH  11  22
+ATOM     22 N22  UNL     1     -31.769  54.657  29.493  1.00  0.00    -0.335 N 
+ATOM     23 H45  UNL     1     -30.981  54.776  28.840  1.00  0.00     0.178 HD
+ATOM     24 H46  UNL     1     -31.690  53.997  30.280  1.00  0.00     0.178 HD
+ENDBRANCH  11  22
+ENDBRANCH   9  10
+ENDBRANCH   8   9
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+TORSDOF 9
+Input molecules processed: 1, skipped: 0
+PDBQT files written: 0
+PDBQT files not written due to error: 0
+Input molecules with errors: 0
+
+
+DEFAULT STDERR:
+
+
+FINAL MEEKO COMMAND:
+mk_prepare_ligand.py -i /tmp/step8c_reference_preparation_qrr7l_ox/PqsR_4JVI_QZN_siteB_reference_prepared.sdf --charge_model gasteiger --add_index_map --rename_atoms -r [N;X3;H2]-[n;R] -b 1 2 -o /tmp/step8c_reference_preparation_qrr7l_ox/PqsR_4JVI_QZN_siteB_reference.pdbqt -v
+
+FINAL STDOUT:
+Molecule Setup
+
+==============[ ATOMS ]===================================================
+idx  |          coords            | charge |ign| atype    | connections
+-----+----------------------------+--------+---+----------+--------------- . . . 
+   0 |  -25.940   62.055   31.360 |  0.004 | 0 | C        | [1, 22, 23, 24]
+   1 |  -27.220   61.559   30.711 | -0.003 | 0 | C        | [0, 2, 25, 26]
+   2 |  -27.042   60.153   30.170 | -0.000 | 0 | C        | [1, 3, 27, 28]
+   3 |  -28.418   59.674   29.828 | -0.000 | 0 | C        | [2, 4, 29, 30]
+   4 |  -28.500   59.573   28.329 |  0.000 | 0 | C        | [3, 5, 31, 32]
+   5 |  -28.969   58.190   27.986 |  0.000 | 0 | C        | [4, 6, 33, 34]
+   6 |  -30.116   58.292   27.006 |  0.000 | 0 | C        | [5, 7, 35, 36]
+   7 |  -31.423   57.939   27.730 |  0.008 | 0 | C        | [8, 6, 37, 38]
+   8 |  -31.998   56.596   27.245 |  0.077 | 0 | C        | [9, 7, 39, 40]
+   9 |  -33.032   56.241   28.268 |  0.131 | 0 | A        | [20, 10, 8]
+  10 |  -34.175   56.897   28.148 | -0.233 | 0 | NA       | [11, 9]
+  11 |  -35.166   56.683   29.025 |  0.079 | 0 | A        | [17, 12, 10]
+  12 |  -36.350   57.380   28.872 |  0.049 | 0 | A        | [13, 11, 41]
+  13 |  -37.406   57.196   29.770 |  0.043 | 0 | A        | [15, 14, 12]
+  14 |  -38.898   58.118   29.583 | -0.084 | 0 | Cl       | [13]
+  15 |  -37.249   56.287   30.809 |  0.021 | 0 | A        | [16, 13, 42]
+  16 |  -36.062   55.583   30.985 |  0.018 | 0 | A        | [15, 17, 43]
+  17 |  -35.025   55.782   30.088 |  0.068 | 0 | A        | [16, 18, 11]
+  18 |  -33.828   55.101   30.243 |  0.279 | 0 | A        | [19, 17, 20]
+  19 |  -33.659   54.307   31.155 | -0.267 | 0 | OA       | [18]
+  20 |  -32.810   55.307   29.332 | -0.212 | 0 | N        | [18, 21, 9]
+  21 |  -31.769   54.657   29.493 | -0.335 | 0 | N        | [20, 44, 45]
+  22 |  -26.044   62.015   32.454 |  0.000 | 1 | H        | [0]
+  23 |  -25.100   61.417   31.048 |  0.000 | 1 | H        | [0]
+  24 |  -25.749   63.092   31.048 |  0.000 | 1 | H        | [0]
+  25 |  -28.026   61.558   31.459 |  0.000 | 1 | H        | [1]
+  26 |  -27.473   62.228   29.875 |  0.000 | 1 | H        | [1]
+  27 |  -26.406   60.165   29.273 |  0.000 | 1 | H        | [2]
+  28 |  -26.553   59.495   30.903 |  0.000 | 1 | H        | [2]
+  29 |  -28.596   58.688   30.282 |  0.000 | 1 | H        | [3]
+  30 |  -29.178   60.370   30.212 |  0.000 | 1 | H        | [3]
+  31 |  -29.213   60.316   27.943 |  0.000 | 1 | H        | [4]
+  32 |  -27.516   59.768   27.877 |  0.000 | 1 | H        | [4]
+  33 |  -28.144   57.622   27.531 |  0.000 | 1 | H        | [5]
+  34 |  -29.302   57.672   28.898 |  0.000 | 1 | H        | [5]
+  35 |  -30.177   59.318   26.614 |  0.000 | 1 | H        | [6]
+  36 |  -29.954   57.596   26.170 |  0.000 | 1 | H        | [6]
+  37 |  -32.161   58.732   27.540 |  0.000 | 1 | H        | [7]
+  38 |  -31.206   57.851   28.805 |  0.000 | 1 | H        | [7]
+  39 |  -31.211   55.828   27.204 |  0.000 | 1 | H        | [8]
+  40 |  -32.418   56.662   26.231 |  0.000 | 1 | H        | [8]
+  41 |  -36.462   58.086   28.036 |  0.000 | 1 | H        | [12]
+  42 |  -38.082   56.120   31.508 |  0.000 | 1 | H        | [15]
+  43 |  -35.949   54.880   31.823 |  0.000 | 1 | H        | [16]
+  44 |  -30.981   54.776   28.840 |  0.178 | 0 | HD       | [21]
+  45 |  -31.690   53.997   30.280 |  0.178 | 0 | HD       | [21]
+-----+----------------------------+--------+---+----------+--------------- . . . 
+  TOT CHARGE: -0.000
+
+==============[ BONDS ]================
+  (0, 1) -  index1: 0, index2: 1, rotatable: False, breakable: False, canon_id: (0, 1)
+(18, 19) -  index1: 19, index2: 18, rotatable: False, breakable: False, canon_id: (18, 19)
+(15, 16) -  index1: 16, index2: 15, rotatable: False, breakable: False, canon_id: (15, 16)
+(16, 17) -  index1: 16, index2: 17, rotatable: False, breakable: False, canon_id: (16, 17)
+(13, 15) -  index1: 15, index2: 13, rotatable: False, breakable: False, canon_id: (13, 15)
+  (1, 2) -  index1: 1, index2: 2, rotatable: True, breakable: False, canon_id: (1, 2)
+(17, 18) -  index1: 18, index2: 17, rotatable: False, breakable: False, canon_id: (17, 18)
+(18, 20) -  index1: 18, index2: 20, rotatable: False, breakable: False, canon_id: (18, 20)
+  (2, 3) -  index1: 2, index2: 3, rotatable: True, breakable: False, canon_id: (2, 3)
+(11, 17) -  index1: 17, index2: 11, rotatable: False, breakable: False, canon_id: (11, 17)
+  (3, 4) -  index1: 3, index2: 4, rotatable: True, breakable: False, canon_id: (3, 4)
+(13, 14) -  index1: 13, index2: 14, rotatable: False, breakable: False, canon_id: (13, 14)
+(12, 13) -  index1: 13, index2: 12, rotatable: False, breakable: False, canon_id: (12, 13)
+(20, 21) -  index1: 21, index2: 20, rotatable: False, breakable: False, canon_id: (20, 21)
+ (9, 20) -  index1: 20, index2: 9, rotatable: False, breakable: False, canon_id: (9, 20)
+(11, 12) -  index1: 11, index2: 12, rotatable: False, breakable: False, canon_id: (11, 12)
+(10, 11) -  index1: 11, index2: 10, rotatable: False, breakable: False, canon_id: (10, 11)
+  (4, 5) -  index1: 4, index2: 5, rotatable: True, breakable: False, canon_id: (4, 5)
+ (9, 10) -  index1: 9, index2: 10, rotatable: False, breakable: False, canon_id: (9, 10)
+  (8, 9) -  index1: 9, index2: 8, rotatable: True, breakable: False, canon_id: (8, 9)
+  (5, 6) -  index1: 5, index2: 6, rotatable: True, breakable: False, canon_id: (5, 6)
+  (7, 8) -  index1: 7, index2: 8, rotatable: True, breakable: False, canon_id: (7, 8)
+  (6, 7) -  index1: 7, index2: 6, rotatable: True, breakable: False, canon_id: (6, 7)
+ (0, 22) -  index1: 0, index2: 22, rotatable: False, breakable: False, canon_id: (0, 22)
+ (0, 23) -  index1: 0, index2: 23, rotatable: False, breakable: False, canon_id: (0, 23)
+ (0, 24) -  index1: 0, index2: 24, rotatable: False, breakable: False, canon_id: (0, 24)
+ (1, 25) -  index1: 1, index2: 25, rotatable: False, breakable: False, canon_id: (1, 25)
+ (1, 26) -  index1: 1, index2: 26, rotatable: False, breakable: False, canon_id: (1, 26)
+ (2, 27) -  index1: 2, index2: 27, rotatable: False, breakable: False, canon_id: (2, 27)
+ (2, 28) -  index1: 2, index2: 28, rotatable: False, breakable: False, canon_id: (2, 28)
+ (3, 29) -  index1: 3, index2: 29, rotatable: False, breakable: False, canon_id: (3, 29)
+ (3, 30) -  index1: 3, index2: 30, rotatable: False, breakable: False, canon_id: (3, 30)
+ (4, 31) -  index1: 4, index2: 31, rotatable: False, breakable: False, canon_id: (4, 31)
+ (4, 32) -  index1: 4, index2: 32, rotatable: False, breakable: False, canon_id: (4, 32)
+ (5, 33) -  index1: 5, index2: 33, rotatable: False, breakable: False, canon_id: (5, 33)
+ (5, 34) -  index1: 5, index2: 34, rotatable: False, breakable: False, canon_id: (5, 34)
+ (6, 35) -  index1: 6, index2: 35, rotatable: False, breakable: False, canon_id: (6, 35)
+ (6, 36) -  index1: 6, index2: 36, rotatable: False, breakable: False, canon_id: (6, 36)
+ (7, 37) -  index1: 7, index2: 37, rotatable: False, breakable: False, canon_id: (7, 37)
+ (7, 38) -  index1: 7, index2: 38, rotatable: False, breakable: False, canon_id: (7, 38)
+ (8, 39) -  index1: 8, index2: 39, rotatable: False, breakable: False, canon_id: (8, 39)
+ (8, 40) -  index1: 8, index2: 40, rotatable: False, breakable: False, canon_id: (8, 40)
+(12, 41) -  index1: 12, index2: 41, rotatable: False, breakable: False, canon_id: (12, 41)
+(15, 42) -  index1: 15, index2: 42, rotatable: False, breakable: False, canon_id: (15, 42)
+(16, 43) -  index1: 16, index2: 43, rotatable: False, breakable: False, canon_id: (16, 43)
+(21, 44) -  index1: 21, index2: 44, rotatable: False, breakable: False, canon_id: (21, 44)
+(21, 45) -  index1: 21, index2: 45, rotatable: False, breakable: False, canon_id: (21, 45)
+
+Input molecules processed: 1, skipped: 0
+PDBQT files written: 1
+PDBQT files not written due to error: 0
+Input molecules with errors: 0
+
+
+FINAL STDERR:
+
+
+QC SUMMARY:
+formula=C17H24ClN3O
+formal_charge=0
+heavy_atoms=22
+hydrogens=24
+total_atoms=46
+pdbqt_atoms=24
+torsdof=8
+branches=8
+gasteiger_charge_sum_after_pdbqt_rounding=-0.001000
+source_heavy_max_coordinate_difference_A=0.000000
+sdf_heavy_max_coordinate_difference_A=0.000000
+pdbqt_heavy_max_coordinate_difference_A=0.000000
+chiral_centers=[]
+isomeric_smiles=CCCCCCCCCc1nc2cc(Cl)ccc2c(=O)n1N
+torsion_validation={'target_input_indices_1_based': [21, 22], 'default_torsdof': 9, 'corrected_torsdof': 8, 'removed_branches': [[21, 22]], 'added_branches': []}

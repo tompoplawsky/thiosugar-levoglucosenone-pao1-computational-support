@@ -1,0 +1,13 @@
+! wB97X-D3 def2-SVP CPCM(Water) TightSCF TightOpt
+%pal
+  nprocs 8
+end
+%maxcore 3000
+%geom
+  InHess Read
+  InHessName "../inputs/compound_08_wb97xd3_def2svp_cpcm_water_opt.opt"
+  MaxIter 20
+  MaxStep 0.05
+  Trust -0.05
+end
+* xyzfile 0 1 ../inputs/compound_08_wb97xd3_def2svp_cpcm_water_restart_cycle80.xyz

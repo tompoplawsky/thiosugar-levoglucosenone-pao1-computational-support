@@ -1,0 +1,85 @@
+STEP 9 — PREREGISTERED REDOCKING VALIDATION PROTOCOL V2
+Date: 2026-07-16
+Status: frozen before inspection of any V2 redocking result
+
+REVISION RATIONALE:
+Protocol V1 using the default Vina scoring function passed the LasR/OHN
+top-ranked-pose criterion but failed for PqsR/QZN.
+
+PqsR/QZN V1 diagnostics:
+- mode 1 direct mapped heavy-atom RMSD: 12.2509 A;
+- mode 1 centroid displacement from crystallographic QZN: 9.7213 A;
+- native-like mode 8 direct mapped heavy-atom RMSD: 1.7193 A;
+- mode 8 centroid displacement: 1.1462 A;
+- mode 1 and mode 8 differed by only 0.318 kcal/mol under Vina.
+
+The native-like pose was therefore sampled but was not ranked first.
+
+Additional diagnostics showed that local optimization starting from the exact
+crystallographic QZN pose retained the experimental geometry:
+- Vina local-only RMSD: 0.5501 A;
+- Vinardo local-only RMSD: 0.7896 A.
+
+Under Vinardo, the locally optimized crystallographic basin scored
+-6.198 kcal/mol, compared with -5.836 kcal/mol for the locally optimized
+incorrect V1 mode 1. Vinardo is therefore selected prospectively as the
+single methodological revision tested in protocol V2.
+
+The diagnostic values above were obtained using explicit retained atom
+serial correspondence. Final acceptance measurements must use the
+symmetry-aware heavy-atom RMSD procedure specified below.
+
+CHANGE RELATIVE TO V1:
+- scoring function changed from default Vina to Vinardo;
+- new random seeds assigned;
+- all other docking parameters, inputs, boxes, and acceptance criteria retained;
+- crystallographic water HOH501 is not added to the receptor;
+- no V1 output is overwritten or reclassified as a successful validation.
+
+Software: AutoDock Vina 1.2.5
+Scoring function: Vinardo
+CPU: 8
+Exhaustiveness: 64
+Number of modes: 20
+Energy range: 5 kcal/mol
+Verbosity: 2
+
+LasR_2UV0 seed: 2026071603
+PqsR_4JVI seed: 2026071604
+
+LasR box: center 55.258 27.138 29.990 A; size 30.000 30.000 30.000 A
+PqsR box: center -33.489 56.865 9.100 A; size 30.000 30.000 30.000 A
+
+PRIMARY ACCEPTANCE CRITERION:
+The top-ranked pose (mode 1) must have symmetry-aware heavy-atom RMSD
+<= 2.0 A relative to the crystallographic reference pose.
+
+SECONDARY REPORTED METRIC:
+The minimum symmetry-aware heavy-atom RMSD among all returned modes and
+its mode number will also be reported, but it cannot validate a protocol
+whose mode 1 fails the primary criterion.
+
+RMSD RULES:
+- exclude all hydrogen atoms;
+- use explicit atom correspondence from the retained Meeko INDEX MAP;
+- account for chemically equivalent atom permutations where applicable;
+- do not use nearest-neighbour coordinate matching;
+- report RMSD, pose number, Vinardo score, and atom count used.
+
+COMPLETE-VALIDATION RULE:
+Both OHN-to-LasR and QZN-to-PqsR redockings must be rerun under protocol V2.
+A result from protocol V1 cannot substitute for either V2 validation run.
+
+DECISION RULE:
+Production docking is prohibited unless both V2 redockings satisfy the
+primary acceptance criterion.
+
+If V2 fails, its outputs must be preserved and no further methodological
+change may be adopted without a separately documented protocol revision
+and complete revalidation.
+
+RUN RECORD REQUIREMENTS:
+Record the complete command, receptor, ligand, box, scoring function, seed,
+exhaustiveness, num_modes, energy_range, CPU setting, Vina version, start
+time, end time, elapsed time, raw output, pose file, RMSD table, QC result,
+and SHA-256 checksums.

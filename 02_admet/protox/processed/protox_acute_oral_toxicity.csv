@@ -1,0 +1,4 @@
+compound,predicted_ld50_mg_kg,predicted_toxicity_class,average_similarity_percent,prediction_accuracy_percent,source_tool,source_version,access_date,source_pdf,source_page,extraction_method,source_pdf_sha256
+compound_08,2000,4,38.65,23,ProTox,3.0,2026-07-02,/data/BIOFILM_INSILICO_SUPPORT/02_admet/protox/raw/pdf_reports/protox_08.pdf,1,visual_verification_of_rendered_page_1,3b38dca7e379deb0537e987fac866e91a5d6b643fb207961150a7d8c7bec5b4d
+compound_09,2000,4,39.60,23,ProTox,3.0,2026-07-02,/data/BIOFILM_INSILICO_SUPPORT/02_admet/protox/raw/pdf_reports/protox_09.pdf,1,visual_verification_of_rendered_page_1,653b1d2bc8d2b61096218f83bc2e30c553621366bf8d4707f321058412383ed7
+compound_11,5000,5,37.06,23,ProTox,3.0,2026-07-02,/data/BIOFILM_INSILICO_SUPPORT/02_admet/protox/raw/pdf_reports/protox_11.pdf,1,visual_verification_of_rendered_page_1,daef6620e2e4726816cc327e645a77156e1a93e9f339ace976da7406b3510d23

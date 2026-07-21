@@ -1,0 +1,56 @@
+STEP 9 — LasR 2UV0 supervised visual-QC closure record
+
+Date UTC:
+2026-07-19T16:24:51.568057+00:00
+
+Software:
+UCSF ChimeraX 1.11.1 (2026-01-23)
+
+Inspection platform:
+Windows workstation
+
+Repository destination:
+03_docking/visual_qc/LasR_2UV0_2026-07-19/windows_chimerax_1.11.1
+
+Docking-validation status:
+LasR receptor-specific redocking validation PASS
+
+Selected representative:
+- compound_11
+- recurrent orthosteric-like pose
+- qualifying spatial pattern in 5/5 docking seeds
+- centroid distance to crystallographic OHN: 4.7025 A
+- selected Vinardo score: -3.5860 kcal/mol
+
+Final visual-QC decision:
+- compound_11: PASS
+  The ligand is chemically connected, located in the OHN-defined pocket region,
+  and free of obvious severe steric interpenetration. Its position relative to
+  OHN is consistent with the predefined orthosteric criterion.
+
+PLIP context:
+- Ala127 hydrophobic interaction: 3.68 A
+- Asp65 ligand-donor hydrogen bond: H-A 3.12 A, D-A 4.02 A,
+  donor angle 148.51 degrees
+- the Asp65 contact is marginal/long and must not be overstated
+
+Negative-result context:
+- compound_08: 0/100 orthosteric poses and no qualifying partial-pocket engagement
+- compound_09: 0/100 orthosteric poses and no qualifying partial-pocket engagement
+- no positive LasR interaction figures were generated for compounds 08 or 09
+
+Archived evidence:
+- one UCSF ChimeraX session file
+- one selected publication-style PNG image
+- SHA-256 verified after transfer from Windows to Linux
+
+Interpretation restriction:
+The visual-QC PASS status confirms technical plausibility and integrity of the
+selected docking pose. It does not establish experimental binding affinity,
+direct LasR target engagement, or causal inhibition of quorum sensing.
+
+Overall LasR visual-QC status:
+PASS
+
+STEP 9 LasR visual-QC status:
+CLOSED

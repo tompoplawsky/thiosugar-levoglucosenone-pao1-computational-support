@@ -1,0 +1,37 @@
+STEP 9 — PREREGISTERED REDOCKING VALIDATION PROTOCOL
+Date: 2026-07-16
+Status: frozen before inspection of any redocking result
+
+Software: AutoDock Vina 1.2.5
+Scoring function: Vina default
+CPU: 8
+Exhaustiveness: 64
+Number of modes: 20
+Energy range: 5 kcal/mol
+Verbosity: 2
+
+LasR_2UV0 seed: 2026071601
+PqsR_4JVI seed: 2026071602
+
+LasR box: center 55.258 27.138 29.990 A; size 30.000 30.000 30.000 A
+PqsR box: center -33.489 56.865 9.100 A; size 30.000 30.000 30.000 A
+
+PRIMARY ACCEPTANCE CRITERION:
+The top-ranked pose (mode 1) must have symmetry-aware heavy-atom RMSD <= 2.0 A relative to the crystallographic reference pose.
+
+SECONDARY REPORTED METRIC:
+The minimum symmetry-aware heavy-atom RMSD among all returned modes and its mode number will also be reported, but it cannot validate a protocol whose mode 1 fails the primary criterion.
+
+RMSD RULES:
+- exclude all hydrogen atoms;
+- use explicit atom correspondence from the retained Meeko INDEX MAP;
+- account for chemically equivalent atom permutations where applicable;
+- do not use nearest-neighbour coordinate matching;
+- report RMSD, pose number, Vina score, and atom count used.
+
+DECISION RULE:
+Production docking is prohibited unless both OHN-to-LasR and QZN-to-PqsR redockings satisfy the primary acceptance criterion.
+Any protocol revision after a failure must be explicitly documented, assigned new parameters, rerun as a complete validation, and must preserve all previous outputs.
+
+RUN RECORD REQUIREMENTS:
+Record the complete command, receptor, ligand, box, seed, exhaustiveness, num_modes, energy_range, CPU setting, Vina version, start time, end time, elapsed time, raw output, pose file, RMSD table, QC result, and SHA-256 checksums.

@@ -1,0 +1,108 @@
+STEP 9 — PQSR-SPECIFIC REDOCKING VALIDATION PROTOCOL V3
+Date: 2026-07-16
+Status: preregistered before inspection of any V3 run
+
+SCOPE
+This protocol applies exclusively to PqsR/MvfR PDB 4JVI.
+LasR is governed by its independently validated V2 Vinardo protocol.
+
+RATIONALE
+PqsR/QZN redocking with the default Vina scoring function sampled a
+native-like QZN pose at mode 8, with direct mapped heavy-atom RMSD 1.7193 A.
+
+PqsR/QZN redocking with Vinardo sampled a native-like QZN pose at mode 5,
+with direct mapped heavy-atom RMSD 1.5289 A.
+
+In both cases, the crystallographic binding basin was sampled, but it was
+not ranked as mode 1. The score differences between incorrect and
+native-like poses were small and indicate ranking uncertainty rather than
+failure to explore the orthosteric site.
+
+Because V1 and V2 results informed development of this protocol, all V3
+acceptance decisions must be based only on new independent random seeds.
+
+SOFTWARE AND INPUTS
+Software: AutoDock Vina 1.2.5
+Scoring function: Vinardo
+
+Receptor:
+03_docking/receptors_pdbqt/PqsR_4JVI.pdbqt
+
+Reference ligand:
+03_docking/reference_ligands_pdbqt/PqsR_4JVI_QZN_siteA_reference.pdbqt
+
+SEARCH BOX
+center_x = -33.489
+center_y = 56.865
+center_z = 9.100
+size_x = 30.000
+size_y = 30.000
+size_z = 30.000
+
+SEARCH PARAMETERS
+CPU: 8
+Exhaustiveness: 64
+Number of modes: 20
+Energy range: 5 kcal/mol
+Verbosity: 2
+
+INDEPENDENT VALIDATION SEEDS
+Run 1: 2026071611
+Run 2: 2026071612
+Run 3: 2026071613
+Run 4: 2026071614
+Run 5: 2026071615
+
+PRIMARY PQSR-SPECIFIC ACCEPTANCE CRITERION
+For each independent run, inspect modes 1–5.
+
+A run is counted as successful when at least one of modes 1–5 satisfies:
+- symmetry-aware heavy-atom RMSD <= 2.0 A relative to crystallographic QZN;
+- heavy atoms only;
+- explicit atom correspondence from the retained Meeko INDEX MAP;
+- chemically equivalent atom permutations included where applicable;
+- centroid displacement from crystallographic QZN <= 5.0 A.
+
+The PqsR protocol is validated when at least four of five independent runs
+satisfy the run-level success criterion.
+
+SECONDARY METRICS
+For every run report:
+- rank of the best native-like pose;
+- symmetry-aware heavy-atom RMSD;
+- direct mapped heavy-atom RMSD;
+- centroid displacement;
+- Vinardo score;
+- score difference relative to mode 1;
+- number of heavy atoms;
+- whether a native-like pose was present in modes 1–5 and modes 1–20.
+
+INTERPRETATION RULE
+This protocol validates reproducible recovery of the crystallographic
+binding basin among the highest-ranked candidate poses.
+
+It does not establish that Vinardo reliably identifies the crystallographic
+orientation as mode 1, and it does not justify interpreting score
+differences as experimental binding free energies.
+
+PRODUCTION RULE
+PqsR production docking may begin only after the V3 multiseed validation
+criterion is satisfied.
+
+The PqsR production workflow must use:
+- the same receptor;
+- the same box;
+- Vinardo scoring;
+- the same exhaustiveness, number of modes, and energy range;
+- multiple independent seeds;
+- explicit orthosteric spatial filtering.
+
+Final production pose-selection and consensus-analysis rules must be frozen
+before inspection of production docking results.
+
+PROVENANCE
+All V1, V2, and V3 files must be retained.
+No earlier failed top-ranked validation may be retrospectively relabelled
+as successful.
+All commands, raw outputs, timing logs, software versions, RMSD tables,
+QC decisions, and SHA-256 checksums must be archived.

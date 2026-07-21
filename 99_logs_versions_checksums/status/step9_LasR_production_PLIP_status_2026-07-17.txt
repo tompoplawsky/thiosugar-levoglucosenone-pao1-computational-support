@@ -1,0 +1,59 @@
+STEP 9 — LasR production docking and PLIP closure status
+
+Date UTC: 2026-07-17T08:24:14.354661+00:00
+Status: CLOSED — TECHNICAL AND ANALYTICAL QC PASSED
+
+Receptor:
+- LasR, PDB 2UV0, prepared chain F
+- validated orthosteric redocking protocol
+- scoring function: Vinardo
+
+Production docking:
+- ligands: compound_08, compound_09, compound_11
+- independent seeds: 5 per ligand
+- retained modes: 20 per seed
+- completed runs: 15/15
+- failed runs: 0
+- pose files: 15
+- run logs: 15
+- time logs: 15
+- run records: 15
+
+Consensus classification:
+- compound_08: no orthosteric consensus; 0/100 qualifying poses
+- compound_09: no orthosteric consensus; 0/100 qualifying poses
+- compound_11: reproducible orthosteric structural hypothesis
+  - 10/100 orthosteric poses
+  - qualifying poses in 5/5 seeds
+  - two clusters, each represented in 5/5 seeds
+  - selected pose: run01_seed2026071661_mode06
+  - Vinardo score: -3.5860 kcal/mol
+  - OHN-reference centroid distance: 4.7025 A
+
+PLIP profile for selected compound_11 pose:
+- Ala127: hydrophobic interaction, 3.68 A
+- Asp65: ligand-donor hydrogen bond
+  - H-A: 3.12 A
+  - D-A: 4.02 A
+  - donor angle: 148.51 degrees
+- interpretation: sparse interaction network; Asp65 contact is geometrically marginal
+
+Scientific limitation:
+The result supports a reproducible orthosteric structural hypothesis for
+compound 11. It does not establish experimental binding affinity, direct
+target engagement, causality, or LasR as the exclusive biological target.
+
+PLIP input correction:
+A duplicate serial number in an intermediate, pre-analysis PDB assembly was
+detected before PLIP execution. The superseded intermediate is excluded from
+the validated final manifest. Docking coordinates and results were unaffected.
+
+Validated files in manifest: 96
+Manifest:
+99_logs_versions_checksums/checksums/sha256_step9_LasR_production_PLIP_2026-07-17.txt
+Manifest SHA-256:
+d7e7a3998fa7976c5a790eb4f65ff0d2b21fb9ae4819e0cd3e96162c93f5d5d8
+
+Next stage:
+PqsR 4JVI exploratory docking under the preregistered protocol, with explicit
+acknowledgement that formal PqsR redocking validation was not achieved.

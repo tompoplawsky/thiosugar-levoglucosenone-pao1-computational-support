@@ -1,0 +1,137 @@
+STEP 9 — LasR post hoc exploratory partial-pocket-engagement analysis
+======================================================================================
+
+Scientific status: POST HOC EXPLORATORY SENSITIVITY ANALYSIS
+This analysis does not replace the preregistered centroid-based result.
+
+Primary LasR result retained unchanged:
+- compound_08: 0/100 primary orthosteric poses
+- compound_09: 0/100 primary orthosteric poses
+- compound_11: reproducible primary orthosteric structural hypothesis
+
+Objective pocket definition:
+- receptor heavy atoms within 5.0 A of crystallographic OHN
+- pocket heavy atoms: 96
+- pocket residues: 26
+- residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, TYR56:F, TRP60:F, ARG61:F, TYR64:F, ALA70:F, ASP73:F, THR75:F, VAL76:F, CYS79:F, TRP88:F, TYR93:F, PHE101:F, ALA105:F, LEU110:F, THR115:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+
+Post hoc direct-engagement screen:
+- minimum ligand–OHN heavy-atom distance <= 5.0 A
+- at least 3 ligand heavy atoms within 4.0 A of pocket heavy atoms
+- at least 2 distinct pocket residues contacted within 4.0 A
+- recurrent exploratory signal: qualifying poses in >= 3/5 seeds
+
+====================================================================================================
+compound_08
+====================================================================================================
+Retained poses per run: 20 + 20 + 20 + 20 + 20 = 100
+Qualifying post hoc direct-engagement poses: 0/100
+Seeds with at least one qualifying pose: 0/5
+Post hoc recurrent signal: NO
+
+Best pocket-contacting pose in each run:
+run                           mode     score   centroid   min_OHN lig_atoms residues  qualifies
+run01_seed2026071641            11   -3.6330    13.7515    6.9140         1        1         NO
+    contacted pocket residues: ARG61:F
+run02_seed2026071642            12   -3.7550    13.9105    6.8737         2        1         NO
+    contacted pocket residues: VAL76:F
+run03_seed2026071643             6   -3.6360    13.5933    6.8720         1        1         NO
+    contacted pocket residues: ARG61:F
+run04_seed2026071644            18   -3.6310    14.6535    6.6245         1        1         NO
+    contacted pocket residues: VAL76:F
+run05_seed2026071645             2   -4.0270    13.7755    7.1127         1        1         NO
+    contacted pocket residues: ARG61:F
+
+No pose met the post hoc direct-engagement screen.
+
+====================================================================================================
+compound_09
+====================================================================================================
+Retained poses per run: 20 + 20 + 20 + 20 + 20 = 100
+Qualifying post hoc direct-engagement poses: 0/100
+Seeds with at least one qualifying pose: 0/5
+Post hoc recurrent signal: NO
+
+Best pocket-contacting pose in each run:
+run                           mode     score   centroid   min_OHN lig_atoms residues  qualifies
+run01_seed2026071651             6   -3.7160    13.8321    6.5815         2        2         NO
+    contacted pocket residues: VAL76:F, LEU125:F
+run02_seed2026071652             8   -3.7400    13.8364    6.5822         2        2         NO
+    contacted pocket residues: VAL76:F, LEU125:F
+run03_seed2026071653             8   -3.7000    13.1462    6.6748         2        1         NO
+    contacted pocket residues: VAL76:F
+run04_seed2026071654             6   -3.7230    13.8339    6.5743         2        2         NO
+    contacted pocket residues: VAL76:F, LEU125:F
+run05_seed2026071655             6   -3.7270    13.8326    6.5706         2        2         NO
+    contacted pocket residues: VAL76:F, LEU125:F
+
+No pose met the post hoc direct-engagement screen.
+
+====================================================================================================
+compound_11
+====================================================================================================
+Retained poses per run: 20 + 20 + 20 + 20 + 20 = 100
+Qualifying post hoc direct-engagement poses: 10/100
+Seeds with at least one qualifying pose: 5/5
+Post hoc recurrent signal: YES
+
+Best pocket-contacting pose in each run:
+run                           mode     score   centroid   min_OHN lig_atoms residues  qualifies
+run01_seed2026071661             7   -3.5770     4.2411    0.6022        15       16        YES
+    contacted pocket residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+run02_seed2026071662             7   -3.4660     4.2418    0.6036        15       16        YES
+    contacted pocket residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+run03_seed2026071663             6   -3.4650     4.2419    0.6033        15       16        YES
+    contacted pocket residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+run04_seed2026071664             6   -3.4640     4.2418    0.6033        15       16        YES
+    contacted pocket residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+run05_seed2026071665             7   -3.5790     4.2417    0.6036        15       16        YES
+    contacted pocket residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+
+Qualifying poses:
+  run01_seed2026071661 mode 06; score=-3.5860; centroid=4.7025 A; min_OHN=0.2669 A; contacting_ligand_atoms=14/16; pocket_residues=14
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F
+  run01_seed2026071661 mode 07; score=-3.5770; centroid=4.2411 A; min_OHN=0.6022 A; contacting_ligand_atoms=15/16; pocket_residues=16
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+  run02_seed2026071662 mode 05; score=-3.4720; centroid=4.7019 A; min_OHN=0.2676 A; contacting_ligand_atoms=14/16; pocket_residues=14
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F
+  run02_seed2026071662 mode 07; score=-3.4660; centroid=4.2418 A; min_OHN=0.6036 A; contacting_ligand_atoms=15/16; pocket_residues=16
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+  run03_seed2026071663 mode 05; score=-3.4730; centroid=4.7023 A; min_OHN=0.2669 A; contacting_ligand_atoms=14/16; pocket_residues=14
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F
+  run03_seed2026071663 mode 06; score=-3.4650; centroid=4.2419 A; min_OHN=0.6033 A; contacting_ligand_atoms=15/16; pocket_residues=16
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+  run04_seed2026071664 mode 05; score=-3.4700; centroid=4.7016 A; min_OHN=0.2674 A; contacting_ligand_atoms=14/16; pocket_residues=14
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F
+  run04_seed2026071664 mode 06; score=-3.4640; centroid=4.2418 A; min_OHN=0.6033 A; contacting_ligand_atoms=15/16; pocket_residues=16
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+  run05_seed2026071665 mode 06; score=-3.5840; centroid=4.7019 A; min_OHN=0.2676 A; contacting_ligand_atoms=14/16; pocket_residues=14
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F
+  run05_seed2026071665 mode 07; score=-3.5790; centroid=4.2417 A; min_OHN=0.6036 A; contacting_ligand_atoms=15/16; pocket_residues=16
+    residues: LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+
+Pocket residues contacted by qualifying poses, counted by independent seed:
+  LEU36:F: 5/5 seeds
+  GLY38:F: 5/5 seeds
+  LEU39:F: 5/5 seeds
+  LEU40:F: 5/5 seeds
+  TYR47:F: 5/5 seeds
+  ALA50:F: 5/5 seeds
+  ILE52:F: 5/5 seeds
+  ARG61:F: 5/5 seeds
+  TYR64:F: 5/5 seeds
+  THR75:F: 5/5 seeds
+  VAL76:F: 5/5 seeds
+  CYS79:F: 5/5 seeds
+  LEU125:F: 5/5 seeds
+  GLY126:F: 5/5 seeds
+  ALA127:F: 5/5 seeds
+  SER129:F: 5/5 seeds
+Recurrent contacted pocket residues (>=3/5 seeds): LEU36:F, GLY38:F, LEU39:F, LEU40:F, TYR47:F, ALA50:F, ILE52:F, ARG61:F, TYR64:F, THR75:F, VAL76:F, CYS79:F, LEU125:F, GLY126:F, ALA127:F, SER129:F
+
+====================================================================================================
+INTERPRETATION RESTRICTION
+====================================================================================================
+A positive result may support only a post hoc exploratory statement of partial pocket contact.
+It does not convert compounds 08 or 09 into primary orthosteric LasR poses and does not establish binding affinity or target engagement.
+PLIP should be considered only if a recurrent signal is present in at least 3/5 seeds.

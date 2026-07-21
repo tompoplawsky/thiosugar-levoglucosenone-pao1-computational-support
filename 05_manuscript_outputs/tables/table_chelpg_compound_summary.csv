@@ -1,0 +1,4 @@
+compound,formula,atoms,basis_dimension,scf_cycles,final_single_point_energy_Eh,runtime,chelpg_charge_sum_e,qc_status
+compound_08,C33H45N3O19S2,102,896,13,-3656.667412535902,0 days 0 hours 7 minutes 30 seconds 676 msec,0.000000030000,PASSED
+compound_09,C18H25N3O9S2,57,506,14,-2328.305165696908,0 days 0 hours 1 minutes 56 seconds 83 msec,-0.000000020000,PASSED
+compound_11,C8H9N3O3S2,25,250,14,-1491.084030226235,0 days 0 hours 0 minutes 23 seconds 847 msec,-0.000000010000,PASSED_WITH_DOCUMENTED_REFERENCE_DISCREPANCY

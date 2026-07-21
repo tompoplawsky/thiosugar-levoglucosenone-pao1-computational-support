@@ -1,0 +1,4 @@
+compound,repository_name,smiles_file,validated_smiles,formula,molecular_weight_g_mol,structural_class,validation_status
+8,compound_08,00_validated_inputs/ligands/compound_08/compound_08.smiles,"S=C(N)N/N=C1C[C@H](S[C@@H]2[C@H](OC(C)=O)[C@@H](OC(C)=O)[C@H](O[C@@H]3[C@H](OC(C)=O)[C@@H](OC(C)=O)[C@H](OC(C)=O)[C@@H](COC(C)=O)O3)[C@@H](COC(C)=O)O2)[C@@H]4O[C@H]/1OC4",C33H45N3O19S2,851.85,"peracetylated disaccharide thiosugar-levoglucosenone thiosemicarbazone","validated"
+9,compound_09,00_validated_inputs/ligands/compound_09/compound_09.smiles,"S=C(N)N/N=C1C[C@H](S[C@@H]2[C@H](OC(C)=O)[C@@H](OC(C)=O)[C@H](OC(C)=O)CO2)[C@@H]3O[C@H]/1OC3",C18H25N3O9S2,491.53,"peracetylated xylopyranose thiosugar-levoglucosenone thiosemicarbazone","validated"
+11,compound_11,00_validated_inputs/ligands/compound_11/compound_11.smiles,"O=C1C[C@H](N(N=C(N)S2)C2=S)[C@@H]3O[C@H]1OC3",C8H9N3O3S2,259.30,"rigid 1,3,4-thiadiazole aza-adduct","validated"

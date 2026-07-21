@@ -1,0 +1,20 @@
+STEP 9 — LasR/OHN redocking V2 Vinardo
+Start: 2026-07-16T18:36:03+02:00
+Host: tomasz-Precision-5820-Tower
+Working directory: /data/BIOFILM_INSILICO_SUPPORT
+Command: /usr/bin/vina --config /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/LasR_2UV0_OHN_redocking_v2_vinardo_2026-07-16.conf
+Vina version: AutoDock Vina v1.2.5
+
+Configuration SHA-256:
+ea02fe38d01331cb14db1648ad1d808ddf97dec88a59f6d05688b14d7c3726cf  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/LasR_2UV0_OHN_redocking_v2_vinardo_2026-07-16.conf
+
+Input SHA-256:
+6a1fd8cd00ea03726e3b0acbddbd5a92e7c5e8164b27c28ff4f354a890f0726e  /data/BIOFILM_INSILICO_SUPPORT/03_docking/receptors_pdbqt/LasR_2UV0.pdbqt
+a994f6d4e5ecc53d8be03c99103365865a9682a18e7e5a6c2b7f9c8d8a883e32  /data/BIOFILM_INSILICO_SUPPORT/03_docking/reference_ligands_pdbqt/LasR_2UV0_OHN_chainF_reference.pdbqt
+
+End: 2026-07-16T18:36:55+02:00
+
+Output SHA-256:
+29153d1fe4886f784b600edccff02762783af1921af94d9438bc993735278ad8  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/LasR_2UV0_OHN_v2_vinardo_2026-07-16/LasR_2UV0_OHN_redocking_v2_vinardo_poses.pdbqt
+4b7a7ba1b3231d41596caa463fb0da1a5530f4c13861a844647cbe8d0db1d3bb  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/LasR_2UV0_OHN_v2_vinardo_2026-07-16/LasR_2UV0_OHN_redocking_v2_vinardo_run.log
+a06904fb6bb4ada1a769e32dd889cf50ccdc454728dac59b7a5c0cb9e7e9b36e  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/LasR_2UV0_OHN_v2_vinardo_2026-07-16/LasR_2UV0_OHN_redocking_v2_vinardo_time.log

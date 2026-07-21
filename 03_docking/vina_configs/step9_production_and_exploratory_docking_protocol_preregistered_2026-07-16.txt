@@ -1,0 +1,234 @@
+STEP 9 — PREREGISTERED LIGAND DOCKING PROTOCOL
+Date: 2026-07-16
+Status: frozen before inspection of docking results for compounds 8, 9, or 11
+
+LIGANDS
+compound_08
+compound_09
+compound_11
+
+RECEPTOR-SPECIFIC STATUS
+
+LasR, PDB 2UV0:
+- redocking validation passed under the V2 Vinardo protocol;
+- OHN mode-1 heavy-atom RMSD: 0.6911 A;
+- docking of compounds 8, 9, and 11 is classified as validated production docking.
+
+PqsR/MvfR, PDB 4JVI:
+- V1, V2, V3, and confirmatory V4 redocking protocols did not satisfy
+  their preregistered protocol-level acceptance criteria;
+- the crystallographic QZN basin was sampled reproducibly but was not
+  ranked sufficiently consistently among the accepted highest-ranked poses;
+- docking of compounds 8, 9, and 11 is permitted only as exploratory
+  structural rationalization;
+- PqsR results must not be described as formally validated docking.
+
+SOFTWARE
+AutoDock Vina 1.2.5
+Scoring function: Vinardo
+CPU: 8
+Exhaustiveness: 64
+Number of modes: 20
+Energy range: 5 kcal/mol
+Verbosity: 2
+
+RECEPTORS
+
+LasR:
+03_docking/receptors_pdbqt/LasR_2UV0.pdbqt
+
+PqsR:
+03_docking/receptors_pdbqt/PqsR_4JVI.pdbqt
+
+LIGANDS
+
+03_docking/ligands_pdbqt/compound_08.pdbqt
+03_docking/ligands_pdbqt/compound_09.pdbqt
+03_docking/ligands_pdbqt/compound_11.pdbqt
+
+REFERENCE LIGANDS
+
+LasR:
+03_docking/reference_ligands_pdbqt/LasR_2UV0_OHN_chainF_reference.pdbqt
+
+PqsR:
+03_docking/reference_ligands_pdbqt/PqsR_4JVI_QZN_siteA_reference.pdbqt
+
+SEARCH BOXES
+
+LasR:
+center_x = 55.258
+center_y = 27.138
+center_z = 29.990
+size_x = 30.000
+size_y = 30.000
+size_z = 30.000
+
+PqsR:
+center_x = -33.489
+center_y = 56.865
+center_z = 9.100
+size_x = 30.000
+size_y = 30.000
+size_z = 30.000
+
+INDEPENDENT PRODUCTION SEEDS
+
+LasR / compound_08:
+2026071641
+2026071642
+2026071643
+2026071644
+2026071645
+
+LasR / compound_09:
+2026071651
+2026071652
+2026071653
+2026071654
+2026071655
+
+LasR / compound_11:
+2026071661
+2026071662
+2026071663
+2026071664
+2026071665
+
+PqsR / compound_08:
+2026071671
+2026071672
+2026071673
+2026071674
+2026071675
+
+PqsR / compound_09:
+2026071681
+2026071682
+2026071683
+2026071684
+2026071685
+
+PqsR / compound_11:
+2026071691
+2026071692
+2026071693
+2026071694
+2026071695
+
+SPATIAL ORTHOSTERIC FILTER
+
+For each reference ligand and docked pose:
+- hydrogen atoms are excluded;
+- calculate the unweighted geometric centroid of all heavy atoms;
+- calculate the Euclidean distance between the docked-ligand centroid and
+  the corresponding crystallographic reference-ligand centroid.
+
+A pose is classified as orthosteric only when:
+centroid distance <= 5.0 A.
+
+A pose with centroid distance > 5.0 A is classified as non-specific,
+surface-associated, or outside the validated reference region regardless
+of its Vinardo score.
+
+The same spatial rule applies to compounds 8, 9, and 11.
+No compound-specific exception will be introduced after inspecting results.
+
+POSE COLLECTION
+
+For every ligand-receptor pair:
+- perform five independent docking runs;
+- retain all 20 modes from every run;
+- preserve raw pose files and complete logs;
+- calculate score and reference-centroid distance for every mode;
+- exclude non-orthosteric poses before consensus analysis.
+
+CONSENSUS CLUSTERING
+
+Orthosteric poses from the five independent seeds will be clustered using:
+- heavy atoms only;
+- explicit identical atom correspondence within the same ligand;
+- direct coordinate RMSD in the fixed receptor coordinate frame;
+- no structural superposition before RMSD calculation;
+- clustering threshold: RMSD <= 2.0 A.
+
+A consensus cluster must contain poses from at least three of five
+independent seeds.
+
+POSE-SELECTION RULE
+
+If at least one consensus orthosteric cluster is present:
+1. select the cluster represented in the largest number of independent seeds;
+2. if tied, select the cluster with the more favourable median Vinardo score;
+3. if still tied, select the cluster with the lower median within-cluster RMSD;
+4. select the lowest-scoring pose within the chosen cluster as the
+   representative pose.
+
+If no orthosteric cluster is represented in at least three of five seeds:
+- no representative pose will be selected;
+- the ligand-receptor result will be classified as unstable or
+  non-reproducible under the protocol;
+- an isolated favourable-scoring pose will not be selected manually.
+
+REPORTING
+
+For each ligand-receptor pair report:
+- number of successful runs;
+- number of orthosteric poses;
+- ranks of orthosteric poses;
+- centroid distances from the crystallographic reference ligand;
+- consensus-cluster occupancy across seeds;
+- representative-pose rank and seed;
+- Vinardo score;
+- within-cluster RMSD distribution;
+- whether the result is reproducible under the consensus criterion.
+
+INTERPRETATION
+
+Vinardo scores are docking scores and must not be described as experimental
+binding free energies.
+
+Small score differences must not be used as proof of relative affinity.
+
+Scores must not be compared quantitatively between LasR and PqsR.
+
+LasR docking may be used as validated structural rationalization.
+
+PqsR docking must always be labelled exploratory because confirmatory
+redocking validation failed.
+
+PLIP
+
+PLIP analysis will be performed only for the selected representative
+orthosteric consensus pose.
+
+No PLIP profile will be generated for:
+- non-orthosteric poses;
+- isolated poses without consensus support;
+- manually selected alternative modes.
+
+MOLECULAR DYNAMICS
+
+Molecular dynamics, RMSD/RMSF trajectories, and MM-GBSA analyses are outside
+the scope of the current experimental manuscript and repository.
+
+They are reserved for a separate bioinformatics manuscript and will not be
+used to rescue or retrospectively validate the present docking results.
+
+PROVENANCE
+
+For every run retain:
+- configuration file;
+- exact command;
+- receptor and ligand paths;
+- seed and all docking parameters;
+- raw PDBQT output;
+- complete Vina log;
+- timing and resource log;
+- run record;
+- pose-level spatial analysis;
+- clustering analysis;
+- QC decision;
+- SHA-256 checksums.
+
+No existing validation or docking output may be overwritten.

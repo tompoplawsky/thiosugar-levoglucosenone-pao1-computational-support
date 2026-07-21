@@ -1,0 +1,136 @@
+STEP 9 — PQSR-SPECIFIC V4 CONFIRMATORY MULTISEED TOP-7 VALIDATION STATUS
+Date: 2026-07-16
+Receptor: PqsR/MvfR, PDB 4JVI
+Reference ligand: QZN, site A
+Software: AutoDock Vina 1.2.5
+Scoring function: Vinardo
+
+PREREGISTERED PROTOCOL
+03_docking/vina_configs/step9_PqsR_specific_validation_protocol_v4_confirmatory_multiseed_top7_preregistered_2026-07-16.txt
+
+PRIMARY ACCEPTANCE RULE
+A run is successful when at least one of modes 1-7 satisfies:
+- heavy-atom RMSD <= 2.0 A relative to crystallographic QZN;
+- centroid displacement <= 5.0 A.
+
+The protocol is validated when at least 8 of 10 independent runs pass.
+
+RUN RESULTS
+
+Run 01, seed 2026071621
+Best top-7 pose: mode 6
+Score: -6.097 kcal/mol
+Delta relative to mode 1: 0.608 kcal/mol
+Heavy-atom RMSD: 1.5096 A
+Centroid displacement: 0.9731 A
+Status: PASS
+
+Run 02, seed 2026071622
+Best top-7 pose: mode 5
+Score: -6.415 kcal/mol
+Delta relative to mode 1: 0.246 kcal/mol
+Heavy-atom RMSD: 3.0520 A
+Centroid displacement: 2.5031 A
+Status: FAIL
+
+Run 03, seed 2026071623
+Best top-7 pose: mode 7
+Score: -6.165 kcal/mol
+Delta relative to mode 1: 0.540 kcal/mol
+Heavy-atom RMSD: 1.6279 A
+Centroid displacement: 1.1981 A
+Status: PASS
+
+Run 04, seed 2026071624
+Best top-7 pose: mode 7
+Score: -6.194 kcal/mol
+Delta relative to mode 1: 0.487 kcal/mol
+Heavy-atom RMSD: 1.5201 A
+Centroid displacement: 1.0550 A
+Status: PASS
+
+Run 05, seed 2026071625
+Best top-7 pose: mode 6
+Score: -6.203 kcal/mol
+Delta relative to mode 1: 0.472 kcal/mol
+Heavy-atom RMSD: 1.5799 A
+Centroid displacement: 1.0958 A
+Status: PASS
+
+Run 06, seed 2026071626
+Best top-7 pose: mode 7
+Score: -6.320 kcal/mol
+Delta relative to mode 1: 0.446 kcal/mol
+Heavy-atom RMSD: 1.5931 A
+Centroid displacement: 1.1828 A
+Status: PASS
+
+Run 07, seed 2026071627
+Best top-7 pose: mode 3
+Score: -6.573 kcal/mol
+Delta relative to mode 1: 0.213 kcal/mol
+Heavy-atom RMSD: 2.9724 A
+Centroid displacement: 2.4866 A
+Status: FAIL
+
+Run 08, seed 2026071628
+Best top-7 pose: mode 6
+Score: -6.335 kcal/mol
+Delta relative to mode 1: 0.421 kcal/mol
+Heavy-atom RMSD: 2.7859 A
+Centroid displacement: 2.3247 A
+Status: FAIL
+
+Run 09, seed 2026071629
+Best top-7 pose: mode 7
+Score: -6.192 kcal/mol
+Delta relative to mode 1: 0.507 kcal/mol
+Heavy-atom RMSD: 2.6089 A
+Centroid displacement: 2.2171 A
+Status: FAIL
+
+Run 10, seed 2026071630
+Best top-7 pose: mode 6
+Score: -6.037 kcal/mol
+Delta relative to mode 1: 0.494 kcal/mol
+Heavy-atom RMSD: 1.5563 A
+Centroid displacement: 1.0667 A
+Status: PASS
+
+SUCCESSFUL RUNS: 6/10
+REQUIRED: 8/10
+
+OVERALL V4 STATUS: FAIL
+
+INTERPRETATION
+The crystallographic QZN binding basin was recovered within modes 1-7
+in 60% of independent confirmatory runs.
+
+Successful native-like poses had RMSD values from 1.5096 to 1.6279 A.
+The four failed runs produced near-site poses with RMSD values from
+2.6089 to 3.0520 A and centroid displacements from 2.2171 to 2.5031 A.
+
+The dominant mode-1 alternative basin remained highly reproducible.
+In most runs, mode 1 had approximately 10.5 A RMSD and approximately
+9.1 A centroid displacement relative to crystallographic QZN.
+
+The results indicate partial but insufficiently reproducible recovery of
+the crystallographic binding basin under the preregistered criterion.
+
+DECISION
+The PqsR V4 protocol is not formally validated.
+
+In accordance with the preregistered stop rule:
+- the accepted rank range will not be expanded;
+- the RMSD threshold will not be relaxed;
+- additional seeds will not be used to tune the acceptance result;
+- V4 will not be retrospectively relabelled as successful.
+
+For the current experimental manuscript, any PqsR docking may only be
+classified as exploratory structural rationalization and must explicitly
+state the redocking-validation limitation.
+
+LasR docking remains independently validated under the V2 Vinardo protocol.
+
+More advanced PqsR methodology, including ensemble approaches and molecular
+dynamics, is reserved for the separate bioinformatics manuscript.

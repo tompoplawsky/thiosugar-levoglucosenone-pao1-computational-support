@@ -1,0 +1,6 @@
+! wB97X-D3 def2-SVP CPCM(Water) TightSCF Freq
+%pal
+  nprocs 8
+end
+%maxcore 3000
+* xyzfile 0 1 ../inputs/compound_09_wb97xd3_def2svp_cpcm_water_opt.xyz

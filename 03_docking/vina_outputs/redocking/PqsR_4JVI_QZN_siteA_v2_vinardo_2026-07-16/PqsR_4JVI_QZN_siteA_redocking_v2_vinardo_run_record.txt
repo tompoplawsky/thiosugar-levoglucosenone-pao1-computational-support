@@ -1,0 +1,20 @@
+STEP 9 — PqsR/QZN redocking V2 Vinardo
+Start: 2026-07-16T18:49:30+02:00
+Host: tomasz-Precision-5820-Tower
+Working directory: /data/BIOFILM_INSILICO_SUPPORT
+Command: /usr/bin/vina --config /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/PqsR_4JVI_QZN_siteA_redocking_v2_vinardo_2026-07-16.conf
+Vina version: AutoDock Vina v1.2.5
+
+Configuration SHA-256:
+1152e462ef72ae9ea3fea68fe01f12206e2e05800c1e67ce17196d6a6a145fde  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/PqsR_4JVI_QZN_siteA_redocking_v2_vinardo_2026-07-16.conf
+
+Input SHA-256:
+d68f6175df926ecf9353d6e043eccba0e05c72c6b950787b53387c88ad7e8955  /data/BIOFILM_INSILICO_SUPPORT/03_docking/receptors_pdbqt/PqsR_4JVI.pdbqt
+4b7891c94ccb4a7c3bc16a19db414238b640c3a2f3f3306306ae0ae596ef3f6c  /data/BIOFILM_INSILICO_SUPPORT/03_docking/reference_ligands_pdbqt/PqsR_4JVI_QZN_siteA_reference.pdbqt
+
+End: 2026-07-16T18:50:13+02:00
+
+Output SHA-256:
+ca38fd474b48e87370215e3454f1a808c1588caa2174de350b88053e97278cde  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/PqsR_4JVI_QZN_siteA_v2_vinardo_2026-07-16/PqsR_4JVI_QZN_siteA_redocking_v2_vinardo_poses.pdbqt
+fbcf84efa75ca4c49111d76f6d1a1095cab2102db1be27a8089c3d6ade7dc447  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/PqsR_4JVI_QZN_siteA_v2_vinardo_2026-07-16/PqsR_4JVI_QZN_siteA_redocking_v2_vinardo_run.log
+c91d1570172217413e74b42d4ca077b92024803f176244ce4b19fb767b42ee7d  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/PqsR_4JVI_QZN_siteA_v2_vinardo_2026-07-16/PqsR_4JVI_QZN_siteA_redocking_v2_vinardo_time.log

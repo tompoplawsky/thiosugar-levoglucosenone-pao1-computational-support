@@ -1,0 +1,24 @@
+LasR–compound_11 PLIP complex construction record
+
+Date UTC: 2026-07-17T05:23:45.439689+00:00
+Receptor source: 00_validated_inputs/receptors/LasR_2UV0/LasR_2UV0_prepared_chainF.pdb
+Ligand source: 03_docking/vina_outputs/production/LasR_2UV0_2026-07-16/selected_representative/compound_11_LasR_2UV0_consensus_cluster1_run01_mode06.pdbqt
+Output complex: 03_docking/plip_inputs/LasR_2UV0_2026-07-17/LasR_2UV0_compound_11_consensus_complex.pdb
+
+Receptor atom count: 1295
+Ligand atom count: 18
+Ligand heavy-atom count: 16
+Ligand residue identifier: L11 Z 901
+
+Coordinates:
+- receptor coordinates copied unchanged from prepared chain F PDB
+- ligand coordinates copied unchanged from selected docking pose
+- PDBQT charges and AutoDock atom types were not written into the PDB
+- ligand bond perception will be performed by PLIP/Open Babel
+
+Minimum receptor–ligand heavy-atom distance: 2.6997 A
+Receptor–ligand heavy-atom pairs <= 4.0 A: 57
+
+Receptor SHA-256: 44b8b4ce2d4590b695e30908e9b7bc28c4a9e476b87c2710bd7e9d08ad4371e2
+Ligand SHA-256: 211eb4d80bd5fc75d8cdc55f6506c9681305d1c8ca47e72fa559146e33d32623
+Complex SHA-256: 7b6b748bd149fc5ea2cbe03dc2fb326a66c51e08109159e8a13e90b4ffd81cd3

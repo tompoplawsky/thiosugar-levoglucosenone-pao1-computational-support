@@ -1,0 +1,11 @@
+COMMAND:
+/usr/bin/time -v -o /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_08_cluster1_medoid/plip_time.log /home/tomasz/miniforge3/bin/conda run -n plip_env plip -f /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_inputs/PqsR_4JVI_2026-07-17/final/PqsR_4JVI_compound_08_cluster1_medoid_complex_FINAL.pdb -o /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_08_cluster1_medoid -x -t --nofix
+
+STDOUT:
+
+STDERR:
+2026-07-17 18:30:29,008 [INFO] [plipcmd.py:151] plip.plipcmd: Protein-Ligand Interaction Profiler (PLIP) 3.0.0
+2026-07-17 18:30:29,009 [INFO] [plipcmd.py:152] plip.plipcmd: brought to you by: PharmAI GmbH (2020-2021) - www.pharm.ai - hello@pharm.ai
+2026-07-17 18:30:29,009 [INFO] [plipcmd.py:153] plip.plipcmd: please cite: Schake,P. Bolz,SN. et al. PLIP 2025: introducing protein–protein interactions to the protein–ligand interaction profiler. Nucl. Acids Res. (10 May 2025), gkaf361. doi: 10.1093/nar/gkaf361
+2026-07-17 18:30:29,009 [INFO] [plipcmd.py:70] plip.plipcmd: starting analysis of PqsR_4JVI_compound_08_cluster1_medoid_complex_FINAL.pdb
+2026-07-17 18:30:29,203 [INFO] [plipcmd.py:188] plip.plipcmd: finished analysis, find the result files in /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_08_cluster1_medoid/

@@ -1,0 +1,10 @@
+! wB97X-D3 def2-SVP CPCM(Water) TightSCF Freq MOREAD
+%pal
+  nprocs 8
+end
+%maxcore 3000
+%moinp "../inputs/compound_08_wb97xd3_def2svp_cpcm_water_restart_cycle80_carthess_opt.gbw"
+%freq
+  Temp 298.15
+end
+* xyzfile 0 1 ../geometries/compound_08_wb97xd3_def2svp_cpcm_water_opt_min.xyz

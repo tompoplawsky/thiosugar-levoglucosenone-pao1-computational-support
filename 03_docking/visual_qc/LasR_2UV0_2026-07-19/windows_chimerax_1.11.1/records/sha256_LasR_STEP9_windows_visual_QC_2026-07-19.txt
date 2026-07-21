@@ -1,0 +1,2 @@
+a4cc99a68d5f8eeca67ec49d4797a660bb638e877c34a32fa4294478e0b1556c  03_docking/visual_qc/LasR_2UV0_2026-07-19/windows_chimerax_1.11.1/sessions/LasR_STEP9_compound_11_QC_session.cxs
+26669f70db5ae53110d6da777708c0db6842dbe0e689239f5897e0e243df0435  03_docking/visual_qc/LasR_2UV0_2026-07-19/windows_chimerax_1.11.1/images/final/LasR_STEP9_compound_11_publication_view.png

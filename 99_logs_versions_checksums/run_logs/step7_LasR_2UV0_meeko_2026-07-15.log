@@ -1,0 +1,9 @@
+COMMAND:
+/home/tomasz/miniforge3/envs/docking_env/bin/mk_prepare_receptor.py --read_pdb /tmp/tmp.EwA2xYYxbf/out/LasR_2UV0_working.pdb -p /tmp/tmp.EwA2xYYxbf/out/LasR_2UV0.pdbqt --charge_model gasteiger --blunt_ends F:5=0,F:168=2
+
+STDOUT:
+
+Files written:
+/tmp/tmp.EwA2xYYxbf/out/LasR_2UV0.pdbqt <-- static (i.e., rigid) receptor input file
+
+STDERR:

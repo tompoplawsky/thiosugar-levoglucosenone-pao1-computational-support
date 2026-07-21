@@ -1,0 +1,59 @@
+STEP 9 — REDOCKING VALIDATION V2 VINARDO STATUS
+Date: 2026-07-16
+Software: AutoDock Vina 1.2.5
+Scoring function: Vinardo
+Protocol:
+03_docking/vina_configs/step9_redocking_protocol_v2_vinardo_preregistered_2026-07-16.txt
+
+PRIMARY ACCEPTANCE CRITERION
+Top-ranked pose mode 1 must have symmetry-aware heavy-atom RMSD <= 2.0 A
+relative to the crystallographic reference pose.
+
+LASR / OHN
+Run:
+03_docking/vina_outputs/redocking/LasR_2UV0_OHN_v2_vinardo_2026-07-16
+
+Mode 1 Vinardo score: -7.683 kcal/mol
+Mode 1 direct mapped heavy-atom RMSD: 0.6911 A
+Mode 1 centroid displacement: 0.3053 A
+Heavy atoms: 21
+
+Because the direct mapped atom correspondence already gives RMSD < 2.0 A,
+the symmetry-aware RMSD cannot be higher than this value.
+
+LASR V2 STATUS: PASS
+
+PQSR / QZN
+Run:
+03_docking/vina_outputs/redocking/PqsR_4JVI_QZN_siteA_v2_vinardo_2026-07-16
+
+Mode 1 Vinardo score: -6.776 kcal/mol
+Mode 1 direct mapped heavy-atom RMSD: 10.5434 A
+Mode 1 centroid displacement: 9.0772 A
+Heavy atoms: 22
+
+Best native-like pose observed:
+Mode 5 Vinardo score: -6.151 kcal/mol
+Mode 5 direct mapped heavy-atom RMSD: 1.5289 A
+Mode 5 centroid displacement: 1.1173 A
+
+Score difference mode 1 versus mode 5:
+0.625 kcal/mol in favour of the incorrect mode 1.
+
+The mode 1 centroid displacement of 9.0772 A is a lower bound on its RMSD.
+Consequently, chemically equivalent atom permutations cannot reduce the
+mode 1 RMSD below the 2.0 A acceptance threshold.
+
+PQSR V2 STATUS: FAIL
+
+INTERPRETATION
+Protocol V2 sampled a native-like QZN pose but ranked it fifth.
+The failure therefore concerns global pose ranking rather than complete
+failure to sample the crystallographic binding basin.
+
+OVERALL V2 VALIDATION STATUS: FAIL
+
+DECISION
+Production docking of compounds 8, 9, and 11 remains prohibited.
+No V1 or V2 pose is reclassified post hoc as a successful top-ranked result.
+All V1 and V2 outputs must be preserved.

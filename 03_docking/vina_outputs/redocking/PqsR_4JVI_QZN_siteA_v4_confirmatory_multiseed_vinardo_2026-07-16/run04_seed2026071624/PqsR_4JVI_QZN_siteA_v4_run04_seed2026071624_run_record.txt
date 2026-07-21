@@ -1,0 +1,23 @@
+STEP 9 — PqsR/QZN confirmatory redocking V4 multiseed Vinardo
+Run: run04_seed2026071624
+Seed: 2026071624
+Start: 2026-07-16T20:37:42+02:00
+Host: tomasz-Precision-5820-Tower
+Working directory: /data/BIOFILM_INSILICO_SUPPORT
+Command: /usr/bin/vina --config /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/PqsR_4JVI_QZN_siteA_v4_vinardo_run04_seed2026071624.conf
+Vina version: AutoDock Vina v1.2.5
+
+Configuration SHA-256:
+13133da30d74272bcf9f187d7f784b6b7e361dd09507f77ca20d965e3accf337  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/PqsR_4JVI_QZN_siteA_v4_vinardo_run04_seed2026071624.conf
+
+Input SHA-256:
+d68f6175df926ecf9353d6e043eccba0e05c72c6b950787b53387c88ad7e8955  /data/BIOFILM_INSILICO_SUPPORT/03_docking/receptors_pdbqt/PqsR_4JVI.pdbqt
+4b7891c94ccb4a7c3bc16a19db414238b640c3a2f3f3306306ae0ae596ef3f6c  /data/BIOFILM_INSILICO_SUPPORT/03_docking/reference_ligands_pdbqt/PqsR_4JVI_QZN_siteA_reference.pdbqt
+
+End: 2026-07-16T20:38:26+02:00
+Exit status: 0
+
+Output SHA-256:
+2a089e6c12aab5444f74b5c0ee27d27b2d7f650308adaacc1c538b14fdba5c26  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/PqsR_4JVI_QZN_siteA_v4_confirmatory_multiseed_vinardo_2026-07-16/run04_seed2026071624/PqsR_4JVI_QZN_siteA_v4_run04_seed2026071624_poses.pdbqt
+e2ddf240cec17acb96c6b3bd8721f681e9e31848f0121deccef9d758e3b87992  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/PqsR_4JVI_QZN_siteA_v4_confirmatory_multiseed_vinardo_2026-07-16/run04_seed2026071624/PqsR_4JVI_QZN_siteA_v4_run04_seed2026071624_run.log
+51785c36eb8b7af7287b3d294ffff0b5a279a0124474f615ab3b84be9def7941  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/redocking/PqsR_4JVI_QZN_siteA_v4_confirmatory_multiseed_vinardo_2026-07-16/run04_seed2026071624/PqsR_4JVI_QZN_siteA_v4_run04_seed2026071624_time.log

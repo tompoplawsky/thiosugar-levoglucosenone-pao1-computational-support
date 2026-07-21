@@ -1,0 +1,227 @@
+COMMAND:
+mk_prepare_ligand.py -i /data/BIOFILM_INSILICO_SUPPORT/03_docking/ligand_preparation/compound_08_final_qm_topology.sdf -o /data/BIOFILM_INSILICO_SUPPORT/03_docking/ligand_preparation/compound_08.pdbqt --charge_model gasteiger --add_index_map --rename_atoms -r [C;X3](=[N;X2]-[N;X3]-[C;X3](=[S;X1])-[N;X3]) -b 2 3 -v
+
+STDOUT:
+Molecule Setup
+
+==============[ ATOMS ]===================================================
+idx  |          coords            | charge |ign| atype    | connections
+-----+----------------------------+--------+---+----------+--------------- . . . 
+   0 |   10.551    3.550    0.815 | -0.040 | 0 | S        | [1]
+   1 |    9.688    2.380   -0.037 |  0.184 | 0 | C        | [0, 2, 3]
+   2 |   10.243    1.493   -0.857 | -0.375 | 0 | N        | [1, 57, 58]
+   3 |    8.331    2.320    0.092 | -0.254 | 0 | N        | [1, 4, 59]
+   4 |    7.634    1.323   -0.504 | -0.177 | 0 | NA       | [3, 5]
+   5 |    6.362    1.318   -0.407 |  0.095 | 0 | C        | [4, 6, 54]
+   6 |    5.555    0.189   -0.977 |  0.076 | 0 | C        | [5, 7, 60, 61]
+   7 |    4.571   -0.336    0.092 |  0.087 | 0 | C        | [6, 8, 52, 62]
+   8 |    3.189   -1.130   -0.792 | -0.120 | 0 | SA       | [7, 9]
+   9 |    2.468   -2.111    0.571 |  0.221 | 0 | C        | [8, 10, 63, 51]
+  10 |    1.456   -3.137    0.036 |  0.259 | 0 | C        | [9, 11, 15, 64]
+  11 |    1.952   -3.869   -1.069 | -0.455 | 0 | OA       | [10, 12]
+  12 |    2.831   -4.860   -0.827 |  0.303 | 0 | C        | [11, 13, 14]
+  13 |    3.264   -5.519   -2.099 |  0.139 | 0 | C        | [12, 65, 66, 67]
+  14 |    3.207   -5.135    0.285 | -0.253 | 0 | OA       | [12]
+  15 |    0.182   -2.446   -0.422 |  0.252 | 0 | C        | [10, 16, 20, 68]
+  16 |   -0.804   -3.425   -0.722 | -0.456 | 0 | OA       | [15, 17]
+  17 |   -1.079   -3.699   -2.011 |  0.303 | 0 | C        | [16, 18, 19]
+  18 |   -2.174   -4.714   -2.120 |  0.139 | 0 | C        | [17, 69, 70, 71]
+  19 |   -0.511   -3.169   -2.933 | -0.253 | 0 | OA       | [17]
+  20 |   -0.388   -1.530    0.653 |  0.199 | 0 | C        | [15, 21, 45, 72]
+  21 |   -1.394   -0.724    0.072 | -0.339 | 0 | OA       | [20, 22]
+  22 |   -2.719   -1.098    0.299 |  0.296 | 0 | C        | [21, 23, 73, 44]
+  23 |   -3.576   -0.644   -0.880 |  0.277 | 0 | C        | [22, 24, 28, 74]
+  24 |   -3.046   -1.132   -2.100 | -0.453 | 0 | OA       | [23, 25]
+  25 |   -3.909   -1.655   -3.002 |  0.303 | 0 | C        | [24, 26, 27]
+  26 |   -3.257   -1.824   -4.338 |  0.139 | 0 | C        | [25, 75, 76, 77]
+  27 |   -5.052   -1.924   -2.737 | -0.253 | 0 | OA       | [25]
+  28 |   -3.646    0.874   -0.954 |  0.266 | 0 | C        | [23, 29, 33, 78]
+  29 |   -4.556    1.188   -2.001 | -0.454 | 0 | OA       | [28, 30]
+  30 |   -4.305    2.246   -2.793 |  0.303 | 0 | C        | [29, 31, 32]
+  31 |   -5.378    2.405   -3.826 |  0.139 | 0 | C        | [30, 79, 80, 81]
+  32 |   -3.348    2.965   -2.649 | -0.253 | 0 | OA       | [30]
+  33 |   -4.131    1.430    0.378 |  0.253 | 0 | C        | [28, 34, 38, 82]
+  34 |   -3.977    2.844    0.405 | -0.455 | 0 | OA       | [33, 35]
+  35 |   -5.019    3.626    0.068 |  0.303 | 0 | C        | [34, 36, 37]
+  36 |   -4.637    5.073    0.112 |  0.139 | 0 | C        | [35, 83, 84, 85]
+  37 |   -6.097    3.186   -0.244 | -0.253 | 0 | OA       | [35]
+  38 |   -3.260    0.884    1.513 |  0.204 | 0 | C        | [33, 39, 44, 86]
+  39 |   -3.754    1.290    2.885 |  0.269 | 0 | C        | [38, 40, 87, 88]
+  40 |   -5.089    0.838    3.080 | -0.463 | 0 | OA       | [39, 41]
+  41 |   -5.302   -0.252    3.836 |  0.302 | 0 | C        | [40, 42, 43]
+  42 |   -6.746   -0.656    3.797 |  0.139 | 0 | C        | [41, 89, 90, 91]
+  43 |   -4.434   -0.813    4.457 | -0.253 | 0 | OA       | [41]
+  44 |   -3.223   -0.534    1.477 | -0.338 | 0 | OA       | [38, 22]
+  45 |    0.705   -0.610    1.204 |  0.190 | 0 | C        | [20, 46, 51, 92]
+  46 |    0.264    0.135    2.449 |  0.267 | 0 | C        | [45, 47, 93, 94]
+  47 |    1.090    1.271    2.683 | -0.463 | 0 | OA       | [46, 48]
+  48 |    0.764    2.414    2.058 |  0.302 | 0 | C        | [47, 49, 50]
+  49 |    1.776    3.489    2.307 |  0.139 | 0 | C        | [48, 95, 96, 97]
+  50 |   -0.218    2.521    1.363 | -0.253 | 0 | OA       | [48]
+  51 |    1.854   -1.352    1.573 | -0.354 | 0 | OA       | [45, 9]
+  52 |    4.128    0.834    0.998 |  0.161 | 0 | C        | [7, 53, 98, 56]
+  53 |    4.191    2.040    0.239 | -0.340 | 0 | OA       | [52, 54]
+  54 |    5.543    2.368    0.349 |  0.298 | 0 | C        | [53, 55, 5, 99]
+  55 |    5.831    2.281    1.721 | -0.344 | 0 | OA       | [54, 56]
+  56 |    5.101    1.138    2.169 |  0.197 | 0 | C        | [55, 52, 100, 101]
+  57 |    9.665    0.799   -1.322 |  0.159 | 0 | HD       | [2]
+  58 |   11.246    1.492   -0.983 |  0.159 | 0 | HD       | [2]
+  59 |    7.911    2.927    0.794 |  0.193 | 0 | HD       | [3]
+  60 |    6.214   -0.608   -1.345 |  0.000 | 1 | H        | [6]
+  61 |    4.980    0.579   -1.834 |  0.000 | 1 | H        | [6]
+  62 |    5.056   -1.110    0.707 |  0.000 | 1 | H        | [7]
+  63 |    3.294   -2.641    1.064 |  0.000 | 1 | H        | [9]
+  64 |    1.227   -3.825    0.865 |  0.000 | 1 | H        | [10]
+  65 |    3.853   -4.799   -2.686 |  0.000 | 1 | H        | [13]
+  66 |    3.875   -6.400   -1.874 |  0.000 | 1 | H        | [13]
+  67 |    2.386   -5.798   -2.698 |  0.000 | 1 | H        | [13]
+  68 |    0.384   -1.852   -1.326 |  0.000 | 1 | H        | [15]
+  69 |   -3.099   -4.298   -1.695 |  0.000 | 1 | H        | [18]
+  70 |   -2.333   -4.982   -3.171 |  0.000 | 1 | H        | [18]
+  71 |   -1.914   -5.606   -1.534 |  0.000 | 1 | H        | [18]
+  72 |   -0.802   -2.142    1.474 |  0.000 | 1 | H        | [20]
+  73 |   -2.803   -2.187    0.426 |  0.000 | 1 | H        | [22]
+  74 |   -4.587   -1.049   -0.733 |  0.000 | 1 | H        | [23]
+  75 |   -3.138   -0.826   -4.787 |  0.000 | 1 | H        | [26]
+  76 |   -2.257   -2.265   -4.229 |  0.000 | 1 | H        | [26]
+  77 |   -3.890   -2.442   -4.984 |  0.000 | 1 | H        | [26]
+  78 |   -2.656    1.290   -1.190 |  0.000 | 1 | H        | [28]
+  79 |   -5.576    1.443   -4.319 |  0.000 | 1 | H        | [31]
+  80 |   -6.301    2.720   -3.318 |  0.000 | 1 | H        | [31]
+  81 |   -5.082    3.164   -4.558 |  0.000 | 1 | H        | [31]
+  82 |   -5.187    1.165    0.531 |  0.000 | 1 | H        | [33]
+  83 |   -4.180    5.315    1.081 |  0.000 | 1 | H        | [36]
+  84 |   -3.884    5.257   -0.669 |  0.000 | 1 | H        | [36]
+  85 |   -5.518    5.698   -0.066 |  0.000 | 1 | H        | [36]
+  86 |   -2.248    1.304    1.382 |  0.000 | 1 | H        | [38]
+  87 |   -3.095    0.867    3.655 |  0.000 | 1 | H        | [39]
+  88 |   -3.764    2.384    2.968 |  0.000 | 1 | H        | [39]
+  89 |   -6.998   -0.984    2.778 |  0.000 | 1 | H        | [42]
+  90 |   -6.925   -1.472    4.505 |  0.000 | 1 | H        | [42]
+  91 |   -7.384    0.205    4.036 |  0.000 | 1 | H        | [42]
+  92 |    0.958    0.113    0.406 |  0.000 | 1 | H        | [45]
+  93 |    0.384   -0.517    3.323 |  0.000 | 1 | H        | [46]
+  94 |   -0.784    0.440    2.367 |  0.000 | 1 | H        | [46]
+  95 |    1.366    4.461    2.011 |  0.000 | 1 | H        | [49]
+  96 |    2.666    3.270    1.697 |  0.000 | 1 | H        | [49]
+  97 |    2.081    3.498    3.362 |  0.000 | 1 | H        | [49]
+  98 |    3.106    0.698    1.361 |  0.000 | 1 | H        | [52]
+  99 |    5.719    3.393   -0.011 |  0.000 | 1 | H        | [54]
+ 100 |    5.778    0.297    2.384 |  0.000 | 1 | H        | [56]
+ 101 |    4.554    1.407    3.083 |  0.000 | 1 | H        | [56]
+-----+----------------------------+--------+---+----------+--------------- . . . 
+  TOT CHARGE: 0.000
+
+==============[ BONDS ]================
+  (0, 1) -  index1: 0, index2: 1, rotatable: False, breakable: False, canon_id: (0, 1)
+  (1, 2) -  index1: 1, index2: 2, rotatable: False, breakable: False, canon_id: (1, 2)
+  (1, 3) -  index1: 1, index2: 3, rotatable: False, breakable: False, canon_id: (1, 3)
+ (2, 57) -  index1: 2, index2: 57, rotatable: False, breakable: False, canon_id: (2, 57)
+ (2, 58) -  index1: 2, index2: 58, rotatable: False, breakable: False, canon_id: (2, 58)
+  (3, 4) -  index1: 3, index2: 4, rotatable: False, breakable: False, canon_id: (3, 4)
+ (3, 59) -  index1: 3, index2: 59, rotatable: False, breakable: False, canon_id: (3, 59)
+  (4, 5) -  index1: 4, index2: 5, rotatable: False, breakable: False, canon_id: (4, 5)
+  (5, 6) -  index1: 5, index2: 6, rotatable: False, breakable: False, canon_id: (5, 6)
+  (6, 7) -  index1: 6, index2: 7, rotatable: False, breakable: False, canon_id: (6, 7)
+ (6, 60) -  index1: 6, index2: 60, rotatable: False, breakable: False, canon_id: (6, 60)
+ (6, 61) -  index1: 6, index2: 61, rotatable: False, breakable: False, canon_id: (6, 61)
+  (7, 8) -  index1: 7, index2: 8, rotatable: True, breakable: False, canon_id: (7, 8)
+ (7, 52) -  index1: 7, index2: 52, rotatable: False, breakable: False, canon_id: (7, 52)
+ (7, 62) -  index1: 7, index2: 62, rotatable: False, breakable: False, canon_id: (7, 62)
+  (8, 9) -  index1: 8, index2: 9, rotatable: True, breakable: False, canon_id: (8, 9)
+ (9, 10) -  index1: 9, index2: 10, rotatable: False, breakable: False, canon_id: (9, 10)
+ (9, 63) -  index1: 9, index2: 63, rotatable: False, breakable: False, canon_id: (9, 63)
+(10, 11) -  index1: 10, index2: 11, rotatable: True, breakable: False, canon_id: (10, 11)
+(10, 15) -  index1: 10, index2: 15, rotatable: False, breakable: False, canon_id: (10, 15)
+(10, 64) -  index1: 10, index2: 64, rotatable: False, breakable: False, canon_id: (10, 64)
+(11, 12) -  index1: 11, index2: 12, rotatable: True, breakable: False, canon_id: (11, 12)
+(12, 13) -  index1: 12, index2: 13, rotatable: False, breakable: False, canon_id: (12, 13)
+(12, 14) -  index1: 12, index2: 14, rotatable: False, breakable: False, canon_id: (12, 14)
+(13, 65) -  index1: 13, index2: 65, rotatable: False, breakable: False, canon_id: (13, 65)
+(13, 66) -  index1: 13, index2: 66, rotatable: False, breakable: False, canon_id: (13, 66)
+(13, 67) -  index1: 13, index2: 67, rotatable: False, breakable: False, canon_id: (13, 67)
+(15, 16) -  index1: 15, index2: 16, rotatable: True, breakable: False, canon_id: (15, 16)
+(15, 20) -  index1: 15, index2: 20, rotatable: False, breakable: False, canon_id: (15, 20)
+(15, 68) -  index1: 15, index2: 68, rotatable: False, breakable: False, canon_id: (15, 68)
+(16, 17) -  index1: 16, index2: 17, rotatable: True, breakable: False, canon_id: (16, 17)
+(17, 18) -  index1: 17, index2: 18, rotatable: False, breakable: False, canon_id: (17, 18)
+(17, 19) -  index1: 17, index2: 19, rotatable: False, breakable: False, canon_id: (17, 19)
+(18, 69) -  index1: 18, index2: 69, rotatable: False, breakable: False, canon_id: (18, 69)
+(18, 70) -  index1: 18, index2: 70, rotatable: False, breakable: False, canon_id: (18, 70)
+(18, 71) -  index1: 18, index2: 71, rotatable: False, breakable: False, canon_id: (18, 71)
+(20, 21) -  index1: 20, index2: 21, rotatable: True, breakable: False, canon_id: (20, 21)
+(20, 45) -  index1: 20, index2: 45, rotatable: False, breakable: False, canon_id: (20, 45)
+(20, 72) -  index1: 20, index2: 72, rotatable: False, breakable: False, canon_id: (20, 72)
+(21, 22) -  index1: 21, index2: 22, rotatable: True, breakable: False, canon_id: (21, 22)
+(22, 23) -  index1: 22, index2: 23, rotatable: False, breakable: False, canon_id: (22, 23)
+(22, 73) -  index1: 22, index2: 73, rotatable: False, breakable: False, canon_id: (22, 73)
+(23, 24) -  index1: 23, index2: 24, rotatable: True, breakable: False, canon_id: (23, 24)
+(23, 28) -  index1: 23, index2: 28, rotatable: False, breakable: False, canon_id: (23, 28)
+(23, 74) -  index1: 23, index2: 74, rotatable: False, breakable: False, canon_id: (23, 74)
+(24, 25) -  index1: 24, index2: 25, rotatable: True, breakable: False, canon_id: (24, 25)
+(25, 26) -  index1: 25, index2: 26, rotatable: False, breakable: False, canon_id: (25, 26)
+(25, 27) -  index1: 25, index2: 27, rotatable: False, breakable: False, canon_id: (25, 27)
+(26, 75) -  index1: 26, index2: 75, rotatable: False, breakable: False, canon_id: (26, 75)
+(26, 76) -  index1: 26, index2: 76, rotatable: False, breakable: False, canon_id: (26, 76)
+(26, 77) -  index1: 26, index2: 77, rotatable: False, breakable: False, canon_id: (26, 77)
+(28, 29) -  index1: 28, index2: 29, rotatable: True, breakable: False, canon_id: (28, 29)
+(28, 33) -  index1: 28, index2: 33, rotatable: False, breakable: False, canon_id: (28, 33)
+(28, 78) -  index1: 28, index2: 78, rotatable: False, breakable: False, canon_id: (28, 78)
+(29, 30) -  index1: 29, index2: 30, rotatable: True, breakable: False, canon_id: (29, 30)
+(30, 31) -  index1: 30, index2: 31, rotatable: False, breakable: False, canon_id: (30, 31)
+(30, 32) -  index1: 30, index2: 32, rotatable: False, breakable: False, canon_id: (30, 32)
+(31, 79) -  index1: 31, index2: 79, rotatable: False, breakable: False, canon_id: (31, 79)
+(31, 80) -  index1: 31, index2: 80, rotatable: False, breakable: False, canon_id: (31, 80)
+(31, 81) -  index1: 31, index2: 81, rotatable: False, breakable: False, canon_id: (31, 81)
+(33, 34) -  index1: 33, index2: 34, rotatable: True, breakable: False, canon_id: (33, 34)
+(33, 38) -  index1: 33, index2: 38, rotatable: False, breakable: False, canon_id: (33, 38)
+(33, 82) -  index1: 33, index2: 82, rotatable: False, breakable: False, canon_id: (33, 82)
+(34, 35) -  index1: 34, index2: 35, rotatable: True, breakable: False, canon_id: (34, 35)
+(35, 36) -  index1: 35, index2: 36, rotatable: False, breakable: False, canon_id: (35, 36)
+(35, 37) -  index1: 35, index2: 37, rotatable: False, breakable: False, canon_id: (35, 37)
+(36, 83) -  index1: 36, index2: 83, rotatable: False, breakable: False, canon_id: (36, 83)
+(36, 84) -  index1: 36, index2: 84, rotatable: False, breakable: False, canon_id: (36, 84)
+(36, 85) -  index1: 36, index2: 85, rotatable: False, breakable: False, canon_id: (36, 85)
+(38, 39) -  index1: 38, index2: 39, rotatable: True, breakable: False, canon_id: (38, 39)
+(38, 44) -  index1: 38, index2: 44, rotatable: False, breakable: False, canon_id: (38, 44)
+(38, 86) -  index1: 38, index2: 86, rotatable: False, breakable: False, canon_id: (38, 86)
+(39, 40) -  index1: 39, index2: 40, rotatable: True, breakable: False, canon_id: (39, 40)
+(39, 87) -  index1: 39, index2: 87, rotatable: False, breakable: False, canon_id: (39, 87)
+(39, 88) -  index1: 39, index2: 88, rotatable: False, breakable: False, canon_id: (39, 88)
+(40, 41) -  index1: 40, index2: 41, rotatable: True, breakable: False, canon_id: (40, 41)
+(41, 42) -  index1: 41, index2: 42, rotatable: False, breakable: False, canon_id: (41, 42)
+(41, 43) -  index1: 41, index2: 43, rotatable: False, breakable: False, canon_id: (41, 43)
+(42, 89) -  index1: 42, index2: 89, rotatable: False, breakable: False, canon_id: (42, 89)
+(42, 90) -  index1: 42, index2: 90, rotatable: False, breakable: False, canon_id: (42, 90)
+(42, 91) -  index1: 42, index2: 91, rotatable: False, breakable: False, canon_id: (42, 91)
+(22, 44) -  index1: 44, index2: 22, rotatable: False, breakable: False, canon_id: (22, 44)
+(45, 46) -  index1: 45, index2: 46, rotatable: True, breakable: False, canon_id: (45, 46)
+(45, 51) -  index1: 45, index2: 51, rotatable: False, breakable: False, canon_id: (45, 51)
+(45, 92) -  index1: 45, index2: 92, rotatable: False, breakable: False, canon_id: (45, 92)
+(46, 47) -  index1: 46, index2: 47, rotatable: True, breakable: False, canon_id: (46, 47)
+(46, 93) -  index1: 46, index2: 93, rotatable: False, breakable: False, canon_id: (46, 93)
+(46, 94) -  index1: 46, index2: 94, rotatable: False, breakable: False, canon_id: (46, 94)
+(47, 48) -  index1: 47, index2: 48, rotatable: True, breakable: False, canon_id: (47, 48)
+(48, 49) -  index1: 48, index2: 49, rotatable: False, breakable: False, canon_id: (48, 49)
+(48, 50) -  index1: 48, index2: 50, rotatable: False, breakable: False, canon_id: (48, 50)
+(49, 95) -  index1: 49, index2: 95, rotatable: False, breakable: False, canon_id: (49, 95)
+(49, 96) -  index1: 49, index2: 96, rotatable: False, breakable: False, canon_id: (49, 96)
+(49, 97) -  index1: 49, index2: 97, rotatable: False, breakable: False, canon_id: (49, 97)
+ (9, 51) -  index1: 51, index2: 9, rotatable: False, breakable: False, canon_id: (9, 51)
+(52, 53) -  index1: 52, index2: 53, rotatable: False, breakable: False, canon_id: (52, 53)
+(52, 98) -  index1: 52, index2: 98, rotatable: False, breakable: False, canon_id: (52, 98)
+(53, 54) -  index1: 53, index2: 54, rotatable: False, breakable: False, canon_id: (53, 54)
+(54, 55) -  index1: 54, index2: 55, rotatable: False, breakable: False, canon_id: (54, 55)
+ (5, 54) -  index1: 54, index2: 5, rotatable: False, breakable: False, canon_id: (5, 54)
+(54, 99) -  index1: 54, index2: 99, rotatable: False, breakable: False, canon_id: (54, 99)
+(55, 56) -  index1: 55, index2: 56, rotatable: False, breakable: False, canon_id: (55, 56)
+(52, 56) -  index1: 56, index2: 52, rotatable: False, breakable: False, canon_id: (52, 56)
+(56, 100) -  index1: 56, index2: 100, rotatable: False, breakable: False, canon_id: (56, 100)
+(56, 101) -  index1: 56, index2: 101, rotatable: False, breakable: False, canon_id: (56, 101)
+
+Input molecules processed: 1, skipped: 0
+PDBQT files written: 1
+PDBQT files not written due to error: 0
+Input molecules with errors: 0
+
+STDERR:

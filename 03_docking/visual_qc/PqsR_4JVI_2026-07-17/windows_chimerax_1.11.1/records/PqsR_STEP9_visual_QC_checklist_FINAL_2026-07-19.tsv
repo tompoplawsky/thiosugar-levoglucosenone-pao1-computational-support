@@ -1,0 +1,16 @@
+compound	check	result	observation
+11	ligand connectivity	PASS	single chemically connected ligand; no broken topology
+11	gross steric clash	PASS	no obvious severe receptor interpenetration
+11	pose location	PASS	compact chain-A pose in the QZN-defined binding region
+11	key interaction context	PASS	PLIP: Leu197 and Leu207; recurrent pocket contacts include Ile149, Leu208, Phe221 and Ile236
+11	Tyr258 hypothesis	PASS	selected cluster-1 pose does not support a Tyr258 interaction
+09	ligand connectivity	PASS	single chemically connected ligand; no broken topology
+09	gross steric clash	PASS	no obvious severe receptor interpenetration
+09	pose location	PASS	recurrent partially inserted, pocket-proximal orientation; not compact orthosteric
+09	interprotomer context	PASS	contacts with chains A and B are spatially plausible
+08	ligand connectivity	PASS	single chemically connected ligand; no broken topology
+08	gross steric clash	PASS	no obvious severe receptor interpenetration
+08	pose location	PASS	recurrent partial insertion; most molecular bulk remains outside the compact QZN-defined cavity
+08	interprotomer context	PASS	broad surface/interface contacts with chains A and B are spatially plausible
+08,09	PLIP salt-bridge chemistry	PASS	Lys266–carboxylate assignments rejected as functional-group perception artifacts because both ligands are formally neutral acetyl esters
+all	supervised Windows/ChimeraX visual QC	PASS	final sessions and selected publication-style PNG images archived and checksum-verified

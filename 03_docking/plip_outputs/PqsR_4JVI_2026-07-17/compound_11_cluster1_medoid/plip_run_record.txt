@@ -1,0 +1,132 @@
+PLIP RUN RECORD — PqsR / compound_11
+
+Date started UTC:
+2026-07-17T16:30:25.504038+00:00
+
+Date finished UTC:
+2026-07-17T16:30:26.735784+00:00
+
+Scientific status:
+EXPLORATORY ONLY
+
+Formal receptor-specific PqsR redocking validation:
+not achieved
+
+Classification:
+compact orthosteric-like exploratory PqsR medoid
+
+Input:
+03_docking/plip_inputs/PqsR_4JVI_2026-07-17/final/PqsR_4JVI_compound_11_cluster1_medoid_complex_FINAL.pdb
+
+Input SHA-256:
+d3b5a0ef5f0da72a367d502dd3f2195383afdba155f6f18ca1dad2837f249801
+
+Output directory:
+03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid
+
+Command:
+plip -f INPUT -o OUTDIR -x -t --nofix
+
+Executed command:
+/usr/bin/time -v -o /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/plip_time.log /home/tomasz/miniforge3/bin/conda run -n plip_env plip -f /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_inputs/PqsR_4JVI_2026-07-17/final/PqsR_4JVI_compound_11_cluster1_medoid_complex_FINAL.pdb -o /data/BIOFILM_INSILICO_SUPPORT/03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid -x -t --nofix
+
+Conda packages:
+openbabel                    3.1.1            py312hbfe4552_9       conda-forge
+plip                         3.0.0            pyhcf101f3_0          conda-forge
+python                       3.12.13          hd63d673_0_cpython    conda-forge
+
+PLIP banner:
+usage: PLIP [-h] (-f INPUT [INPUT ...] | -i PDBID [PDBID ...])
+            [-o OUTPATH | -O] [--rawstring] [-v] [-q] [-s] [-p] [-x] [-t] [-z]
+            [--name OUTPUTFILENAME] [-y] [--maxthreads MAXTHREADS]
+            [--breakcomposite] [--altlocation] [--nofix] [--nofixfile]
+            [--nopdbcanmap] [--dnareceptor]
+            [--peptides PEPTIDES [PEPTIDES ...]] [--intra INTRA] [--keepmod]
+            [--nohydro] [--model MODEL] [--chains CHAINS] [--regions REGIONS]
+
+The Protein-Ligand Interaction Profiler (PLIP) Version 3.0.0 is a command-line
+based tool to analyze interactions in a protein-ligand complex. If you are
+using PLIP in your work, please cite: Schake,P. Bolz,SN. et al. PLIP 2025:
+introducing protein–protein interactions to the protein–ligand interaction
+profiler. Nucl. Acids Res. (10 May 2025), gkaf361. doi: 10.1093/nar/gkaf361
+Supported and maintained by: PharmAI GmbH (2020-2021) - www.pharm.ai -
+hello@pharm.ai
+
+options:
+  -h, --help            show this help message and exit
+  -f INPUT [INPUT ...], --file INPUT [INPUT ...]
+                        Set input file, '-' reads from stdin
+  -i PDBID [PDBID ...], --input PDBID [PDBID ...]
+  -o OUTPATH, --out OUTPATH
+  -O, --stdout          Write to stdout instead of file
+  --rawstring           Use Python raw strings for stdin
+  -v, --verbose         Turn on verbose mode
+  -q, --quiet           Turn on quiet mode
+  -s, --silent          Turn on silent mode
+  -p, --pics            Additional pictures
+  -x, --xml             Generate report file in XML format
+  -t, --txt             Generate report file in TXT (RST) format
+  -z, --gzip            XML and TXT report files will be gzip compressed.
+  --name OUTPUTFILENAME
+                        Set a filename for the report TXT and XML files.
+  -y, --pymol           Additional PyMOL session files
+  --maxthreads MAXTHREADS
+                        Set maximum number of main threads (number of binding
+                        sites processed simultaneously).If not set, PLIP uses
+                        all available CPUs if possible.
+  --breakcomposite      Don't combine ligand fragments with covalent bonds but
+                        treat them as single ligands for the analysis.
+  --altlocation         Also consider alternate locations for atoms (e.g.
+                        alternate conformations).
+  --nofix               Turns off fixing of PDB files.
+  --nofixfile           Turns off writing files for fixed PDB files.
+  --nopdbcanmap         Turns off calculation of mapping between canonical and
+                        PDB atom order for ligands.
+  --dnareceptor         Treat nucleic acids as part of the receptor structure
+                        (together with any present protein) instead of as a
+                        ligand.
+  --peptides PEPTIDES [PEPTIDES ...], --inter PEPTIDES [PEPTIDES ...]
+                        Allows to define one or multiple chains as peptide
+                        ligands or to detect inter-chain contacts
+  --intra INTRA         Allows to define one chain to analyze intra-chain
+                        contacts.
+  --keepmod             Keep modified residues as ligands
+  --nohydro             Do not add polar hydrogens in case your structure
+                        already contains hydrogens.
+  --model MODEL         Model number to be used for multi-model structures.
+  --chains CHAINS       Specify chains as receptor/ligand groups, e.g.,
+                        '[['A'], ['B']]'. Use format [['A'], ['B', 'C']] to
+                        define A as receptor, and B, C as ligands.
+  --regions REGIONS     Specify protein regions as receptor/ligand groups by
+                        chain and residue numbers. e.g., ({A: 1-20, 25, 26,
+                        28}, {A: 54-63, B: 17-46}) to define residues1-20, 25,
+                        26, and 28 of chain A as ligand and residues 54-63 of
+                        chain A and residues17-46 of chain B as receptor.
+                        Defining a receptor is optional. Multiple ligand-
+                        receptorpairs can be parsed as a list of tuples [({A:
+                        1-20}, {B: 17-46}), ({C: 5-43}, {D: 7})].
+
+Open Babel binary banner:
+Open Babel 3.1.0 -- Nov 30 2023 -- 20:44:30
+
+Outputs:
+- 03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/PqsR_4JVI_compound_11_cluster1_medoid_complex_FINAL_report.xml
+- 03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/PqsR_4JVI_compound_11_cluster1_medoid_complex_FINAL_report.txt
+- 03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/PqsR_4JVI_compound_11_cluster1_medoid_complex_FINAL_protonated.pdb
+- 03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/plip_stdout_stderr.log
+- 03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/plip_time.log
+
+Output SHA-256:
+- 0f50e251e3d2a59191fe548a2282c483b7e8a8147c10de4e7a06856473b54eeb  03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/PqsR_4JVI_compound_11_cluster1_medoid_complex_FINAL_report.xml
+- 2916a2ab5e1c0aab9cc7cc4af8cb061e24ef2be4a27ba5ef8b577690b641d2e1  03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/PqsR_4JVI_compound_11_cluster1_medoid_complex_FINAL_report.txt
+- 5cbc5b13ffca0296985b823898259c67c84e82d02089a67cb377a7680a0a9a9c  03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/PqsR_4JVI_compound_11_cluster1_medoid_complex_FINAL_protonated.pdb
+- 6e525707f5dbaec6ea169d88223cabedfffbc5d1a4acdfc66877df7a3c06b6de  03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/plip_stdout_stderr.log
+- 363f3a86b3ec41912929d23c0419a3baa5dd0154d29343ae23c1bbac5dddcf15  03_docking/plip_outputs/PqsR_4JVI_2026-07-17/compound_11_cluster1_medoid/plip_time.log
+
+Interpretation restriction:
+PLIP interactions are descriptive geometric/chemical assignments for an
+exploratory docking pose. They do not establish experimental binding affinity,
+direct PqsR target engagement, or causal inhibition of quorum sensing.
+
+Status:
+PASS

@@ -1,0 +1,4 @@
+compound,source_tool,access_date,source_raw_file,source_raw_sha256,formula_reported,mw_reported,tpsa_a2,hba,hbd,rotatable_bonds,consensus_logp,esol_logs,esol_class,gi_absorption,bbb_permeant,pgp_substrate,cyp1a2_inhibitor,cyp2c19_inhibitor,cyp2c9_inhibitor,cyp2d6_inhibitor,cyp3a4_inhibitor
+compound_08,SwissADME,2026-07-02,swissadme_08.csv,787e248d1ec8600350ced4fcc007850e8a1f90fc48ec8d81bcb210249f68526c,C33H45N3O19S2,851.85,338.05,20,2,22,-0.83,-3.15,Soluble,Low,No,Yes,n/d,n/d,n/d,n/d,n/d
+compound_09,SwissADME,2026-07-02,swissadme_09.csv,56b3bb9e03492e83b87286728617866578495739faa79e47ab6b8cadb65ed012,C18H25N3O9S2,491.54,214.39,10,2,10,-0.29,-2.00,Soluble,Low,No,Yes,n/d,n/d,n/d,n/d,n/d
+compound_11,SwissADME,2026-07-02,swissadme_11.csv,eecc9e66eb9d0ee9dd4683fc9f771ab54ff57588528f40a23bd38689e99e9af1,C8H9N3O3S2,259.31,139.70,4,1,1,-0.26,-2.27,Soluble,High,No,No,n/d,n/d,n/d,n/d,n/d

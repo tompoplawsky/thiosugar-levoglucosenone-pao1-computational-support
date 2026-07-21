@@ -1,0 +1,41 @@
+LasR–compound_11 PLIP input correction note
+
+Date UTC: 2026-07-17T05:58:40.344971+00:00
+
+Issue detected:
+The intermediate complex file
+LasR_2UV0_compound_11_consensus_complex.pdb
+contained a duplicate PDB serial number:
+- receptor TER record: 1296
+- first ligand HETATM record: 1296
+
+Cause:
+A custom assembly script independently assigned both records as
+maximum receptor atom serial + 1.
+
+Scope:
+This was a post-docking PDB serialization error confined to the
+intermediate PLIP input. It did not affect:
+- receptor or ligand docking coordinates
+- Vinardo scores
+- orthosteric classification
+- RMSD clustering
+- consensus-pose selection
+
+Downstream impact:
+PLIP had not been run on the affected file. No interaction results
+require correction or repetition.
+
+Corrective action:
+- the intermediate complex is superseded and must not be used for PLIP
+- the ligand was re-exported from the selected PDBQT pose using Meeko 0.7.1
+- the Meeko export audit passed
+- molecular formula: C8H9N3O3S2
+- formal charge: 0
+- heavy atoms: 16
+- maximum heavy-atom coordinate displacement: 0.000000 A
+- the final complex will use unique PDB serial numbers and validated
+  ligand connectivity derived from the Meeko-reconstructed structure
+
+Status:
+Correction pathway validated; final corrected PLIP complex still to be generated.

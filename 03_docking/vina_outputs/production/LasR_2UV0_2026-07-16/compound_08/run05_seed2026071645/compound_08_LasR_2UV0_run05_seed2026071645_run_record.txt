@@ -1,0 +1,23 @@
+STEP 9 — LasR production docking
+Configuration: /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/production_LasR_2026-07-16/compound_08_LasR_2UV0_run05_seed2026071645.conf
+Ligand: /data/BIOFILM_INSILICO_SUPPORT/03_docking/ligands_pdbqt/compound_08.pdbqt
+Seed: 2026071645
+Start: 2026-07-16T23:10:31+02:00
+Host: tomasz-Precision-5820-Tower
+Command: /usr/bin/vina --config /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/production_LasR_2026-07-16/compound_08_LasR_2UV0_run05_seed2026071645.conf
+Vina version: AutoDock Vina v1.2.5
+
+Configuration SHA-256:
+d389c5a310f9b28c1ae8efc2970be0b6907f681fabc98fb451137a7d4bed4d66  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/production_LasR_2026-07-16/compound_08_LasR_2UV0_run05_seed2026071645.conf
+
+Input SHA-256:
+6a1fd8cd00ea03726e3b0acbddbd5a92e7c5e8164b27c28ff4f354a890f0726e  /data/BIOFILM_INSILICO_SUPPORT/03_docking/receptors_pdbqt/LasR_2UV0.pdbqt
+90df2d2cde9e14914cfcf6662beb886ac41cf86d3c2aa94421958f141a17a428  /data/BIOFILM_INSILICO_SUPPORT/03_docking/ligands_pdbqt/compound_08.pdbqt
+
+End: 2026-07-16T23:26:59+02:00
+Exit status: 0
+
+Output SHA-256:
+8ed627a100beb072cc79cf24ee094457bd0c44e5bbb5b8b8ed92062fdb3e44f5  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/production/LasR_2UV0_2026-07-16/compound_08/run05_seed2026071645/compound_08_LasR_2UV0_run05_seed2026071645_poses.pdbqt
+96afc4db64346d2dd3c0efa5140b56039c13e5c797cbb6b7d1515b7fb3509e16  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/production/LasR_2UV0_2026-07-16/compound_08/run05_seed2026071645/compound_08_LasR_2UV0_run05_seed2026071645_run.log
+527f8c1108442d72fa4c161b332095bd51675e8b827a29f8c6075fa26b41fc2e  /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/production/LasR_2UV0_2026-07-16/compound_08/run05_seed2026071645/compound_08_LasR_2UV0_run05_seed2026071645_time.log

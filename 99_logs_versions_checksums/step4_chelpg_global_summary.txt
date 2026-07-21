@@ -1,0 +1,32 @@
+STEP 4 — GLOBAL CHELPG SUMMARY
+date: 2026-07-14
+software: ORCA 6.1.1 RELEASE
+method: RHF/6-31G* single-point CHELPG
+scf: TightSCF
+phase: gas
+solvent_model: none
+chelpg_grid_angstrom: 0.3
+chelpg_rmax_angstrom: 2.8
+chelpg_vdwradii: COSMO radii only; no COSMO solvation model
+chelpg_dipole_constraint: false
+total_charge: 0
+multiplicity: 1
+compounds_completed: 3
+full_atomic_charge_rows: 184
+mapped_pharmacophoric_atom_rows: 52
+strict_pharmacophoric_heteroatom_rows: 46
+
+compound_08: atoms=102; basis_functions=896; scf_cycles=13; qc_status=PASSED
+compound_09: atoms=57; basis_functions=506; scf_cycles=14; qc_status=PASSED
+compound_11: atoms=25; basis_functions=250; scf_cycles=14; qc_status=PASSED_WITH_DOCUMENTED_REFERENCE_DISCREPANCY
+
+compound_11 validated CHELPG mapping:
+N-4 (ORCA atom 4): +0.31321861 e
+N-3 (ORCA atom 5): -0.45537399 e
+exocyclic amino N (ORCA atom 7): -0.95315983 e
+Historical N-4 value approximately -1.087 e was not reproduced.
+Its provenance remains unresolved and it is not a QC target.
+
+Compounds 08 and 09 in the current workflow contain the complete thiosemicarbazone connectivity C=N-NH-C(=S)-NH2.
+All current Step 4 calculations used the validated N3 structures.
+global_qc_status: PASSED

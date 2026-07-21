@@ -1,0 +1,30 @@
+STEP 9 software versions
+Recorded UTC: 2026-07-19T17:37:20.799521+00:00
+
+AutoDock Vina:
+  AutoDock Vina v1.2.5
+
+docking_env Python/RDKit/Meeko/NumPy/SciPy/Gemmi:
+  Python 3.12.13
+  RDKit 2025.09.5
+  Meeko 0.7.1
+  NumPy 2.4.3
+  SciPy 1.17.1
+  Gemmi 0.7.5
+
+Open Babel binary:
+  Open Babel 3.1.0 -- Nov 30 2023 -- 20:44:30
+
+PLIP Python package:
+  PLIP 3.0.0
+
+Docking scoring function: Vinardo
+CPU threads: 8
+Exhaustiveness: 64
+Number of modes: 20
+Energy range: 5 kcal/mol
+Production seeds: explicitly recorded per run
+PLIP execution environment: plip_env
+Visual QC: UCSF ChimeraX 1.11.1 (Windows; recorded in QC closure records)
+Operating system: Linux-6.17.0-40-generic-x86_64-with-glibc2.39
+Python used to generate closure: 3.13.12

@@ -1,0 +1,112 @@
+STEP 9 — PqsR 4JVI exploratory docking analysis addendum
+
+Date: 2026-07-17
+Status: preregistered before production docking results were generated or inspected
+
+SCOPE
+
+Docking of compounds 08, 09, and 11 to PqsR/MvfR 4JVI is exploratory.
+Formal PqsR redocking validation was not achieved. No result from this
+analysis may be described as validated docking, demonstrated target
+engagement, binding affinity, or proof of biological mechanism.
+
+DOCKING PARAMETERS
+
+The frozen docking parameters remain unchanged:
+- receptor: PqsR_4JVI
+- crystallographic reference ligand: QZN, site A
+- scoring function: Vinardo
+- box centre: -33.489, 56.865, 9.100 A
+- box dimensions: 30 x 30 x 30 A
+- exhaustiveness: 64
+- num_modes: 20
+- energy_range: 5 kcal/mol
+- CPUs: 8
+- independent seeds: 5 per ligand
+- all generated modes retained
+
+PRIMARY PREREGISTERED ANALYSIS
+
+A pose is classified as orthosteric only when its unweighted heavy-atom
+centroid is no more than 5.0 A from the crystallographic QZN heavy-atom
+centroid.
+
+Primary consensus clustering:
+- direct fixed-frame heavy-atom RMSD
+- no structural superposition
+- RMSD threshold: 2.0 A
+- consensus occupancy: at least 3 of 5 independent seeds
+
+The primary result remains the principal spatial classification and will
+not be relaxed retrospectively.
+
+SECONDARY EXTENDED EXPLORATORY ANALYSIS
+
+Because PqsR docking is explicitly hypothesis-generating, a secondary
+sensitivity analysis will also examine pocket-proximal poses.
+
+A pose qualifies for extended exploratory review when at least one of the
+following conditions is met:
+
+1. ligand heavy-atom centroid distance from QZN is greater than 5.0 A but
+   no more than 8.0 A; or
+
+2. the pose directly engages the crystallographic QZN pocket:
+   - pocket residues are defined objectively as receptor residues having
+     at least one heavy atom within 5.0 A of crystallographic QZN;
+   - at least one ligand heavy atom lies within 4.0 A of a heavy atom from
+     this predefined pocket-residue set;
+   - minimum ligand-to-QZN heavy-atom distance is no more than 5.0 A.
+
+Extended exploratory clustering:
+- direct fixed-frame heavy-atom RMSD
+- no structural superposition
+- RMSD threshold: 2.5 A
+- recurrent exploratory motif: poses represented in at least 2 of 5 seeds
+- a pose represented in only 1 of 5 seeds is classified as isolated and
+  non-reproducible
+
+SELECTION RULES FOR AN EXTENDED EXPLORATORY MOTIF
+
+If one or more recurrent pocket-proximal clusters are present:
+
+1. select the cluster represented in the largest number of seeds;
+2. if tied, select the cluster with the more favourable median Vinardo score;
+3. if still tied, select the cluster with the lower median within-cluster RMSD;
+4. select the lowest-scoring pose within that cluster as the representative.
+
+PLIP may be applied only to:
+- a primary orthosteric consensus pose; or
+- a recurrent extended exploratory pocket-proximal motif represented in
+  at least 2 of 5 seeds.
+
+Any PLIP result from the second category must be labelled:
+"exploratory pocket-proximal interaction profile".
+
+REPORTING RESTRICTIONS
+
+Permitted wording:
+- exploratory docking
+- orthosteric-like pose
+- pocket-proximal pose
+- recurrent exploratory motif
+- structural hypothesis
+- interaction pattern consistent with possible pocket engagement
+
+Prohibited wording:
+- validated PqsR binding
+- confirmed PqsR inhibitor
+- experimentally determined affinity
+- proven direct target
+- causal mechanism established by docking
+
+Vinardo scores must not be compared quantitatively between LasR and PqsR.
+The wet-lab phenotype establishes biological activity but does not identify
+PqsR as the direct molecular target.
+
+FUTURE WORK
+
+Formal receptor-specific validation, explicit-solvent molecular dynamics,
+binding-pose stability, water-mediated contacts, and free-energy analysis
+are outside the current manuscript and are reserved for the separate
+bioinformatics/MD study.

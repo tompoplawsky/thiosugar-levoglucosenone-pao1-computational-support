@@ -1,0 +1,82 @@
+PqsR–compound_08 final PLIP complex construction record
+
+Date UTC:
+2026-07-17T14:10:13.910943+00:00
+
+Scientific status:
+EXPLORATORY ONLY
+
+Formal receptor-specific PqsR redocking validation:
+not achieved
+
+Classification:
+recurrent partially inserted exploratory PqsR medoid; bulk of ligand outside the QZN-defined cavity
+
+Inputs:
+- receptor: 00_validated_inputs/receptors/PqsR_4JVI/PqsR_4JVI_prepared_dimer_AB.pdb
+- selected docking pose: 03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/selected_representatives_final/compound_08_PqsR_4JVI_cluster1_medoid_run01_mode15.pdbqt
+- Meeko-reconstructed ligand: 03_docking/plip_inputs/PqsR_4JVI_2026-07-17/meeko_export_audit/compound_08_PqsR_4JVI_cluster1_medoid_run01_mode15_meeko.sdf
+
+Output:
+- final PLIP complex: 03_docking/plip_inputs/PqsR_4JVI_2026-07-17/final/PqsR_4JVI_compound_08_cluster1_medoid_complex_FINAL.pdb
+
+Selected representative:
+- run: run01_seed2026071671
+- mode: 15
+- Vinardo score: -2.2480 kcal/mol
+- QZN centroid distance: 9.4680 A
+
+Ligand validation:
+- formula: C33H45N3O19S2
+- formal charge: 0
+- total atoms: 102
+- heavy atoms: 57
+- heavy-atom elements: {'C': 33, 'N': 3, 'O': 19, 'S': 2}
+- bonds: 105
+- bond-type counts: {'DOUBLE': 9, 'SINGLE': 96}
+
+Coordinate validation:
+- maximum SDF-to-PDB atom displacement: 0.000812 A
+- RMS SDF-to-PDB atom displacement: 0.000342 A
+- minimum receptor-ligand heavy-atom distance: 2.1989 A
+- minimum receptor-ligand all-atom distance: 1.1823 A
+
+PDB serialization:
+- receptor atoms: 3196
+- chain A atoms: 1598
+- chain A atom serial range: 1-1598
+- chain A TER serial: 1599
+- chain B atoms: 1598
+- chain B atom serial range: 1600-3197
+- chain B TER serial: 3198
+- ligand atoms: 102
+- ligand atom serial range: 3199-3300
+- ligand TER serial: 3301
+- ligand CONECT records: 102
+- duplicate coordinate/TER serials: none
+- coordinate/TER serial sequence: contiguous 1-3301
+
+Software:
+- RDKit: 2025.09.5
+- Open Babel: Open Babel 3.1.0 -- Nov 30 2023 -- 20:44:30
+- Meeko export source: Meeko 0.7.1
+
+Open Babel conversion stdout:
+[empty]
+
+Open Babel conversion stderr:
+1 molecule converted
+
+SHA-256:
+- receptor: 8c34a5c0054a7ed7c6c33ad09088b3e3f6abb1715281aa65003c3f664b2f537f
+- selected PDBQT: ee7814ef1046cd1945d4666935418797d48c00672627e873390ab2010112b91e
+- ligand SDF: 97b35c2af8ac8ee90a702c8e5c882acf5623a8d5327eac841caf1f40c1df0d4c
+- final complex: 2f1640a4389ae0b67fe3aefa41e3c2938379fe5a06e5a7f7da62657cffd391b2
+
+Interpretation restriction:
+This complex is an exploratory structural hypothesis prepared for PLIP.
+It does not establish binding affinity, direct PqsR target engagement,
+or causal inhibition of quorum sensing.
+
+Status:
+PASS

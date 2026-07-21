@@ -1,0 +1,16 @@
+! HF 6-31G* TightSCF CHELPG
+
+%pal
+  nprocs 8
+end
+
+%maxcore 3000
+
+%chelpg
+  grid 0.3
+  rmax 2.8
+  dipole false
+  vdwradii cosmo
+end
+
+* xyzfile 0 1 /data/BIOFILM_INSILICO_SUPPORT/01_qm_orca_xtb/compound_11/geometries/compound_11_wb97xd3_def2svp_cpcm_water_minimum.xyz

@@ -1,0 +1,28 @@
+PLIP RUN RECORD
+Date UTC: 2026-07-17T06:04:49+00:00
+Input: 03_docking/plip_inputs/LasR_2UV0_2026-07-17/final/LasR_2UV0_compound_11_consensus_complex_FINAL.pdb
+Input SHA-256: f2dab66d61f25a77b4280e0f4c40c73fe8442186245fb78bc912f9fe3244e739
+
+Conda packages:
+openbabel                    3.1.1            py312hbfe4552_9       conda-forge
+plip                         3.0.0            pyhcf101f3_0          conda-forge
+python                       3.12.13          hd63d673_0_cpython    conda-forge
+
+PLIP banner:
+usage: PLIP [-h] (-f INPUT [INPUT ...] | -i PDBID [PDBID ...])
+            [-o OUTPATH | -O] [--rawstring] [-v] [-q] [-s] [-p] [-x] [-t] [-z]
+            [--name OUTPUTFILENAME] [-y] [--maxthreads MAXTHREADS]
+            [--breakcomposite] [--altlocation] [--nofix] [--nofixfile]
+            [--nopdbcanmap] [--dnareceptor]
+            [--peptides PEPTIDES [PEPTIDES ...]] [--intra INTRA] [--keepmod]
+            [--nohydro] [--model MODEL] [--chains CHAINS] [--regions REGIONS]
+
+The Protein-Ligand Interaction Profiler (PLIP) Version 3.0.0 is a command-line
+based tool to analyze interactions in a protein-ligand complex. If you are
+using PLIP in your work, please cite: Schake,P. Bolz,SN. et al. PLIP 2025:
+introducing protein–protein interactions to the protein–ligand interaction
+
+Open Babel binary banner:
+Open Babel 3.1.0 -- Nov 30 2023 -- 20:44:30
+
+Command: plip -f INPUT -o OUTDIR -x -t --nofix

@@ -1,0 +1,28 @@
+compound,target,prediction,probability,source_tool,access_date,source_raw_file,source_raw_sha256
+compound_08,Hepatotoxicity,Inactive,0.57,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_08,Neurotoxicity,Inactive,0.59,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_08,Nephrotoxicity,Active,0.65,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_08,Respiratory toxicity,Active,0.69,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_08,Cardiotoxicity,Inactive,0.52,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_08,Carcinogenicity,Active,0.51,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_08,Immunotoxicity,Inactive,0.91,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_08,Mutagenicity,Active,0.51,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_08,Cytotoxicity,Inactive,0.70,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_08.csv,c3f0de129e02245ba095ccf3a08e3a47efd2b239096582d35c7a1b8c6bc60966
+compound_09,Hepatotoxicity,Inactive,0.59,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_09,Neurotoxicity,Inactive,0.59,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_09,Nephrotoxicity,Active,0.64,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_09,Respiratory toxicity,Active,0.70,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_09,Cardiotoxicity,Inactive,0.56,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_09,Carcinogenicity,Active,0.50,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_09,Immunotoxicity,Inactive,0.98,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_09,Mutagenicity,Active,0.50,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_09,Cytotoxicity,Inactive,0.69,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_09.csv,50894e55d66f272d874ad22534af87085eb6c5cc01c2c0c92b09bee3703e8167
+compound_11,Hepatotoxicity,Active,0.50,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35
+compound_11,Neurotoxicity,Active,0.57,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35
+compound_11,Nephrotoxicity,Active,0.54,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35
+compound_11,Respiratory toxicity,Active,0.75,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35
+compound_11,Cardiotoxicity,Inactive,0.74,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35
+compound_11,Carcinogenicity,Active,0.56,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35
+compound_11,Immunotoxicity,Inactive,0.99,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35
+compound_11,Mutagenicity,Inactive,0.55,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35
+compound_11,Cytotoxicity,Inactive,0.69,ProTox 3.0,2026-07-02,ProTox-3.0 - Prediction of TOXicity of chemicals_11.csv,8b32416ddca2964465954949a4037bc22606a6616edfa71c3a16380490770a35

@@ -1,0 +1,62 @@
+STEP 9 — REFERENCE LIGAND HEAVY-ATOM SYMMETRY AUDIT
+Date: 2026-07-16
+Software: RDKit 2025.09.5
+Environment: docking_env
+
+PURPOSE
+Determine whether chemically equivalent heavy-atom permutations must be
+considered when calculating redocking RMSD for the crystallographic
+reference ligands QZN and OHN.
+
+METHOD
+Reference prepared SDF structures were read with RDKit.
+Hydrogen atoms were removed.
+Heavy-atom graph automorphisms were enumerated with chirality enabled.
+Canonical atom symmetry classes were also inspected.
+
+QZN / PqsR 4JVI
+Input:
+03_docking/reference_ligands_sdf/PqsR_4JVI_QZN_siteA_reference_prepared.sdf
+
+Heavy atoms: 22
+Heavy-atom graph automorphisms: 1
+Chemically equivalent heavy-atom classes: none
+
+Only automorphism:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+
+OHN / LasR 2UV0
+Input:
+03_docking/reference_ligands_sdf/LasR_2UV0_OHN_chainF_reference_prepared.sdf
+
+Heavy atoms: 21
+Heavy-atom graph automorphisms: 1
+Chemically equivalent heavy-atom classes: none
+
+Only automorphism:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+
+CONCLUSION
+Neither QZN nor OHN contains non-trivial heavy-atom graph automorphisms
+under the prepared molecular structures and retained stereochemical model.
+
+Therefore, for both reference ligands:
+- the explicit INDEX MAP correspondence is the only valid heavy-atom mapping;
+- direct mapped heavy-atom RMSD equals symmetry-aware heavy-atom RMSD;
+- no atom permutation can lower or otherwise alter the reported RMSD values.
+
+VALIDATION CONSEQUENCES
+LasR/OHN V2 Vinardo mode 1:
+Final heavy-atom RMSD = 0.6911 A
+Status: PASS
+
+PqsR/QZN V2 Vinardo mode 1:
+Final heavy-atom RMSD = 10.5434 A
+Status: FAIL
+
+PqsR/QZN V3 top-5 multiseed:
+Successful runs = 1/5
+Status: FAIL
+
+All previously reported direct mapped RMSD values for QZN and OHN are
+formally symmetry-aware RMSD values for these structures.

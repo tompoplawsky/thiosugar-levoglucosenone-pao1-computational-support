@@ -1,0 +1,51 @@
+LasR 2UV0 production docking consensus interpretation
+
+Date UTC: 2026-07-17T06:11:41.886383+00:00
+
+Protocol:
+- scoring function: Vinardo
+- independent seeds: 5 per ligand
+- modes retained: 20 per seed
+- orthosteric criterion: ligand heavy-atom centroid <= 5.0 A from OHN reference centroid
+- consensus criterion: fixed-frame heavy-atom RMSD <= 2.0 A with occupancy >= 3/5 seeds
+
+Compound 08:
+- 0 orthosteric poses among 100 examined poses
+- 0/5 runs contained an orthosteric pose
+- classification: no orthosteric LasR consensus
+
+Compound 09:
+- 0 orthosteric poses among 100 examined poses
+- 0/5 runs contained an orthosteric pose
+- classification: no orthosteric LasR consensus
+
+Compound 11:
+- 10 orthosteric poses among 100 examined poses
+- orthosteric poses present in 5/5 runs
+- two distinct consensus clusters, each present in 5/5 seeds
+- selected cluster determined by preregistered median-score tie-breaker
+- representative pose: run01_seed2026071661_mode06
+- score: -3.5860 kcal/mol
+- reference-centroid distance: 4.7025 A
+
+PLIP profile of the selected compound 11 pose:
+- Asp65 side chain: ligand-donor hydrogen bond
+  H-A distance 3.12 A; D-A distance 4.02 A; donor angle 148.51 degrees
+- Ala127: hydrophobic interaction, distance 3.68 A
+
+Interpretation:
+Compound 11 reproducibly samples the LasR orthosteric region, but the selected
+pose forms a sparse interaction network and was not the top-ranked solution.
+The Asp65 hydrogen bond is geometrically marginal because of the long
+donor-acceptor distance. The result constitutes a structural hypothesis and
+does not establish direct binding affinity or prove LasR as the exclusive
+biological target.
+
+Compounds 08 and 09 showed no orthosteric consensus under the preregistered
+protocol. Their non-orthosteric docking scores must not be interpreted as
+LasR binding energies.
+
+Wet-lab activity establishes biological quorum-sensing modulation but does
+not independently identify the direct molecular target.
+
+Summary TSV SHA-256: f014caa994e7c670d95a7374a00225a0355db44de3252f3271092e0aed545437

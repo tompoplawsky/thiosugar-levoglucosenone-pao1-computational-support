@@ -1,0 +1,156 @@
+STEP 9 — PQSR-SPECIFIC CONFIRMATORY REDOCKING VALIDATION PROTOCOL V4
+Date: 2026-07-16
+Status: preregistered before inspection of any V4 docking result
+
+SCOPE
+This protocol applies exclusively to PqsR/MvfR, PDB 4JVI.
+LasR/OHN has already passed its independent V2 Vinardo validation protocol.
+
+DEVELOPMENT HISTORY
+Protocols V1-V3 constituted the method-development dataset.
+
+V1, default Vina scoring:
+- a native-like QZN pose was recovered at mode 8;
+- heavy-atom RMSD: 1.7193 A;
+- mode 1 was spatially incorrect.
+
+V2, Vinardo scoring:
+- a native-like QZN pose was recovered at mode 5;
+- heavy-atom RMSD: 1.5289 A;
+- mode 1 was spatially incorrect.
+
+V3, five-seed Vinardo top-5 validation:
+- preregistered top-5 criterion passed in 1/5 runs;
+- native-like QZN poses were nevertheless recovered reproducibly at ranks 5-7;
+- ranks of the best native-like poses: 5, 6, 7, 7, and 6;
+- four of five runs recovered a pose with heavy-atom RMSD <= 2.0 A in modes 1-7.
+
+The V1-V3 outputs are retained and remain classified according to their
+original preregistered criteria. They are not retrospectively relabelled.
+
+SYMMETRY AUDIT
+RDKit heavy-atom graph analysis identified one automorphism for QZN:
+the identity mapping only.
+
+Therefore:
+- explicit INDEX MAP RMSD equals symmetry-aware heavy-atom RMSD;
+- no chemically equivalent atom permutation changes the RMSD result.
+
+CONFIRMATORY DESIGN
+V4 uses only new random seeds not used during V1-V3 development.
+
+The only acceptance-rule change relative to V3 is expansion of the inspected
+candidate set from modes 1-5 to modes 1-7.
+
+No receptor, ligand, box, scoring-function, exhaustiveness, number of modes,
+or energy-range parameter is changed.
+
+SOFTWARE AND INPUTS
+Software: AutoDock Vina 1.2.5
+Scoring function: Vinardo
+
+Receptor:
+03_docking/receptors_pdbqt/PqsR_4JVI.pdbqt
+
+Reference ligand:
+03_docking/reference_ligands_pdbqt/PqsR_4JVI_QZN_siteA_reference.pdbqt
+
+SEARCH BOX
+center_x = -33.489
+center_y = 56.865
+center_z = 9.100
+size_x = 30.000
+size_y = 30.000
+size_z = 30.000
+
+SEARCH PARAMETERS
+CPU: 8
+Exhaustiveness: 64
+Number of modes: 20
+Energy range: 5 kcal/mol
+Verbosity: 2
+
+INDEPENDENT CONFIRMATORY SEEDS
+Run 01: 2026071621
+Run 02: 2026071622
+Run 03: 2026071623
+Run 04: 2026071624
+Run 05: 2026071625
+Run 06: 2026071626
+Run 07: 2026071627
+Run 08: 2026071628
+Run 09: 2026071629
+Run 10: 2026071630
+
+RUN-LEVEL SUCCESS CRITERION
+A run is successful when at least one of modes 1-7 satisfies both:
+- symmetry-aware heavy-atom RMSD <= 2.0 A relative to crystallographic QZN;
+- centroid displacement from crystallographic QZN <= 5.0 A.
+
+RMSD RULES
+- hydrogen atoms excluded;
+- explicit correspondence from the retained Meeko INDEX MAP;
+- no nearest-neighbour coordinate matching;
+- QZN has no non-trivial heavy-atom automorphism;
+- direct mapped RMSD is therefore the final symmetry-aware RMSD.
+
+PROTOCOL-LEVEL ACCEPTANCE CRITERION
+The PqsR V4 protocol is validated when at least 8 of 10 independent runs
+satisfy the run-level success criterion.
+
+SECONDARY REPORTED METRICS
+For every run report:
+- rank of the best native-like pose in modes 1-7;
+- rank of the best native-like pose in modes 1-20;
+- heavy-atom RMSD;
+- centroid displacement;
+- Vinardo score;
+- score difference relative to mode 1;
+- mode 1 RMSD and centroid displacement;
+- number of heavy atoms used.
+
+Also report:
+- total successful runs;
+- distribution and median rank of native-like poses;
+- RMSD range;
+- score-difference range;
+- reproducibility of the alternative mode-1 basin.
+
+INTERPRETATION
+Successful V4 validation would demonstrate reproducible recovery of the
+crystallographic QZN binding basin among the seven highest-ranked Vinardo
+candidate poses.
+
+It would not demonstrate that:
+- the crystallographic pose is ranked first;
+- Vinardo scores are experimental binding free energies;
+- small score differences establish relative ligand affinity.
+
+PRODUCTION CONSEQUENCE
+PqsR production docking may begin only if V4 passes.
+
+A separate production protocol must then be frozen before inspection of
+compound 8, 9, or 11 docking results. It must retain:
+- the same receptor;
+- the same search box;
+- Vinardo scoring;
+- exhaustiveness 64;
+- 20 modes;
+- multiple independent seeds;
+- explicit orthosteric spatial filtering;
+- consensus analysis across seeds.
+
+STOP RULE
+If V4 fails, no additional expansion of the accepted rank range, RMSD
+threshold, centroid threshold, or further seed-driven protocol tuning will
+be adopted in STEP 9.
+
+In that case:
+- PqsR docking will not be classified as formally validated;
+- any PqsR docking results may only be presented as exploratory structural
+  rationalization with the validation limitation stated explicitly.
+
+PROVENANCE
+Retain all V1-V4 protocols, configurations, raw outputs, logs, timing files,
+RMSD tables, QC decisions, software-version records, and SHA-256 checksums.
+No previous result may be overwritten.

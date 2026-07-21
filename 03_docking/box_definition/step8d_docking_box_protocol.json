@@ -1,0 +1,116 @@
+{
+  "step": "8D",
+  "date": "2026-07-16",
+  "purpose": "Validated receptor-specific docking-box definitions for crystallographic redocking and later docking of compounds 8, 9, and 11",
+  "box_policy": {
+    "shape": "cube",
+    "size_A": [
+      30.0,
+      30.0,
+      30.0
+    ],
+    "volume_A3": 27000.0,
+    "center_definition": "Heavy-atom geometric centroid of the crystallographic reference ligand",
+    "pocket_validation": "All receptor heavy atoms within 6.0 Å of any reference-ligand heavy atom must lie inside the box",
+    "ligand_validation": "The maximum centroid radius among compounds 8, 9, 11 and the receptor-specific reference ligand must fit at the box center under arbitrary rotation",
+    "common_use": "The same receptor-specific box must be used for reference redocking and subsequent compound docking",
+    "vina_parameters": "Not defined in STEP 8D",
+    "docking_status": "No redocking or production docking performed in STEP 8D"
+  },
+  "systems": {
+    "LasR_2UV0": {
+      "system": "LasR_2UV0",
+      "center_A": [
+        55.258,
+        27.138,
+        29.99
+      ],
+      "size_A": [
+        30.0,
+        30.0,
+        30.0
+      ],
+      "volume_A3": 27000.0,
+      "reference_name": "OHN",
+      "reference_heavy_atoms": 21,
+      "pocket_cutoff_A": 6.0,
+      "pocket_heavy_atoms": 158,
+      "reference_minimum_face_clearance_A": 8.445999999999998,
+      "pocket_minimum_face_clearance_A": 3.664000000000005,
+      "ligand_centroid_radii_A": {
+        "compound_08": 11.021621996956227,
+        "compound_09": 6.966090243295245,
+        "compound_11": 3.8335294330127088,
+        "OHN": 6.769245158834787
+      },
+      "largest_ligand_centroid_radius_A": 11.021621996956227,
+      "largest_ligand": "compound_08",
+      "rotation_clearance_at_center_A": 3.9783780030437725,
+      "checks": {
+        "center_matches_audited_value": true,
+        "reference_inside_box": true,
+        "pocket_inside_box": true,
+        "all_ligands_rotation_safe_at_center": true,
+        "box_volume_is_27000_A3": true
+      },
+      "box_file": "03_docking/configs/box_definitions/LasR_2UV0_box_30A.txt",
+      "receptor_pdb": "00_validated_inputs/receptors/LasR_2UV0/LasR_2UV0_prepared_chainF.pdb",
+      "receptor_pdb_sha256": "44b8b4ce2d4590b695e30908e9b7bc28c4a9e476b87c2710bd7e9d08ad4371e2",
+      "receptor_pdbqt": "03_docking/receptors_pdbqt/LasR_2UV0.pdbqt",
+      "receptor_pdbqt_sha256": "6a1fd8cd00ea03726e3b0acbddbd5a92e7c5e8164b27c28ff4f354a890f0726e",
+      "reference_pdb": "00_validated_inputs/receptors/LasR_2UV0/LasR_2UV0_OHN_chainF_reference.pdb",
+      "reference_pdb_sha256": "3bf62a81464b5f007692109b14faf49ee188ff7ff9ca807031ad31fb2785cbf6",
+      "reference_sdf": "03_docking/reference_ligands_sdf/LasR_2UV0_OHN_chainF_reference_prepared.sdf",
+      "reference_sdf_sha256": "3233857cd55fd461fb917cbac0d9e531c7479de2773af2adadcd57cfc12f7291",
+      "reference_pdbqt": "03_docking/reference_ligands_pdbqt/LasR_2UV0_OHN_chainF_reference.pdbqt",
+      "reference_pdbqt_sha256": "a994f6d4e5ecc53d8be03c99103365865a9682a18e7e5a6c2b7f9c8d8a883e32"
+    },
+    "PqsR_4JVI": {
+      "system": "PqsR_4JVI",
+      "center_A": [
+        -33.489,
+        56.865,
+        9.1
+      ],
+      "size_A": [
+        30.0,
+        30.0,
+        30.0
+      ],
+      "volume_A3": 27000.0,
+      "reference_name": "QZN_siteA",
+      "reference_heavy_atoms": 22,
+      "pocket_cutoff_A": 6.0,
+      "pocket_heavy_atoms": 110,
+      "reference_minimum_face_clearance_A": 7.717954545454546,
+      "pocket_minimum_face_clearance_A": 2.535954545454544,
+      "ligand_centroid_radii_A": {
+        "compound_08": 11.021621996956227,
+        "compound_09": 6.966090243295245,
+        "compound_11": 3.8335294330127088,
+        "QZN_siteA": 8.268548758162808
+      },
+      "largest_ligand_centroid_radius_A": 11.021621996956227,
+      "largest_ligand": "compound_08",
+      "rotation_clearance_at_center_A": 3.9783780030437725,
+      "checks": {
+        "center_matches_audited_value": true,
+        "reference_inside_box": true,
+        "pocket_inside_box": true,
+        "all_ligands_rotation_safe_at_center": true,
+        "box_volume_is_27000_A3": true
+      },
+      "box_file": "03_docking/configs/box_definitions/PqsR_4JVI_box_30A.txt",
+      "receptor_pdb": "00_validated_inputs/receptors/PqsR_4JVI/PqsR_4JVI_prepared_dimer_AB.pdb",
+      "receptor_pdb_sha256": "8c34a5c0054a7ed7c6c33ad09088b3e3f6abb1715281aa65003c3f664b2f537f",
+      "receptor_pdbqt": "03_docking/receptors_pdbqt/PqsR_4JVI.pdbqt",
+      "receptor_pdbqt_sha256": "d68f6175df926ecf9353d6e043eccba0e05c72c6b950787b53387c88ad7e8955",
+      "reference_pdb": "00_validated_inputs/receptors/PqsR_4JVI/PqsR_4JVI_QZN_chainA_reference.pdb",
+      "reference_pdb_sha256": "8ab349e5b80d2c25e10b9bb34040a2d17758920e05f6a0af2a15c15deb9b9076",
+      "reference_sdf": "03_docking/reference_ligands_sdf/PqsR_4JVI_QZN_siteA_reference_prepared.sdf",
+      "reference_sdf_sha256": "b18dc248f8afe1651264407d392affd91df7a84aae345c872f7dcff8c3d52ea2",
+      "reference_pdbqt": "03_docking/reference_ligands_pdbqt/PqsR_4JVI_QZN_siteA_reference.pdbqt",
+      "reference_pdbqt_sha256": "4b7891c94ccb4a7c3bc16a19db414238b640c3a2f3f3306306ae0ae596ef3f6c"
+    }
+  }
+}

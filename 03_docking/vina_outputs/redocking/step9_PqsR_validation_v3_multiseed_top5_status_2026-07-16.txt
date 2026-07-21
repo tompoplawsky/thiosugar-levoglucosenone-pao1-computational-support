@@ -1,0 +1,91 @@
+STEP 9 — PQSR-SPECIFIC V3 MULTISEED TOP-5 VALIDATION STATUS
+Date: 2026-07-16
+Receptor: PqsR/MvfR, PDB 4JVI
+Reference ligand: QZN, site A
+Software: AutoDock Vina 1.2.5
+Scoring function: Vinardo
+
+PREREGISTERED PROTOCOL
+03_docking/vina_configs/step9_PqsR_specific_validation_protocol_v3_multiseed_top5_preregistered_2026-07-16.txt
+
+PRIMARY ACCEPTANCE RULE
+A run is successful when at least one of modes 1-5 has:
+- symmetry-aware heavy-atom RMSD <= 2.0 A;
+- centroid displacement <= 5.0 A.
+
+The protocol is validated when at least four of five independent runs pass.
+
+RUN-LEVEL RESULTS
+
+Run 1, seed 2026071611
+Best top-5 pose: mode 5
+Vinardo score: -6.198 kcal/mol
+Delta relative to mode 1: 0.520 kcal/mol
+Direct mapped heavy-atom RMSD: 1.6160 A
+Centroid displacement: 1.1555 A
+Status: PASS
+
+Run 2, seed 2026071612
+Best top-5 pose: mode 4
+Vinardo score: -6.334 kcal/mol
+Delta relative to mode 1: 0.410 kcal/mol
+Direct mapped heavy-atom RMSD: 2.8476 A
+Centroid displacement: 2.3308 A
+Status: FAIL
+
+Run 3, seed 2026071613
+Best top-5 pose: mode 5
+Vinardo score: -6.275 kcal/mol
+Delta relative to mode 1: 0.439 kcal/mol
+Direct mapped heavy-atom RMSD: 2.9496 A
+Centroid displacement: 2.5637 A
+Status: FAIL
+
+Run 4, seed 2026071614
+Best top-5 pose: mode 4
+Vinardo score: -6.207 kcal/mol
+Delta relative to mode 1: 0.445 kcal/mol
+Direct mapped heavy-atom RMSD: 3.0254 A
+Centroid displacement: 2.6547 A
+Status: FAIL
+
+Run 5, seed 2026071615
+Best top-5 pose: mode 4
+Vinardo score: -6.315 kcal/mol
+Delta relative to mode 1: 0.439 kcal/mol
+Direct mapped heavy-atom RMSD: 2.8210 A
+Centroid displacement: 2.3718 A
+Status: FAIL
+
+SUCCESSFUL RUNS: 1/5
+REQUIRED: 4/5
+
+OVERALL V3 STATUS: FAIL
+
+SYMMETRY CONSIDERATION
+For the four failed top-5 results, centroid displacement alone exceeds
+2.0 A. Since centroid displacement is a lower bound on RMSD, chemically
+equivalent atom permutations cannot reduce these poses below the
+2.0 A acceptance threshold.
+
+SECONDARY TOP-20 OBSERVATION
+Run 1: mode 5, direct mapped RMSD 1.6160 A
+Run 2: mode 6, direct mapped RMSD 2.0978 A
+Run 3: mode 7, direct mapped RMSD 1.6348 A
+Run 4: mode 7, direct mapped RMSD 1.6079 A
+Run 5: mode 6, direct mapped RMSD 1.5812 A
+
+The crystallographic binding basin was therefore recovered consistently
+at ranks 5-7, although the preregistered top-5 criterion was not satisfied.
+
+INTERPRETATION
+The search procedure reproducibly samples the native-like QZN binding basin.
+The dominant limitation is systematic global ranking: mode 1 repeatedly
+occupies an alternative basin with approximately 10.5 A direct mapped RMSD
+and approximately 9.1 A centroid displacement.
+
+DECISION
+PqsR production docking is not authorized under protocol V3.
+The V3 result must not be retrospectively relabelled as successful.
+Any revised PqsR-specific protocol must be preregistered and tested using
+new independent seeds.

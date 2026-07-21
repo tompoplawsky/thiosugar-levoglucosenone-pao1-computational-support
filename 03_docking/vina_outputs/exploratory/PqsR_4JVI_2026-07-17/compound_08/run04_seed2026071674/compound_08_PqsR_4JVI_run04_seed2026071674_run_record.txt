@@ -1,0 +1,30 @@
+PqsR exploratory docking run record
+
+Interpretation status: exploratory only
+Formal PqsR redocking validation: not achieved
+Configuration: compound_08_PqsR_4JVI_run04_seed2026071674
+Ligand: compound_08
+Receptor: PqsR_4JVI
+Seed: 2026071674
+Start: 2026-07-17T11:55:48+02:00
+End: 2026-07-17T12:08:17+02:00
+Exit status: 0
+Mode-1 Vinardo score: -4.610 kcal/mol
+Elapsed: 12:28.86
+Maximum RSS: 1105152 kB
+
+Config: /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_configs/exploratory_PqsR_2026-07-17/compound_08_PqsR_4JVI_run04_seed2026071674.conf
+Pose output: /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/compound_08/run04_seed2026071674/compound_08_PqsR_4JVI_run04_seed2026071674_poses.pdbqt
+Run log: /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/compound_08/run04_seed2026071674/compound_08_PqsR_4JVI_run04_seed2026071674_run.log
+Time log: /data/BIOFILM_INSILICO_SUPPORT/03_docking/vina_outputs/exploratory/PqsR_4JVI_2026-07-17/compound_08/run04_seed2026071674/compound_08_PqsR_4JVI_run04_seed2026071674_time.log
+
+Protocol SHA-256: b2d00f6dd1d9cc62772f242e24b4c5b6fcf72b6de9e519b5074d7a94c805f9c4
+Addendum SHA-256: eef880ca4d8fe86a7c2ff84605d19ecdc034d8a58e11d875ec6a0b61d6cc0d7a
+Config SHA-256: 9f5c109c129379fffa3c814bb7fc15da3cee60328abb80b9e5701972d5e7e201
+Pose SHA-256: 664efa94533e52707cd88af8898318916cc80fe8f93ca066f7d9c0d987493983
+Run-log SHA-256: af56257e6d1b2f0c03a4d1529938f22f438965b3abc344c0930d395eb3ef00e6
+Time-log SHA-256: 39720483a2a6eff63fee509b0f2359023c2f22d0c21b7ce9555fb68e8fe8e31c
+
+Scientific restriction:
+This run is hypothesis-generating and must not be described as
+validated PqsR binding, binding affinity, or confirmed target engagement.

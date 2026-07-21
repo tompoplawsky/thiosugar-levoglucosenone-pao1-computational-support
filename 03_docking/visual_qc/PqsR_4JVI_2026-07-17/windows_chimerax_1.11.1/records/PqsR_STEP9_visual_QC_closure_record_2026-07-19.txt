@@ -1,0 +1,62 @@
+STEP 9 — PqsR 4JVI supervised visual-QC closure record
+
+Date UTC:
+2026-07-19T15:14:22.835994+00:00
+
+Software:
+UCSF ChimeraX 1.11.1 (2026-01-23)
+
+Inspection platform:
+Windows workstation
+
+Repository destination:
+03_docking/visual_qc/PqsR_4JVI_2026-07-17/windows_chimerax_1.11.1
+
+Scientific status:
+EXPLORATORY ONLY
+
+Formal receptor-specific PqsR redocking validation:
+not achieved
+
+Scope:
+Supervised visual inspection of the final selected docking representatives for
+compounds 11, 09 and 08, together with crystallographic QZN site-A reference.
+
+Final decisions:
+- compound_11: PASS
+  Compact chain-A pose in the QZN-defined binding region. No obvious severe
+  steric clash or topology defect. PLIP-classified interactions involve Leu197
+  and Leu207. The selected cluster-1 pose does not support the previous Tyr258
+  hypothesis.
+
+- compound_09: PASS
+  Recurrent partially inserted, pocket-proximal orientation. A substantial
+  portion remains outside the compact QZN volume. Contacts involving both
+  protomers are spatially plausible. The pose is not classified as fully
+  orthosteric.
+
+- compound_08: PASS
+  Recurrent partially inserted surface/interface orientation. Most of the
+  large ligand remains outside the compact QZN-defined cavity. No obvious
+  severe steric clash or topology defect was observed.
+
+Chemistry review:
+PLIP salt-bridge assignments between Lys266 and purported ligand
+"Carboxylate" groups for compounds 08 and 09 were rejected. Both ligands are
+formally neutral and contain acetyl esters rather than carboxylate anions.
+
+Archived evidence:
+- three UCSF ChimeraX session files;
+- three selected publication-style PNG images;
+- SHA-256 verified after transfer from Windows to Linux.
+
+Interpretation restriction:
+The visual-QC PASS status confirms technical plausibility and integrity of the
+selected exploratory docking poses. It does not establish binding affinity,
+direct PqsR target engagement, or causal inhibition of quorum sensing.
+
+Overall PqsR visual-QC status:
+PASS
+
+STEP 9 PqsR visual-QC status:
+CLOSED

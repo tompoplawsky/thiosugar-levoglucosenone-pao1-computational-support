@@ -1,0 +1,9 @@
+STEP 8D software versions
+Date: 2026-07-16
+
+Operating system: Linux-6.17.0-40-generic-x86_64-with-glibc2.39
+Python: 3.12.13
+RDKit: 2025.09.5
+NumPy: 2.4.3
+
+No Vina execution occurred in STEP 8D.
