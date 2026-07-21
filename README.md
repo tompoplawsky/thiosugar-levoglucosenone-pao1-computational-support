@@ -40,7 +40,9 @@ Excluded:
 | Target | PDB ID | Use |
 |---|---|---|
 | LasR | 2UV0 | orthosteric docking |
-| PqsR / MvfR | 4JVI | orthosteric docking |
+| PqsR / MvfR | 4JVI | exploratory pocket-focused docking; redocking validation failed |
+
+**Docking validation status:** LasR redocking passed. PqsR redocking failed; therefore, all PqsR docking and PLIP results are exploratory structural rationalizations and must not be described as receptor-specifically validated or as evidence of direct target engagement.
 
 ## Directory overview
 
