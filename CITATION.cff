@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this computational repository, please cite the archived release." 
+title: "Thiosugar–levoglucosenone hybrids against Pseudomonas aeruginosa PAO1: computational support"
+version: 1.0.0
+date-released: 2026-07-21
+type: software
+abstract: "Validated molecular inputs, quantum-chemical calculations, CHELPG charge analyses, ADMET predictions, molecular docking, PLIP interaction profiles, scripts, quality-control records, software-version records, and checksums supporting the associated study of thiosugar–levoglucosenone hybrids." 
+repository-code: "https://github.com/tompoplawsky/thiosugar-levoglucosenone-pao1-computational-support"
+authors:
+  - given-names: "Tomasz"
+    family-names: "Popławski"
+  - given-names: "Jarosław"
+    family-names: "Rachuna"
+  - given-names: "Anna"
+    family-names: "Macieja"
+  - given-names: "Karolina"
+    family-names: "Przybyłowska-Sygut"
+  - given-names: "Sławomir"
+    family-names: "Wąsik"
+  - given-names: "Michał"
+    family-names: "Arabski"
+  - given-names: "Ireneusz"
+    family-names: "Majsterek"
+  - given-names: "Roman"
+    family-names: "Bielski"
+  - given-names: "Donald E."
+    family-names: "Mencer"
+  - given-names: "Zbigniew"
+    family-names: "Witczak"
+keywords:
+  - biofilm
+  - quorum sensing
+  - Pseudomonas aeruginosa PAO1
+  - levoglucosenone
+  - thiosugars
+  - density functional theory
+  - molecular docking
+  - ADMET
